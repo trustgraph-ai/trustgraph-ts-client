@@ -172,7 +172,7 @@ export class SKOSValidator {
 
       // Notation format (if present)
       if (concept.notation && !/^[A-Za-z0-9._-]+$/.test(concept.notation)) {
-        info.push({
+        _info.push({
           type: "info",
           code: "CONCEPT_NOTATION_FORMAT",
           message: `Concept "${concept.prefLabel}" notation "${concept.notation}" uses non-standard characters`,
@@ -368,7 +368,7 @@ export class SKOSValidator {
     );
 
     if (disconnected.size > 0) {
-      info.push({
+      _info.push({
         type: "info",
         code: "HIERARCHY_DISCONNECTED_CONCEPTS",
         message: `Found ${disconnected.size} concepts that are not connected to the main hierarchy`,

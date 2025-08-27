@@ -510,7 +510,7 @@ export class SKOSParser {
   /**
    * Parse SKOS Turtle and convert to internal ontology format
    */
-  async parseTurtle(content: string, ontologyId: string): Promise<Ontology> {
+  async parseTurtle(_content: string, _ontologyId: string): Promise<Ontology> {
     // For a complete implementation, we'd use a proper Turtle parser
     // This is a placeholder for the Turtle parsing functionality
     throw new Error(
