@@ -26,6 +26,8 @@ export class ServiceCall {
   socket: BaseApi;
   completed: boolean = false;
   timer: NodeJS.Timeout | undefined;
+  complete: boolean = false;
+  timeoutId: NodeJS.Timeout | undefined;
 
   constructor(
     mid: string, // Message ID - unique identifier for this request
@@ -45,6 +47,11 @@ export class ServiceCall {
     this.retries = retries;
     this.socket = socket;
     this.completed = false; // Track if this request has completed
+  }
+
+  calculateBackoff(): number {
+    // Simple exponential backoff calculation
+    return Math.min(1000 * Math.pow(2, 3 - this.retries), 10000);
   }
   complete: boolean; // Flag indicating if request is complete
 
