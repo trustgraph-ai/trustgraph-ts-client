@@ -152,12 +152,10 @@ export const useOntologies = () => {
     }) => {
       return socket
         .config()
-        .deleteConfig([
-          {
-            type: "ontology",
-            key: id,
-          },
-        ])
+        .deleteConfig({
+          type: "ontology",
+          key: id,
+        })
         .then((x: any) => {
           if (x && x["error"]) {
             console.log("Error:", x);

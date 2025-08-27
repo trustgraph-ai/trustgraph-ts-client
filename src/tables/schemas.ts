@@ -27,10 +27,11 @@ const columnHelper = createColumnHelper<SchemaTableRow>();
  */
 export const schemaColumns = (renderers?: TableRenderers) => [
   // ID column with code formatting
-  columnHelper.accessor("0", {
+  columnHelper.accessor((row) => row[0], {
+    id: "id",
     header: "ID",
     cell: (info) => {
-      const value = info.getValue();
+      const value = info.getValue() as string;
       return renderers?.code ? renderers.code(value) : value;
     },
   }),

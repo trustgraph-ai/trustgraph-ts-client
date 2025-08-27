@@ -38,7 +38,7 @@ export const flowColumns = (renderers?: TableRenderers) => [
       if (renderers?.checkbox) {
         return renderers.checkbox(
           state === true,
-          handler,
+          () => handler({}),
           state === "indeterminate" ? "indeterminate" : undefined
         );
       }
@@ -51,7 +51,7 @@ export const flowColumns = (renderers?: TableRenderers) => [
       const handler = row.getToggleSelectedHandler();
       
       if (renderers?.checkbox) {
-        return renderers.checkbox(isSelected, handler);
+        return renderers.checkbox(isSelected, () => handler({}));
       }
       
       // Fallback to text indicator
