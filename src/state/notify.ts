@@ -28,11 +28,8 @@ export const useNotification = () => {
      * Automatically prefixes the message with "Error: "
      * @param {string} error - The error message to display
      */
-    error: (error) => {
-      toaster.create({
-        title: "Error: " + error,
-        type: "error",
-      });
+    error: (error: string) => {
+      notify('error', `Error: ${error}`);
     },
 
     /**
@@ -40,22 +37,16 @@ export const useNotification = () => {
      * Automatically prefixes the message with "Error: "
      * @param {string} error - The error message to display
      */
-    warning: (warning) => {
-      toaster.create({
-        title: "Warning: " + warning,
-        type: "warning",
-      });
+    warning: (warning: string) => {
+      notify('warning', `Warning: ${warning}`);
     },
 
     /**
      * Display an informational notification
      * @param {string} info - The informational message to display
      */
-    info: (info) => {
-      toaster.create({
-        title: info,
-        type: "info",
-      });
+    info: (info: string) => {
+      notify('info', info);
     },
   };
 };
