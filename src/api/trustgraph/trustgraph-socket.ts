@@ -1109,7 +1109,7 @@ export class FlowApi {
         data: document,
       },
       30000,
-      null,
+      undefined,
       this.flowId,
     );
   }
@@ -1132,7 +1132,7 @@ export class FlowApi {
         charset: charset,
       },
       30000,
-      null,
+      undefined,
       this.flowId,
     );
   }
@@ -1265,7 +1265,7 @@ export class ConfigApi {
         },
         60000,
       )
-      .then((r) => r.values);
+      .then((r: any) => r.values);
   }
 
   /**
@@ -1282,15 +1282,15 @@ export class ConfigApi {
         },
         60000,
       )
-      .then((r) =>
+      .then((r: any) =>
         // Parse JSON values and restructure data
-        r.values.map((x) => {
+        r.values.map((x: any) => {
           return { key: x.key, value: JSON.parse(x.value) };
         }),
       )
-      .then((r) =>
+      .then((r: any) =>
         // Transform to more usable format
-        r.map((x) => {
+        r.map((x: any) => {
           return {
             model: x.key,
             input_price: x.value.input_price, // Cost per input token
@@ -1317,7 +1317,7 @@ export class KnowledgeApi {
    */
   getKnowledgeCores() {
     return this.api
-      .makeRequest<FlowRequest, FlowResponse>(
+      .makeRequest<any, any>(
         "knowledge",
         {
           operation: "list-kg-cores",
@@ -1325,14 +1325,14 @@ export class KnowledgeApi {
         },
         60000,
       )
-      .then((r) => r.ids);
+      .then((r: any) => r.ids);
   }
 
   /**
    * Deletes a knowledge graph core
    */
   deleteKgCore(id: string, user?: string) {
-    return this.api.makeRequest<LibraryRequest, LibraryResponse>(
+    return this.api.makeRequest<any, any>(
       "knowledge",
       {
         operation: "delete-kg-core",
@@ -1347,7 +1347,7 @@ export class KnowledgeApi {
    * Deletes a knowledge graph core
    */
   loadKgCore(id: string, flow: string, user?: string, collection?: string) {
-    return this.api.makeRequest<LibraryRequest, LibraryResponse>(
+    return this.api.makeRequest<any, any>(
       "knowledge",
       {
         operation: "load-kg-core",
@@ -1365,7 +1365,7 @@ export class KnowledgeApi {
    * Uses multi-request pattern for large datasets
    * @param receiver - Callback function to handle streaming data chunks
    */
-  getKgCore(id: string, user?: string, receiver: (msg: any, isEnd: boolean) => void) {
+  getKgCore(id: string, receiver: (msg: any, isEnd: boolean) => void, user?: string) {
     // Wrapper to handle end-of-stream detection
     const recv = (msg: any) => {
       if (msg.eos) {
@@ -1379,7 +1379,7 @@ export class KnowledgeApi {
       }
     };
 
-    return this.api.makeRequestMulti<LibraryRequest, LibraryResponse>(
+    return this.api.makeRequestMulti<any, any>(
       "knowledge",
       {
         operation: "get-kg-core",
@@ -1398,5 +1398,5 @@ export class KnowledgeApi {
  * @param token - Optional authentication token for secure connections
  */
 export const createTrustGraphSocket = (token?: string): Socket => {
-  return new BaseApi(token);
+  return new BaseApi(token) as unknown as Socket;
 };
