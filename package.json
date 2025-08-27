@@ -1,0 +1,91 @@
+{
+  "name": "@trustgraph/client",
+  "private": false,
+  "version": "1.0.0",
+  "description": "UI-agnostic TrustGraph client library for WebSocket communication and state management",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./state": {
+      "types": "./dist/state/index.d.ts",
+      "import": "./dist/state/index.mjs",
+      "require": "./dist/state/index.js"
+    },
+    "./tables": {
+      "types": "./dist/tables/index.d.ts",
+      "import": "./dist/tables/index.mjs",
+      "require": "./dist/tables/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.js"
+    },
+    "./providers": {
+      "types": "./dist/providers/index.d.ts",
+      "import": "./dist/providers/index.mjs",
+      "require": "./dist/providers/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.80.3",
+    "@tanstack/react-table": "^8.21.3",
+    "uuid": "^11.0.3",
+    "zustand": "^5.0.0-rc.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^8.57.0",
+    "prettier": "3.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.3",
+    "vitest": "^3.2.4",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/react-hooks": "^8.0.0",
+    "@vitest/ui": "^3.2.4",
+    "jsdom": "^24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trustgraph-ai/trustgraph-client"
+  },
+  "keywords": [
+    "trustgraph",
+    "websocket",
+    "client",
+    "react",
+    "state-management"
+  ],
+  "author": "TrustGraph AI",
+  "license": "MIT"
+}
