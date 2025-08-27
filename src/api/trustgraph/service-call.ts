@@ -81,7 +81,7 @@ export class ServiceCall {
 
     // Clean up timeout timer
     clearTimeout(this.timeoutId);
-    this.timeoutId = null;
+    this.timeoutId = undefined;
 
     // Remove from inflight requests tracker
     delete this.socket.inflight[this.mid];

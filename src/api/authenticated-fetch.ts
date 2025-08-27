@@ -12,8 +12,8 @@
  */
 export const createAuthenticatedFetch = (apiKey?: string) => {
   return (url: string, options: RequestInit = {}) => {
-    const headers: HeadersInit = {
-      ...options.headers,
+    const headers: Record<string, string> = {
+      ...(options.headers as Record<string, string> || {}),
     };
 
     // Add Bearer token if API key is present

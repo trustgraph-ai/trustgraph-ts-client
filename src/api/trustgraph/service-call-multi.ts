@@ -61,7 +61,7 @@ export class ServiceCallMulti {
 
       //        console.log("Received for", this.mid);
       clearTimeout(this.timeoutId);
-      this.timeoutId = null;
+      this.timeoutId = undefined;
       delete this.socket.inflight[this.mid];
       this.success(resp);
     }

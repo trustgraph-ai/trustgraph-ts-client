@@ -617,7 +617,7 @@ export class LibrarianApi {
    */
   getDocuments() {
     return this.api
-      .makeRequest<LibrarianRequest, LibrarianResponse>(
+      .makeRequest<LibraryRequest, LibraryResponse>(
         "librarian",
         {
           operation: "list-documents",
@@ -633,7 +633,7 @@ export class LibrarianApi {
    */
   getProcessing() {
     return this.api
-      .makeRequest<LibrarianRequest, LibrarianResponse>(
+      .makeRequest<LibraryRequest, LibraryResponse>(
         "librarian",
         {
           operation: "list-processing",
