@@ -29,6 +29,7 @@ This document outlines the architectural transformation of the TrustGraph client
 1. **UI Components** (`*-table.tsx` files in `/model`): These contain Chakra-specific table implementations
 2. **UI Utilities**: Any direct imports from `@chakra-ui/*`
 3. **Presentation Logic**: Components that mix business logic with UI rendering
+4. **Notification System** (`/state/notify.ts`): Currently integrated with Chakra's toast component - needs refactoring to event-based system
 
 ### Core Modules to Preserve and Enhance
 
