@@ -6,7 +6,7 @@
 
 # Interface: ProgressState
 
-Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L7)
+Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/progress.ts#L7)
 
 Progress state interface for tracking activities and errors
 
@@ -16,7 +16,7 @@ Progress state interface for tracking activities and errors
 
 > **activity**: `Set`\<`string`\>
 
-Defined in: [src/state/progress.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L9)
+Defined in: [src/state/progress.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/progress.ts#L9)
 
 Set of active activity identifiers - using Set for O(1) lookups and automatic deduplication
 
@@ -26,7 +26,7 @@ Set of active activity identifiers - using Set for O(1) lookups and automatic de
 
 > **error**: `string`
 
-Defined in: [src/state/progress.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L12)
+Defined in: [src/state/progress.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/progress.ts#L12)
 
 Current error message, empty string when no error
 
@@ -36,7 +36,7 @@ Current error message, empty string when no error
 
 > **addActivity**: (`act`) => `void`
 
-Defined in: [src/state/progress.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L15)
+Defined in: [src/state/progress.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/progress.ts#L15)
 
 Add a new activity to the tracking set
 
@@ -56,7 +56,7 @@ Add a new activity to the tracking set
 
 > **removeActivity**: (`act`) => `void`
 
-Defined in: [src/state/progress.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L18)
+Defined in: [src/state/progress.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/progress.ts#L18)
 
 Remove an activity from the tracking set
 
@@ -76,7 +76,7 @@ Remove an activity from the tracking set
 
 > **setError**: (`error`) => `void`
 
-Defined in: [src/state/progress.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L21)
+Defined in: [src/state/progress.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/progress.ts#L21)
 
 Set/update the current error message
 

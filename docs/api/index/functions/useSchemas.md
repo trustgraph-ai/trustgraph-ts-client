@@ -8,11 +8,16 @@
 
 > **useSchemas**(): `object`
 
-Defined in: [src/state/schemas.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/schemas.ts#L7)
+Defined in: [src/state/schemas.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/schemas.ts#L13)
+
+Custom hook for managing data schemas
+Provides functionality for fetching, updating, and deleting schemas
 
 ## Returns
 
 `object`
+
+Schema state and operations
 
 ### schemas
 

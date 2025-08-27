@@ -8,7 +8,7 @@
 
 > **useSettings**(): `object`
 
-Defined in: [src/state/settings.ts:72](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/settings.ts#L72)
+Defined in: [src/state/settings.ts:72](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/settings.ts#L72)
 
 Custom hook for managing application settings
 Uses TanStack Query for consistent async patterns while storing in localStorage

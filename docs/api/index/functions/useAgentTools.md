@@ -8,14 +8,16 @@
 
 > **useAgentTools**(): `object`
 
-Defined in: [src/state/agent-tools.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/agent-tools.ts#L15)
+Defined in: [src/state/agent-tools.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/agent-tools.ts#L12)
 
-Custom hook for managing agent tools (create, read, update, delete operations)
+Custom hook for managing AI agent tools
 Provides CRUD operations for agent tools stored in the TrustGraph configuration
 
 ## Returns
 
 `object`
+
+Agent tools state and operations
 
 ### tools
 

@@ -6,7 +6,7 @@
 
 # Class: FlowsApi
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:768](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L768)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:768](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L768)
 
 FlowsApi - Manages processing flows and configuration
 Flows define how documents and data are processed through the system
@@ -17,7 +17,7 @@ Flows define how documents and data are processed through the system
 
 > **new FlowsApi**(`api`): `FlowsApi`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:771](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L771)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:771](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L771)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/api/trustgraph/trustgraph-socket.ts:771](https://github.com/tru
 
 > **getFlows**(): `Promise`\<`string`[]\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:778](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L778)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:778](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L778)
 
 Retrieves list of available flows
 
@@ -49,7 +49,7 @@ Retrieves list of available flows
 
 > **getFlow**(`id`): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:793](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L793)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:793](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L793)
 
 Retrieves definition of a specific flow
 
@@ -69,7 +69,7 @@ Retrieves definition of a specific flow
 
 > **getConfigAll**(): `Promise`\<`object`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:811](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L811)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:811](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L811)
 
 Retrieves all configuration settings
 
@@ -83,7 +83,7 @@ Retrieves all configuration settings
 
 > **getConfig**(`keys`): `Promise`\<`object`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:824](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L824)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:824](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L824)
 
 Retrieves specific configuration values by key
 
@@ -103,7 +103,7 @@ Retrieves specific configuration values by key
 
 > **putConfig**(`values`): `Promise`\<`object`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:838](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L838)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:838](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L838)
 
 Updates configuration values
 
@@ -123,7 +123,7 @@ Updates configuration values
 
 > **deleteConfig**(`keys`): `Promise`\<`object`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:852](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L852)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:852](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L852)
 
 Deletes configuration entries
 
@@ -149,7 +149,7 @@ Deletes configuration entries
 
 > **getPrompts**(): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:868](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L868)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:868](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L868)
 
 Retrieves list of available prompt templates
 
@@ -163,7 +163,7 @@ Retrieves list of available prompt templates
 
 > **getPrompt**(`id`): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:878](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L878)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:878](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L878)
 
 Retrieves a specific prompt template
 
@@ -183,7 +183,7 @@ Retrieves a specific prompt template
 
 > **getSystemPrompt**(): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:887](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L887)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:887](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L887)
 
 Retrieves the system prompt configuration
 
@@ -197,7 +197,7 @@ Retrieves the system prompt configuration
 
 > **getFlowClasses**(): `Promise`\<`undefined` \| `string`[]\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:898](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L898)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:898](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L898)
 
 Retrieves list of available flow classes (templates)
 
@@ -211,7 +211,7 @@ Retrieves list of available flow classes (templates)
 
 > **getFlowClass**(`name`): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:913](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L913)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:913](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L913)
 
 Retrieves definition of a specific flow class
 
@@ -231,7 +231,7 @@ Retrieves definition of a specific flow class
 
 > **startFlow**(`id`, `class_name`, `description`): `Promise`\<[`FlowResponse`](../../../../index/interfaces/FlowResponse.md)\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:931](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L931)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:931](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L931)
 
 Starts a new flow instance
 
@@ -259,7 +259,7 @@ Starts a new flow instance
 
 > **stopFlow**(`id`): `Promise`\<[`FlowResponse`](../../../../index/interfaces/FlowResponse.md)\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:947](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L947)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:947](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/trustgraph-socket.ts#L947)
 
 Stops a running flow instance
 

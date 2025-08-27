@@ -6,7 +6,7 @@
 
 # Interface: ApiTriple
 
-Defined in: [src/api/trustgraph/Triple.ts:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L32)
+Defined in: [src/api/trustgraph/Triple.ts:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L32)
 
 Represents a complete RDF triple (subject-predicate-object)
 The fundamental unit of knowledge in the TrustGraph system
@@ -17,7 +17,7 @@ The fundamental unit of knowledge in the TrustGraph system
 
 > **s**: [`ApiValue`](ApiValue.md)
 
-Defined in: [src/api/trustgraph/Triple.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L34)
+Defined in: [src/api/trustgraph/Triple.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L34)
 
 Subject - what the statement is about
 
@@ -27,7 +27,7 @@ Subject - what the statement is about
 
 > **p**: [`ApiValue`](ApiValue.md)
 
-Defined in: [src/api/trustgraph/Triple.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L36)
+Defined in: [src/api/trustgraph/Triple.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L36)
 
 Predicate - the relationship or property
 
@@ -37,7 +37,7 @@ Predicate - the relationship or property
 
 > **o**: [`ApiValue`](ApiValue.md)
 
-Defined in: [src/api/trustgraph/Triple.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L38)
+Defined in: [src/api/trustgraph/Triple.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L38)
 
 Object - the value or target of the relationship
 
@@ -47,6 +47,6 @@ Object - the value or target of the relationship
 
 > `optional` **direc**: `string`
 
-Defined in: [src/api/trustgraph/Triple.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L40)
+Defined in: [src/api/trustgraph/Triple.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L40)
 
 Optional direction indicator for graph traversal

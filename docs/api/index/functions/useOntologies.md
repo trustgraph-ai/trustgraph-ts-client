@@ -8,11 +8,16 @@
 
 > **useOntologies**(): `object`
 
-Defined in: [src/state/ontologies.ts:43](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L43)
+Defined in: [src/state/ontologies.ts:89](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L89)
+
+Custom hook for managing ontology operations
+Provides functionality for fetching, creating, updating, and deleting ontologies
 
 ## Returns
 
 `object`
+
+Ontology state and operations
 
 ### ontologies
 

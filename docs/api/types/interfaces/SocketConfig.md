@@ -6,7 +6,7 @@
 
 # Interface: SocketConfig
 
-Defined in: [src/types/index.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/types/index.ts#L26)
+Defined in: [src/types/index.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L26)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/types/index.ts:26](https://github.com/trustgraph-ai/trustgraph-
 
 > **url**: `string`
 
-Defined in: [src/types/index.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/types/index.ts#L27)
+Defined in: [src/types/index.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L27)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/types/index.ts:27](https://github.com/trustgraph-ai/trustgraph-
 
 > `optional` **reconnect**: `boolean`
 
-Defined in: [src/types/index.ts:28](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/types/index.ts#L28)
+Defined in: [src/types/index.ts:28](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L28)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/types/index.ts:28](https://github.com/trustgraph-ai/trustgraph-
 
 > `optional` **reconnectInterval**: `number`
 
-Defined in: [src/types/index.ts:29](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/types/index.ts#L29)
+Defined in: [src/types/index.ts:29](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L29)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/types/index.ts:29](https://github.com/trustgraph-ai/trustgraph-
 
 > `optional` **reconnectMaxRetries**: `number`
 
-Defined in: [src/types/index.ts:30](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/types/index.ts#L30)
+Defined in: [src/types/index.ts:30](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L30)

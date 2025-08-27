@@ -6,7 +6,7 @@
 
 # Interface: RequestMessage
 
-Defined in: [src/api/trustgraph/messages.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L25)
+Defined in: [src/api/trustgraph/messages.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L25)
 
 Standard request message structure for WebSocket communication
 
@@ -16,7 +16,7 @@ Standard request message structure for WebSocket communication
 
 > **id**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L27)
+Defined in: [src/api/trustgraph/messages.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L27)
 
 Unique message identifier
 
@@ -26,7 +26,7 @@ Unique message identifier
 
 > **service**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:29](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L29)
+Defined in: [src/api/trustgraph/messages.ts:29](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L29)
 
 Target service name
 
@@ -36,7 +36,7 @@ Target service name
 
 > **request**: `object`
 
-Defined in: [src/api/trustgraph/messages.ts:31](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L31)
+Defined in: [src/api/trustgraph/messages.ts:31](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L31)
 
 Request payload
 
@@ -46,6 +46,6 @@ Request payload
 
 > `optional` **flow**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L33)
+Defined in: [src/api/trustgraph/messages.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L33)
 
 Optional flow context

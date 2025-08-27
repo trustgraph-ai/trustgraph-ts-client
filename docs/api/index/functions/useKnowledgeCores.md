@@ -8,7 +8,7 @@
 
 > **useKnowledgeCores**(): `object`
 
-Defined in: [src/state/knowledge-cores.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/knowledge-cores.ts#L12)
+Defined in: [src/state/knowledge-cores.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/knowledge-cores.ts#L12)
 
 Custom hook for managing knowledge core operations
 Provides functionality for fetching, deleting, down/uploading cores

@@ -6,7 +6,7 @@
 
 # Interface: LoadState
 
-Defined in: [src/state/load.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L8)
+Defined in: [src/state/load.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L8)
 
 State interface for managing document loading and upload operations
 Handles file uploads, text input, metadata, and processing operations
@@ -17,7 +17,7 @@ Handles file uploads, text input, metadata, and processing operations
 
 > **title**: `string`
 
-Defined in: [src/state/load.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L10)
+Defined in: [src/state/load.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L10)
 
 Document title/name
 
@@ -27,7 +27,7 @@ Document title/name
 
 > **comments**: `string`
 
-Defined in: [src/state/load.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L12)
+Defined in: [src/state/load.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L12)
 
 Additional comments or description
 
@@ -37,7 +37,7 @@ Additional comments or description
 
 > **url**: `string`
 
-Defined in: [src/state/load.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L14)
+Defined in: [src/state/load.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L14)
 
 Source URL (for web-based content)
 
@@ -47,7 +47,7 @@ Source URL (for web-based content)
 
 > **keywords**: `string`[]
 
-Defined in: [src/state/load.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L16)
+Defined in: [src/state/load.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L16)
 
 Keywords/tags associated with the document
 
@@ -57,7 +57,7 @@ Keywords/tags associated with the document
 
 > **operation**: `string`
 
-Defined in: [src/state/load.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L19)
+Defined in: [src/state/load.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L19)
 
 Type of operation (e.g., "upload-pdf", "upload-text")
 
@@ -67,7 +67,7 @@ Type of operation (e.g., "upload-pdf", "upload-text")
 
 > **files**: `File`[]
 
-Defined in: [src/state/load.ts:22](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L22)
+Defined in: [src/state/load.ts:22](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L22)
 
 Files selected for upload
 
@@ -77,7 +77,7 @@ Files selected for upload
 
 > **uploaded**: `string`[]
 
-Defined in: [src/state/load.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L24)
+Defined in: [src/state/load.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L24)
 
 List of successfully uploaded file names
 
@@ -87,7 +87,7 @@ List of successfully uploaded file names
 
 > **text**: `string`
 
-Defined in: [src/state/load.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L26)
+Defined in: [src/state/load.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L26)
 
 Direct text input content
 
@@ -97,7 +97,7 @@ Direct text input content
 
 > **setTitle**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:29](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L29)
+Defined in: [src/state/load.ts:29](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L29)
 
 Update document title
 
@@ -117,7 +117,7 @@ Update document title
 
 > **setComments**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:31](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L31)
+Defined in: [src/state/load.ts:31](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L31)
 
 Update document comments
 
@@ -137,7 +137,7 @@ Update document comments
 
 > **setUrl**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L33)
+Defined in: [src/state/load.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L33)
 
 Update document URL
 
@@ -157,7 +157,7 @@ Update document URL
 
 > **setKeywords**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:35](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L35)
+Defined in: [src/state/load.ts:35](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L35)
 
 Update document keywords
 
@@ -177,7 +177,7 @@ Update document keywords
 
 > **setOperation**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L38)
+Defined in: [src/state/load.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L38)
 
 Update processing operation type
 
@@ -197,7 +197,7 @@ Update processing operation type
 
 > **setFiles**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:41](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L41)
+Defined in: [src/state/load.ts:41](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L41)
 
 Update selected files
 
@@ -217,7 +217,7 @@ Update selected files
 
 > **setUploaded**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:43](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L43)
+Defined in: [src/state/load.ts:43](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L43)
 
 Update uploaded files list
 
@@ -237,7 +237,7 @@ Update uploaded files list
 
 > **setText**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:45](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L45)
+Defined in: [src/state/load.ts:45](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L45)
 
 Update text content
 
@@ -257,7 +257,7 @@ Update text content
 
 > **addUploaded**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:47](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L47)
+Defined in: [src/state/load.ts:47](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L47)
 
 Add a single uploaded file to the list
 
@@ -277,7 +277,7 @@ Add a single uploaded file to the list
 
 > **removeFile**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:49](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L49)
+Defined in: [src/state/load.ts:49](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L49)
 
 Remove a file from the selection
 
@@ -297,7 +297,7 @@ Remove a file from the selection
 
 > **textUploads**: `number`
 
-Defined in: [src/state/load.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L52)
+Defined in: [src/state/load.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L52)
 
 Counter for text-based uploads
 
@@ -307,7 +307,7 @@ Counter for text-based uploads
 
 > **setTextUploads**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L54)
+Defined in: [src/state/load.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L54)
 
 Update text upload counter
 
@@ -327,7 +327,7 @@ Update text upload counter
 
 > **incTextUploads**: () => `void`
 
-Defined in: [src/state/load.ts:56](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/load.ts#L56)
+Defined in: [src/state/load.ts:56](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/load.ts#L56)
 
 Increment the text upload counter
 

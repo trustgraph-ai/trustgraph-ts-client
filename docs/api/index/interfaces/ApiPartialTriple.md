@@ -6,7 +6,7 @@
 
 # Interface: ApiPartialTriple
 
-Defined in: [src/api/trustgraph/Triple.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L18)
+Defined in: [src/api/trustgraph/Triple.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L18)
 
 Represents a partial triple for querying - any component can be omitted
 
@@ -16,7 +16,7 @@ Represents a partial triple for querying - any component can be omitted
 
 > `optional` **s**: [`ApiValue`](ApiValue.md)
 
-Defined in: [src/api/trustgraph/Triple.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L20)
+Defined in: [src/api/trustgraph/Triple.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L20)
 
 Subject (optional)
 
@@ -26,7 +26,7 @@ Subject (optional)
 
 > `optional` **p**: [`ApiValue`](ApiValue.md)
 
-Defined in: [src/api/trustgraph/Triple.ts:22](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L22)
+Defined in: [src/api/trustgraph/Triple.ts:22](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L22)
 
 Predicate (optional)
 
@@ -36,6 +36,6 @@ Predicate (optional)
 
 > `optional` **o**: [`ApiValue`](ApiValue.md)
 
-Defined in: [src/api/trustgraph/Triple.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/Triple.ts#L24)
+Defined in: [src/api/trustgraph/Triple.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/Triple.ts#L24)
 
 Object (optional)

@@ -8,7 +8,7 @@
 
 > **useEmbeddings**(`params`): `object`
 
-Defined in: [src/state/embeddings.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/embeddings.ts#L16)
+Defined in: [src/state/embeddings.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/embeddings.ts#L16)
 
 Custom hook for generating embeddings from text using AI models
 Provides functionality for computing vector embeddings for semantic search

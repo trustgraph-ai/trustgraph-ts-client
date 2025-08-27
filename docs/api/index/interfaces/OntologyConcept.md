@@ -6,7 +6,9 @@
 
 # Interface: OntologyConcept
 
-Defined in: [src/state/ontologies.ts:17](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L17)
+Defined in: [src/state/ontologies.ts:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L32)
+
+Individual concept within an ontology (SKOS-based)
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/state/ontologies.ts:17](https://github.com/trustgraph-ai/trustg
 
 > **id**: `string`
 
-Defined in: [src/state/ontologies.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L18)
+Defined in: [src/state/ontologies.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L34)
+
+Unique identifier for the concept
 
 ***
 
@@ -22,7 +26,9 @@ Defined in: [src/state/ontologies.ts:18](https://github.com/trustgraph-ai/trustg
 
 > **prefLabel**: `string`
 
-Defined in: [src/state/ontologies.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L19)
+Defined in: [src/state/ontologies.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L36)
+
+Preferred label for display
 
 ***
 
@@ -30,7 +36,9 @@ Defined in: [src/state/ontologies.ts:19](https://github.com/trustgraph-ai/trustg
 
 > `optional` **altLabel**: `string`[]
 
-Defined in: [src/state/ontologies.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L20)
+Defined in: [src/state/ontologies.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L38)
+
+Alternative labels/synonyms
 
 ***
 
@@ -38,7 +46,9 @@ Defined in: [src/state/ontologies.ts:20](https://github.com/trustgraph-ai/trustg
 
 > `optional` **definition**: `string`
 
-Defined in: [src/state/ontologies.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L21)
+Defined in: [src/state/ontologies.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L40)
+
+Formal definition of the concept
 
 ***
 
@@ -46,7 +56,9 @@ Defined in: [src/state/ontologies.ts:21](https://github.com/trustgraph-ai/trustg
 
 > `optional` **scopeNote**: `string`
 
-Defined in: [src/state/ontologies.ts:22](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L22)
+Defined in: [src/state/ontologies.ts:42](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L42)
+
+Scope note explaining usage
 
 ***
 
@@ -54,7 +66,9 @@ Defined in: [src/state/ontologies.ts:22](https://github.com/trustgraph-ai/trustg
 
 > `optional` **example**: `string`[]
 
-Defined in: [src/state/ontologies.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L23)
+Defined in: [src/state/ontologies.ts:44](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L44)
+
+Usage examples
 
 ***
 
@@ -62,7 +76,9 @@ Defined in: [src/state/ontologies.ts:23](https://github.com/trustgraph-ai/trustg
 
 > `optional` **notation**: `string`
 
-Defined in: [src/state/ontologies.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L24)
+Defined in: [src/state/ontologies.ts:46](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L46)
+
+Notation code
 
 ***
 
@@ -70,7 +86,9 @@ Defined in: [src/state/ontologies.ts:24](https://github.com/trustgraph-ai/trustg
 
 > `optional` **broader**: `null` \| `string`
 
-Defined in: [src/state/ontologies.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L25)
+Defined in: [src/state/ontologies.ts:48](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L48)
+
+Parent concept URI (broader term)
 
 ***
 
@@ -78,7 +96,9 @@ Defined in: [src/state/ontologies.ts:25](https://github.com/trustgraph-ai/trustg
 
 > `optional` **narrower**: `string`[]
 
-Defined in: [src/state/ontologies.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L26)
+Defined in: [src/state/ontologies.ts:50](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L50)
+
+Child concept URIs (narrower terms)
 
 ***
 
@@ -86,7 +106,9 @@ Defined in: [src/state/ontologies.ts:26](https://github.com/trustgraph-ai/trustg
 
 > `optional` **related**: `string`[]
 
-Defined in: [src/state/ontologies.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L27)
+Defined in: [src/state/ontologies.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L52)
+
+Related concept URIs
 
 ***
 
@@ -94,4 +116,6 @@ Defined in: [src/state/ontologies.ts:27](https://github.com/trustgraph-ai/trustg
 
 > `optional` **topConcept**: `boolean`
 
-Defined in: [src/state/ontologies.ts:28](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L28)
+Defined in: [src/state/ontologies.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L54)
+
+Whether this is a top-level concept

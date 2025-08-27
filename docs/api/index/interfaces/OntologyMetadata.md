@@ -6,7 +6,9 @@
 
 # Interface: OntologyMetadata
 
-Defined in: [src/state/ontologies.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L7)
+Defined in: [src/state/ontologies.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L11)
+
+Metadata for an ontology definition
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/state/ontologies.ts:7](https://github.com/trustgraph-ai/trustgr
 
 > **name**: `string`
 
-Defined in: [src/state/ontologies.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L8)
+Defined in: [src/state/ontologies.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L13)
+
+Name of the ontology
 
 ***
 
@@ -22,7 +26,9 @@ Defined in: [src/state/ontologies.ts:8](https://github.com/trustgraph-ai/trustgr
 
 > **description**: `string`
 
-Defined in: [src/state/ontologies.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L9)
+Defined in: [src/state/ontologies.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L15)
+
+Human-readable description
 
 ***
 
@@ -30,7 +36,9 @@ Defined in: [src/state/ontologies.ts:9](https://github.com/trustgraph-ai/trustgr
 
 > **version**: `string`
 
-Defined in: [src/state/ontologies.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L10)
+Defined in: [src/state/ontologies.ts:17](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L17)
+
+Version identifier
 
 ***
 
@@ -38,7 +46,9 @@ Defined in: [src/state/ontologies.ts:10](https://github.com/trustgraph-ai/trustg
 
 > **created**: `string`
 
-Defined in: [src/state/ontologies.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L11)
+Defined in: [src/state/ontologies.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L19)
+
+ISO date when created
 
 ***
 
@@ -46,7 +56,9 @@ Defined in: [src/state/ontologies.ts:11](https://github.com/trustgraph-ai/trustg
 
 > **modified**: `string`
 
-Defined in: [src/state/ontologies.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L12)
+Defined in: [src/state/ontologies.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L21)
+
+ISO date when last modified
 
 ***
 
@@ -54,7 +66,9 @@ Defined in: [src/state/ontologies.ts:12](https://github.com/trustgraph-ai/trustg
 
 > **creator**: `string`
 
-Defined in: [src/state/ontologies.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L13)
+Defined in: [src/state/ontologies.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L23)
+
+Creator/author of the ontology
 
 ***
 
@@ -62,4 +76,6 @@ Defined in: [src/state/ontologies.ts:13](https://github.com/trustgraph-ai/trustg
 
 > **namespace**: `string`
 
-Defined in: [src/state/ontologies.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L14)
+Defined in: [src/state/ontologies.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/ontologies.ts#L25)
+
+Namespace URI for the ontology
