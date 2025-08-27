@@ -111,17 +111,6 @@ export class ServiceCall {
     this.attempt();
   }
 
-  /**
-   * Calculates exponential backoff delay with jitter
-   * @returns backoff delay in milliseconds
-   */
-  calculateBackoff() {
-    return Math.min(
-      SOCKET_RECONNECTION_TIMEOUT * Math.pow(2, 3 - this.retries) +
-        Math.random() * 1000,
-      30000, // Max 30 seconds
-    );
-  }
 
   /**
    * Core retry logic - attempts to send the message over the WebSocket
