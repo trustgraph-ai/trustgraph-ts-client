@@ -330,6 +330,7 @@ trustgraph-client/
 ### Files to Refactor
 - `/src/api/trustgraph/*.ts` - Extract to core modules
 - `/src/state/*.ts` - Convert to UI-agnostic hooks
+- `/src/state/notify.ts` - Refactor from toast integration to event-based notification system
 - `/src/utils/*.ts` - Ensure no UI dependencies
 
 ### New Files to Create
