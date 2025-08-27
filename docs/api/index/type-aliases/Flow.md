@@ -8,7 +8,7 @@
 
 > **Flow** = `object`
 
-Defined in: [src/tables/flows.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/flows.ts#L8)
+Defined in: [src/tables/flows.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/flows.ts#L8)
 
 Flow data structure for the flow table
 Represents a single flow with its metadata and properties
@@ -19,7 +19,7 @@ Represents a single flow with its metadata and properties
 
 > **id**: `string`
 
-Defined in: [src/tables/flows.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/flows.ts#L9)
+Defined in: [src/tables/flows.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/flows.ts#L9)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/flows.ts:9](https://github.com/trustgraph-ai/trustgraph-
 
 > **flowClass**: `string`
 
-Defined in: [src/tables/flows.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/flows.ts#L10)
+Defined in: [src/tables/flows.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/flows.ts#L10)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [src/tables/flows.ts:10](https://github.com/trustgraph-ai/trustgraph
 
 > **description**: `string`
 
-Defined in: [src/tables/flows.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/flows.ts#L11)
+Defined in: [src/tables/flows.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/flows.ts#L11)

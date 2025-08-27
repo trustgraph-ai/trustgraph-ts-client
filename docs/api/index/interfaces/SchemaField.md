@@ -6,7 +6,7 @@
 
 # Interface: SchemaField
 
-Defined in: [src/tables/schemas.ts:4](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L4)
+Defined in: [src/tables/schemas.ts:4](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L4)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/tables/schemas.ts:4](https://github.com/trustgraph-ai/trustgrap
 
 > **id**: `string`
 
-Defined in: [src/tables/schemas.ts:5](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L5)
+Defined in: [src/tables/schemas.ts:5](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L5)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/tables/schemas.ts:5](https://github.com/trustgraph-ai/trustgrap
 
 > **name**: `string`
 
-Defined in: [src/tables/schemas.ts:6](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L6)
+Defined in: [src/tables/schemas.ts:6](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/tables/schemas.ts:6](https://github.com/trustgraph-ai/trustgrap
 
 > **type**: `"string"` \| `"boolean"` \| `"integer"` \| `"float"` \| `"timestamp"` \| `"enum"`
 
-Defined in: [src/tables/schemas.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L7)
+Defined in: [src/tables/schemas.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L7)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/tables/schemas.ts:7](https://github.com/trustgraph-ai/trustgrap
 
 > `optional` **primary\_key**: `boolean`
 
-Defined in: [src/tables/schemas.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L8)
+Defined in: [src/tables/schemas.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L8)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/tables/schemas.ts:8](https://github.com/trustgraph-ai/trustgrap
 
 > `optional` **required**: `boolean`
 
-Defined in: [src/tables/schemas.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L9)
+Defined in: [src/tables/schemas.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L9)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [src/tables/schemas.ts:9](https://github.com/trustgraph-ai/trustgrap
 
 > `optional` **enum**: `string`[]
 
-Defined in: [src/tables/schemas.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/schemas.ts#L10)
+Defined in: [src/tables/schemas.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/schemas.ts#L10)

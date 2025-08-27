@@ -6,7 +6,7 @@
 
 # Interface: TrustGraphProviderProps
 
-Defined in: [src/providers/TrustGraphProvider.tsx:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/providers/TrustGraphProvider.tsx#L32)
+Defined in: [src/providers/TrustGraphProvider.tsx:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/providers/TrustGraphProvider.tsx#L32)
 
 Props for the TrustGraphProvider component
 
@@ -16,7 +16,7 @@ Props for the TrustGraphProvider component
 
 > **children**: `ReactNode`
 
-Defined in: [src/providers/TrustGraphProvider.tsx:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/providers/TrustGraphProvider.tsx#L33)
+Defined in: [src/providers/TrustGraphProvider.tsx:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/providers/TrustGraphProvider.tsx#L33)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [src/providers/TrustGraphProvider.tsx:33](https://github.com/trustgr
 
 > `optional` **config**: [`TrustGraphConfig`](TrustGraphConfig.md)
 
-Defined in: [src/providers/TrustGraphProvider.tsx:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/providers/TrustGraphProvider.tsx#L34)
+Defined in: [src/providers/TrustGraphProvider.tsx:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/providers/TrustGraphProvider.tsx#L34)

@@ -8,4 +8,4 @@
 
 > `const` **notificationManager**: `NotificationEventManager`
 
-Defined in: [src/state/notify.ts:51](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/notify.ts#L51)
+Defined in: [src/state/notify.ts:51](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/notify.ts#L51)

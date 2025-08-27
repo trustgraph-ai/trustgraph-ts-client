@@ -8,7 +8,7 @@
 
 > **AgentTool** = `object`
 
-Defined in: [src/tables/agent-tools.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/agent-tools.ts#L7)
+Defined in: [src/tables/agent-tools.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/agent-tools.ts#L7)
 
 Agent Tool data structure for the tools table
 Represents an agent tool with its metadata and configuration
@@ -19,7 +19,7 @@ Represents an agent tool with its metadata and configuration
 
 > **id**: `string`
 
-Defined in: [src/tables/agent-tools.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/agent-tools.ts#L8)
+Defined in: [src/tables/agent-tools.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/agent-tools.ts#L8)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/agent-tools.ts:8](https://github.com/trustgraph-ai/trust
 
 > **name**: `string`
 
-Defined in: [src/tables/agent-tools.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/agent-tools.ts#L9)
+Defined in: [src/tables/agent-tools.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/agent-tools.ts#L9)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/tables/agent-tools.ts:9](https://github.com/trustgraph-ai/trust
 
 > **description**: `string`
 
-Defined in: [src/tables/agent-tools.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/agent-tools.ts#L10)
+Defined in: [src/tables/agent-tools.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/agent-tools.ts#L10)
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: [src/tables/agent-tools.ts:10](https://github.com/trustgraph-ai/trus
 
 > **type**: `string`
 
-Defined in: [src/tables/agent-tools.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/agent-tools.ts#L11)
+Defined in: [src/tables/agent-tools.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/agent-tools.ts#L11)

@@ -8,7 +8,7 @@
 
 > **useVectorSearch**(): `object`
 
-Defined in: [src/state/vector-search.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/vector-search.ts#L14)
+Defined in: [src/state/vector-search.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/vector-search.ts#L14)
 
 Custom hook for performing vector-based semantic search
 Provides functionality for searching knowledge graph entities using embeddings

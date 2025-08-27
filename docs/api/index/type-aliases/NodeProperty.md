@@ -8,7 +8,7 @@
 
 > **NodeProperty** = `object`
 
-Defined in: [src/tables/node-properties.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/node-properties.ts#L7)
+Defined in: [src/tables/node-properties.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/node-properties.ts#L7)
 
 Node property data structure for the node properties table
 Represents a single property with its predicate label and value
@@ -19,7 +19,7 @@ Represents a single property with its predicate label and value
 
 > **property**: `string`
 
-Defined in: [src/tables/node-properties.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/node-properties.ts#L8)
+Defined in: [src/tables/node-properties.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/node-properties.ts#L8)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/node-properties.ts:8](https://github.com/trustgraph-ai/t
 
 > **value**: `string`
 
-Defined in: [src/tables/node-properties.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/node-properties.ts#L9)
+Defined in: [src/tables/node-properties.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/node-properties.ts#L9)
 
 ***
 
@@ -35,4 +35,4 @@ Defined in: [src/tables/node-properties.ts:9](https://github.com/trustgraph-ai/t
 
 > `optional` **uri**: `string`
 
-Defined in: [src/tables/node-properties.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/node-properties.ts#L10)
+Defined in: [src/tables/node-properties.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/node-properties.ts#L10)

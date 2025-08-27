@@ -6,7 +6,7 @@
 
 # Interface: NotificationConfig
 
-Defined in: [src/types/index.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L33)
+Defined in: [src/types/index.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/types/index.ts#L33)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/types/index.ts:33](https://github.com/trustgraph-ai/trustgraph-
 
 > **type**: `"error"` \| `"info"` \| `"success"` \| `"warning"`
 
-Defined in: [src/types/index.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L34)
+Defined in: [src/types/index.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/types/index.ts#L34)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/types/index.ts:34](https://github.com/trustgraph-ai/trustgraph-
 
 > **message**: `string`
 
-Defined in: [src/types/index.ts:35](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L35)
+Defined in: [src/types/index.ts:35](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/types/index.ts#L35)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/types/index.ts:35](https://github.com/trustgraph-ai/trustgraph-
 
 > `optional` **duration**: `number`
 
-Defined in: [src/types/index.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L36)
+Defined in: [src/types/index.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/types/index.ts#L36)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/types/index.ts:36](https://github.com/trustgraph-ai/trustgraph-
 
 > `optional` **id**: `string`
 
-Defined in: [src/types/index.ts:37](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/types/index.ts#L37)
+Defined in: [src/types/index.ts:37](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/types/index.ts#L37)

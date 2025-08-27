@@ -8,7 +8,7 @@
 
 > **useMcpTools**(): `object`
 
-Defined in: [src/state/mcp-tools.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/mcp-tools.ts#L12)
+Defined in: [src/state/mcp-tools.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/mcp-tools.ts#L12)
 
 Custom hook for managing MCP (Model Context Protocol) tools
 Provides CRUD operations for MCP tools stored in the TrustGraph configuration

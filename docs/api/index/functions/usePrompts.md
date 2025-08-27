@@ -8,7 +8,7 @@
 
 > **usePrompts**(): `object`
 
-Defined in: [src/state/prompts.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/prompts.ts#L12)
+Defined in: [src/state/prompts.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/prompts.ts#L12)
 
 Custom hook for managing AI prompts (system prompt and prompt templates)
 Provides CRUD operations for both the system prompt and user-defined prompt templates

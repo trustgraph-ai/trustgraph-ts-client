@@ -6,7 +6,7 @@
 
 # Interface: TextCompletionResponse
 
-Defined in: [src/api/trustgraph/messages.ts:99](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L99)
+Defined in: [src/api/trustgraph/messages.ts:99](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L99)
 
 Response from AI text completion
 
@@ -16,6 +16,6 @@ Response from AI text completion
 
 > **response**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:101](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L101)
+Defined in: [src/api/trustgraph/messages.ts:101](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L101)
 
 Generated text response

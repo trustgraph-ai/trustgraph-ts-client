@@ -6,7 +6,7 @@
 
 # Interface: GraphRagResponse
 
-Defined in: [src/api/trustgraph/messages.ts:125](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L125)
+Defined in: [src/api/trustgraph/messages.ts:125](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L125)
 
 Response from Graph RAG query
 
@@ -16,6 +16,6 @@ Response from Graph RAG query
 
 > **response**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:127](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L127)
+Defined in: [src/api/trustgraph/messages.ts:127](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L127)
 
 Generated response using graph context

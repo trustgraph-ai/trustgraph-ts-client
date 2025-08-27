@@ -8,7 +8,7 @@
 
 > **useNotificationState**(): `object`
 
-Defined in: [src/state/notify.ts:197](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/notify.ts#L197)
+Defined in: [src/state/notify.ts:197](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/notify.ts#L197)
 
 Utility hook to get notification history and state
 Useful for building notification centers or debugging

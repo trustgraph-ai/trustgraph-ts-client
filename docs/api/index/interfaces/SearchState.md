@@ -6,7 +6,7 @@
 
 # Interface: SearchState
 
-Defined in: [src/state/search.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/search.ts#L8)
+Defined in: [src/state/search.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/search.ts#L8)
 
 Search state interface for managing search functionality
 
@@ -16,7 +16,7 @@ Search state interface for managing search functionality
 
 > **rows**: `Row`[]
 
-Defined in: [src/state/search.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/search.ts#L10)
+Defined in: [src/state/search.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/search.ts#L10)
 
 Array of Row objects representing search results or filtered data
 
@@ -26,7 +26,7 @@ Array of Row objects representing search results or filtered data
 
 > **setRows**: (`v`) => `void`
 
-Defined in: [src/state/search.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/search.ts#L13)
+Defined in: [src/state/search.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/search.ts#L13)
 
 Function to update the entire rows array (replaces all results)
 
@@ -46,7 +46,7 @@ Function to update the entire rows array (replaces all results)
 
 > **input**: `string`
 
-Defined in: [src/state/search.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/search.ts#L16)
+Defined in: [src/state/search.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/search.ts#L16)
 
 Current search input/query string from user
 
@@ -56,7 +56,7 @@ Current search input/query string from user
 
 > **setInput**: (`v`) => `void`
 
-Defined in: [src/state/search.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/state/search.ts#L19)
+Defined in: [src/state/search.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/search.ts#L19)
 
 Function to update the search input value
 

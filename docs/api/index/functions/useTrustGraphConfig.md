@@ -8,7 +8,7 @@
 
 > **useTrustGraphConfig**(): [`TrustGraphConfig`](../interfaces/TrustGraphConfig.md)
 
-Defined in: [src/providers/TrustGraphProvider.tsx:115](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/providers/TrustGraphProvider.tsx#L115)
+Defined in: [src/providers/TrustGraphProvider.tsx:115](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/providers/TrustGraphProvider.tsx#L115)
 
 Hook to access TrustGraph configuration
 This is a placeholder for future configuration context

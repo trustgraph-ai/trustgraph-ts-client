@@ -6,7 +6,7 @@
 
 # Interface: GraphEmbeddingsQueryRequest
 
-Defined in: [src/api/trustgraph/messages.ts:172](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L172)
+Defined in: [src/api/trustgraph/messages.ts:172](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L172)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/api/trustgraph/messages.ts:172](https://github.com/trustgraph-a
 
 > **vectors**: `number`[][]
 
-Defined in: [src/api/trustgraph/messages.ts:173](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L173)
+Defined in: [src/api/trustgraph/messages.ts:173](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L173)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [src/api/trustgraph/messages.ts:173](https://github.com/trustgraph-a
 
 > **limit**: `number`
 
-Defined in: [src/api/trustgraph/messages.ts:174](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/api/trustgraph/messages.ts#L174)
+Defined in: [src/api/trustgraph/messages.ts:174](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L174)

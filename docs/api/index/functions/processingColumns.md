@@ -8,7 +8,7 @@
 
 > **processingColumns**(`renderers?`): (`AccessorKeyColumnDefBase`\<[`Processing`](../type-aliases/Processing.md), `string`\> & `Partial`\<`IdIdentifier`\<[`Processing`](../type-aliases/Processing.md), `string`\>\> \| `AccessorKeyColumnDefBase`\<[`Processing`](../type-aliases/Processing.md), `number`\> & `Partial`\<`IdIdentifier`\<[`Processing`](../type-aliases/Processing.md), `number`\>\> \| `AccessorKeyColumnDefBase`\<[`Processing`](../type-aliases/Processing.md), `string`[]\> & `Partial`\<`IdIdentifier`\<[`Processing`](../type-aliases/Processing.md), `string`[]\>\>)[]
 
-Defined in: [src/tables/processing.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/92e187771a25b959c85a4f966bb97eb5d407310b/src/tables/processing.ts#L24)
+Defined in: [src/tables/processing.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L24)
 
 Column definitions for the processing table
 Returns UI-agnostic column definitions that can be used with any table component
