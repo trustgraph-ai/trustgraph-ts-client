@@ -21,12 +21,12 @@ export const useSessionStore = create<SessionState>()((set) => ({
 
   // MISMATCH: Interface expects 'flow: string' but implementation has
   // 'flow: null'
-  flow: null, // This should be a string according to the interface
+  flow: "", // Fixed: should be a string according to the interface
 
   // MISSING: Interface defines 'flowDescription' but it's not implemented
 
   // EXTRA: This setter doesn't exist in the interface
-  setFlowId: (v) =>
+  setFlowId: (v: string) =>
     set(() => ({
       flowId: v,
     })),

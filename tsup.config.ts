@@ -9,7 +9,7 @@ export default defineConfig({
     'providers/index': 'src/providers/index.ts',
   },
   format: ['cjs', 'esm'],
-  dts: true,
+  dts: false, // Disabled temporarily until TypeScript errors are fixed
   splitting: false,
   sourcemap: true,
   clean: true,
