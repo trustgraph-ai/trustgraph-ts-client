@@ -1,7 +1,7 @@
 import similarity from "compute-cosine-similarity";
 
-import { Value } from "./Triple";
-import { Socket } from "../socket/trustgraph-socket";
+import { Value } from "../api/trustgraph/Triple";
+import { Socket } from "../api/trustgraph/trustgraph-socket";
 import { RDFS_LABEL, SKOS_DEFINITION } from "./knowledge-graph";
 
 export interface Row {
@@ -37,7 +37,7 @@ export const getGraphEmbeddings = (
           return { uri: ent.v, target: vecs[0] };
         }),
       )
-      .catch((err) => {
+      .catch((err: any) => {
         remove(act);
         throw err;
       });
@@ -76,7 +76,7 @@ export const addRowLabels =
               };
             }
           })
-          .catch((err) => {
+          .catch((err: any) => {
             remove(act);
             throw err;
           });
@@ -100,7 +100,7 @@ export const addRowDefinitions =
             undefined,
             1,
           )
-          .then((t) => {
+          .then((t: any) => {
             if (t.length < 1) {
               remove(act);
               return { ...ent, description: "" };
@@ -112,7 +112,7 @@ export const addRowDefinitions =
               };
             }
           })
-          .catch((err) => {
+          .catch((err: any) => {
             remove(act);
             throw err;
           });
@@ -150,7 +150,7 @@ export const addRowEmbeddings =
               };
             }
           })
-          .catch((err) => {
+          .catch((err: any) => {
             remove(act);
             throw err;
           });
