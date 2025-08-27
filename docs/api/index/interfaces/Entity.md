@@ -6,7 +6,7 @@
 
 # Interface: Entity
 
-Defined in: [src/state/entity.ts:6](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/entity.ts#L6)
+Defined in: [src/state/entity.ts:6](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/entity.ts#L6)
 
 Represents an entity in the knowledge graph
 Entities are nodes that represent real-world objects, concepts, or resources
@@ -17,7 +17,7 @@ Entities are nodes that represent real-world objects, concepts, or resources
 
 > **label**: `string`
 
-Defined in: [src/state/entity.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/entity.ts#L8)
+Defined in: [src/state/entity.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/entity.ts#L8)
 
 Human-readable display name for the entity
 
@@ -27,6 +27,6 @@ Human-readable display name for the entity
 
 > **uri**: `string`
 
-Defined in: [src/state/entity.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/entity.ts#L10)
+Defined in: [src/state/entity.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/entity.ts#L10)
 
 Unique Resource Identifier (URI) that uniquely identifies the entity

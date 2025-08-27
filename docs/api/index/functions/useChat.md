@@ -8,7 +8,7 @@
 
 > **useChat**(): `object`
 
-Defined in: [src/state/chat-query.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/chat-query.ts#L20)
+Defined in: [src/state/chat-query.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/chat-query.ts#L20)
 
 Custom hook for managing chat operations using React Query
 Provides functionality for sending chat messages and handling responses

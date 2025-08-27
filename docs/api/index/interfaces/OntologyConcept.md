@@ -6,7 +6,7 @@
 
 # Interface: OntologyConcept
 
-Defined in: [src/state/ontologies.ts:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L32)
+Defined in: [src/state/ontologies.ts:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L32)
 
 Individual concept within an ontology (SKOS-based)
 
@@ -16,7 +16,7 @@ Individual concept within an ontology (SKOS-based)
 
 > **id**: `string`
 
-Defined in: [src/state/ontologies.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L34)
+Defined in: [src/state/ontologies.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L34)
 
 Unique identifier for the concept
 
@@ -26,7 +26,7 @@ Unique identifier for the concept
 
 > **prefLabel**: `string`
 
-Defined in: [src/state/ontologies.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L36)
+Defined in: [src/state/ontologies.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L36)
 
 Preferred label for display
 
@@ -36,7 +36,7 @@ Preferred label for display
 
 > `optional` **altLabel**: `string`[]
 
-Defined in: [src/state/ontologies.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L38)
+Defined in: [src/state/ontologies.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L38)
 
 Alternative labels/synonyms
 
@@ -46,7 +46,7 @@ Alternative labels/synonyms
 
 > `optional` **definition**: `string`
 
-Defined in: [src/state/ontologies.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L40)
+Defined in: [src/state/ontologies.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L40)
 
 Formal definition of the concept
 
@@ -56,7 +56,7 @@ Formal definition of the concept
 
 > `optional` **scopeNote**: `string`
 
-Defined in: [src/state/ontologies.ts:42](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L42)
+Defined in: [src/state/ontologies.ts:42](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L42)
 
 Scope note explaining usage
 
@@ -66,7 +66,7 @@ Scope note explaining usage
 
 > `optional` **example**: `string`[]
 
-Defined in: [src/state/ontologies.ts:44](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L44)
+Defined in: [src/state/ontologies.ts:44](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L44)
 
 Usage examples
 
@@ -76,7 +76,7 @@ Usage examples
 
 > `optional` **notation**: `string`
 
-Defined in: [src/state/ontologies.ts:46](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L46)
+Defined in: [src/state/ontologies.ts:46](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L46)
 
 Notation code
 
@@ -86,7 +86,7 @@ Notation code
 
 > `optional` **broader**: `null` \| `string`
 
-Defined in: [src/state/ontologies.ts:48](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L48)
+Defined in: [src/state/ontologies.ts:48](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L48)
 
 Parent concept URI (broader term)
 
@@ -96,7 +96,7 @@ Parent concept URI (broader term)
 
 > `optional` **narrower**: `string`[]
 
-Defined in: [src/state/ontologies.ts:50](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L50)
+Defined in: [src/state/ontologies.ts:50](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L50)
 
 Child concept URIs (narrower terms)
 
@@ -106,7 +106,7 @@ Child concept URIs (narrower terms)
 
 > `optional` **related**: `string`[]
 
-Defined in: [src/state/ontologies.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L52)
+Defined in: [src/state/ontologies.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L52)
 
 Related concept URIs
 
@@ -116,6 +116,6 @@ Related concept URIs
 
 > `optional` **topConcept**: `boolean`
 
-Defined in: [src/state/ontologies.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/ontologies.ts#L54)
+Defined in: [src/state/ontologies.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/ontologies.ts#L54)
 
 Whether this is a top-level concept

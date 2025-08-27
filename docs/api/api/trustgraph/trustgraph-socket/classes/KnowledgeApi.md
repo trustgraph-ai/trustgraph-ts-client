@@ -6,7 +6,7 @@
 
 # Class: KnowledgeApi
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:1333](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L1333)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:1333](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L1333)
 
 KnowledgeApi - Manages knowledge graph cores and data
 Knowledge cores appear to be collections of processed knowledge graph data
@@ -17,7 +17,7 @@ Knowledge cores appear to be collections of processed knowledge graph data
 
 > **new KnowledgeApi**(`api`): `KnowledgeApi`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:1336](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L1336)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:1336](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L1336)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/api/trustgraph/trustgraph-socket.ts:1336](https://github.com/tr
 
 > **getKnowledgeCores**(): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:1343](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L1343)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:1343](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L1343)
 
 Retrieves list of available knowledge graph cores
 
@@ -49,7 +49,7 @@ Retrieves list of available knowledge graph cores
 
 > **deleteKgCore**(`id`, `user?`): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:1359](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L1359)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:1359](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L1359)
 
 Deletes a knowledge graph core
 
@@ -73,7 +73,7 @@ Deletes a knowledge graph core
 
 > **loadKgCore**(`id`, `flow`, `user?`, `collection?`): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:1374](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L1374)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:1374](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L1374)
 
 Deletes a knowledge graph core
 
@@ -105,7 +105,7 @@ Deletes a knowledge graph core
 
 > **getKgCore**(`id`, `receiver`, `user?`): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:1393](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L1393)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:1393](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L1393)
 
 Retrieves a knowledge graph core with streaming data
 Uses multi-request pattern for large datasets

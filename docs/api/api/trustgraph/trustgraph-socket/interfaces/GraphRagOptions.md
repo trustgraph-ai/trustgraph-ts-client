@@ -6,7 +6,7 @@
 
 # Interface: GraphRagOptions
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:46](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L46)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:46](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L46)
 
 GraphRAG query options for configurable parameters
 
@@ -16,7 +16,7 @@ GraphRAG query options for configurable parameters
 
 > `optional` **entityLimit**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:48](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L48)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:48](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L48)
 
 Maximum number of entities to retrieve
 
@@ -26,7 +26,7 @@ Maximum number of entities to retrieve
 
 > `optional` **tripleLimit**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:50](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L50)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:50](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L50)
 
 Maximum number of triples to retrieve
 
@@ -36,7 +36,7 @@ Maximum number of triples to retrieve
 
 > `optional` **maxSubgraphSize**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L52)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:52](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L52)
 
 Maximum size of the knowledge subgraph
 
@@ -46,6 +46,6 @@ Maximum size of the knowledge subgraph
 
 > `optional` **pathLength**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L54)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:54](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L54)
 
 Maximum path length for graph traversal

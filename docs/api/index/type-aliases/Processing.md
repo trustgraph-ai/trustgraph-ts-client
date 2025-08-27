@@ -8,7 +8,7 @@
 
 > **Processing** = `object`
 
-Defined in: [src/tables/processing.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L9)
+Defined in: [src/tables/processing.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/processing.ts#L9)
 
 Processing data structure for the processing table
 Represents a single processing object with its metadata and properties
@@ -19,7 +19,7 @@ Represents a single processing object with its metadata and properties
 
 > **id**: `string`
 
-Defined in: [src/tables/processing.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L10)
+Defined in: [src/tables/processing.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/processing.ts#L10)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/processing.ts:10](https://github.com/trustgraph-ai/trust
 
 > **time**: `number`
 
-Defined in: [src/tables/processing.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L11)
+Defined in: [src/tables/processing.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/processing.ts#L11)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/tables/processing.ts:11](https://github.com/trustgraph-ai/trust
 
 > **document-id**: `string`
 
-Defined in: [src/tables/processing.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L12)
+Defined in: [src/tables/processing.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/processing.ts#L12)
 
 ***
 
@@ -43,7 +43,7 @@ Defined in: [src/tables/processing.ts:12](https://github.com/trustgraph-ai/trust
 
 > **flow**: `string`
 
-Defined in: [src/tables/processing.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L13)
+Defined in: [src/tables/processing.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/processing.ts#L13)
 
 ***
 
@@ -51,4 +51,4 @@ Defined in: [src/tables/processing.ts:13](https://github.com/trustgraph-ai/trust
 
 > **tags**: `string`[]
 
-Defined in: [src/tables/processing.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/processing.ts#L14)
+Defined in: [src/tables/processing.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/processing.ts#L14)

@@ -6,7 +6,7 @@
 
 # Interface: GraphRagRequest
 
-Defined in: [src/api/trustgraph/messages.ts:108](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L108)
+Defined in: [src/api/trustgraph/messages.ts:108](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L108)
 
 Request for Graph-based Retrieval Augmented Generation
 
@@ -16,7 +16,7 @@ Request for Graph-based Retrieval Augmented Generation
 
 > **query**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:110](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L110)
+Defined in: [src/api/trustgraph/messages.ts:110](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L110)
 
 Query text
 
@@ -26,7 +26,7 @@ Query text
 
 > `optional` **entity-limit**: `number`
 
-Defined in: [src/api/trustgraph/messages.ts:112](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L112)
+Defined in: [src/api/trustgraph/messages.ts:112](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L112)
 
 Maximum entities to retrieve (default: 50)
 
@@ -36,7 +36,7 @@ Maximum entities to retrieve (default: 50)
 
 > `optional` **triple-limit**: `number`
 
-Defined in: [src/api/trustgraph/messages.ts:114](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L114)
+Defined in: [src/api/trustgraph/messages.ts:114](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L114)
 
 Maximum triples to retrieve (default: 30)
 
@@ -46,7 +46,7 @@ Maximum triples to retrieve (default: 30)
 
 > `optional` **max-subgraph-size**: `number`
 
-Defined in: [src/api/trustgraph/messages.ts:116](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L116)
+Defined in: [src/api/trustgraph/messages.ts:116](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L116)
 
 Maximum subgraph size (default: 1000)
 
@@ -56,6 +56,6 @@ Maximum subgraph size (default: 1000)
 
 > `optional` **max-path-length**: `number`
 
-Defined in: [src/api/trustgraph/messages.ts:118](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L118)
+Defined in: [src/api/trustgraph/messages.ts:118](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L118)
 
 Maximum path length for traversal (default: 2)

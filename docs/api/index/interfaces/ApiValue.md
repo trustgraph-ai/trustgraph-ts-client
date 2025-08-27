@@ -6,7 +6,7 @@
 
 # Interface: ApiValue
 
-Defined in: [src/api/trustgraph/Triple.ts:5](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/Triple.ts#L5)
+Defined in: [src/api/trustgraph/Triple.ts:5](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/Triple.ts#L5)
 
 Represents a value in the TrustGraph knowledge graph
 
@@ -16,7 +16,7 @@ Represents a value in the TrustGraph knowledge graph
 
 > **v**: `string`
 
-Defined in: [src/api/trustgraph/Triple.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/Triple.ts#L7)
+Defined in: [src/api/trustgraph/Triple.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/Triple.ts#L7)
 
 The actual value/content
 
@@ -26,7 +26,7 @@ The actual value/content
 
 > **e**: `boolean`
 
-Defined in: [src/api/trustgraph/Triple.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/Triple.ts#L9)
+Defined in: [src/api/trustgraph/Triple.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/Triple.ts#L9)
 
 Whether this value represents an entity (true) or literal (false)
 
@@ -36,6 +36,6 @@ Whether this value represents an entity (true) or literal (false)
 
 > `optional` **label**: `string`
 
-Defined in: [src/api/trustgraph/Triple.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/Triple.ts#L11)
+Defined in: [src/api/trustgraph/Triple.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/Triple.ts#L11)
 
 Optional human-readable label for the value

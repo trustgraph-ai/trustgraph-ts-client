@@ -8,7 +8,7 @@
 
 > **useNodeDetails**(`nodeId`, `flowId`): `object`
 
-Defined in: [src/state/node-details.ts:45](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/node-details.ts#L45)
+Defined in: [src/state/node-details.ts:45](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/node-details.ts#L45)
 
 Custom hook for managing node details operations
 Provides functionality for fetching triples and processing outbound relationships

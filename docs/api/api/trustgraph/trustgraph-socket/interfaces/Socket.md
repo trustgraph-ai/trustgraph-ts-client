@@ -6,7 +6,7 @@
 
 # Interface: Socket
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:67](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L67)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:67](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L67)
 
 Socket interface defining all available operations for the TrustGraph API
 This provides a unified interface for various AI/ML and knowledge graph operations
@@ -17,7 +17,7 @@ This provides a unified interface for various AI/ML and knowledge graph operatio
 
 > **close**: () => `void`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:69](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L69)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:69](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L69)
 
 Close the WebSocket connection
 
@@ -31,7 +31,7 @@ Close the WebSocket connection
 
 > **textCompletion**: (`system`, `text`) => `Promise`\<`string`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:72](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L72)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:72](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L72)
 
 Text completion using AI models
 
@@ -55,7 +55,7 @@ Text completion using AI models
 
 > **graphRag**: (`text`, `options?`) => `Promise`\<`string`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:75](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L75)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:75](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L75)
 
 Graph-based Retrieval Augmented Generation
 
@@ -79,7 +79,7 @@ Graph-based Retrieval Augmented Generation
 
 > **agent**: (`question`, `think`, `observe`, `answer`, `error`) => `void`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:78](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L78)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:78](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L78)
 
 Agent interaction with streaming callbacks for different phases
 
@@ -115,7 +115,7 @@ Agent interaction with streaming callbacks for different phases
 
 > **embeddings**: (`text`) => `Promise`\<`number`[][]\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:87](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L87)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:87](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L87)
 
 Generate embeddings for text
 
@@ -135,7 +135,7 @@ Generate embeddings for text
 
 > **graphEmbeddingsQuery**: (`vecs`, `limit`) => `Promise`\<[`ApiValue`](../../../../index/interfaces/ApiValue.md)[]\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:90](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L90)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:90](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L90)
 
 Query graph using embedding vectors
 
@@ -159,7 +159,7 @@ Query graph using embedding vectors
 
 > **triplesQuery**: (`s?`, `p?`, `o?`, `limit?`) => `Promise`\<[`ApiTriple`](../../../../index/interfaces/ApiTriple.md)[]\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:93](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L93)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:93](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L93)
 
 Query knowledge graph triples (subject-predicate-object)
 
@@ -191,7 +191,7 @@ Query knowledge graph triples (subject-predicate-object)
 
 > **loadDocument**: (`document`, `id?`, `metadata?`) => `Promise`\<`void`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:101](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L101)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:101](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L101)
 
 Load a document into the system
 
@@ -219,7 +219,7 @@ Load a document into the system
 
 > **loadText**: (`text`, `id?`, `metadata?`) => `Promise`\<`void`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:108](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L108)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:108](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L108)
 
 Load plain text into the system
 
@@ -247,7 +247,7 @@ Load plain text into the system
 
 > **loadLibraryDocument**: (`document`, `mimeType`, `id?`, `metadata?`) => `Promise`\<`void`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:111](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L111)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:111](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L111)
 
 Load a document into the library with full metadata
 
@@ -279,7 +279,7 @@ Load a document into the library with full metadata
 
 > **onConnectionStateChange**: (`listener`) => () => `void`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:119](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L119)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:119](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L119)
 
 Connection state management
 
@@ -303,7 +303,7 @@ Connection state management
 
 > **librarian**: () => [`LibrarianApi`](../classes/LibrarianApi.md)
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:122](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L122)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:122](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L122)
 
 API factory methods
 
@@ -317,7 +317,7 @@ API factory methods
 
 > **flows**: () => [`FlowsApi`](../classes/FlowsApi.md)
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:123](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L123)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:123](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L123)
 
 #### Returns
 
@@ -329,7 +329,7 @@ Defined in: [src/api/trustgraph/trustgraph-socket.ts:123](https://github.com/tru
 
 > **flow**: (`id`) => [`FlowApi`](../classes/FlowApi.md)
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:124](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L124)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:124](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L124)
 
 #### Parameters
 
@@ -347,7 +347,7 @@ Defined in: [src/api/trustgraph/trustgraph-socket.ts:124](https://github.com/tru
 
 > **knowledge**: () => [`KnowledgeApi`](../classes/KnowledgeApi.md)
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:125](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L125)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:125](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L125)
 
 #### Returns
 
@@ -359,7 +359,7 @@ Defined in: [src/api/trustgraph/trustgraph-socket.ts:125](https://github.com/tru
 
 > **config**: () => [`ConfigApi`](../classes/ConfigApi.md)
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:126](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/trustgraph-socket.ts#L126)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:126](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/trustgraph-socket.ts#L126)
 
 #### Returns
 

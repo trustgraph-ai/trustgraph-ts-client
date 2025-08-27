@@ -8,7 +8,7 @@
 
 > **useEntityDetail**(`entityUri`, `flowId`): `object`
 
-Defined in: [src/state/entity-query.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/state/entity-query.ts#L16)
+Defined in: [src/state/entity-query.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/state/entity-query.ts#L16)
 
 Custom hook for managing entity detail operations using React Query
 Provides functionality for fetching entity details and related triples

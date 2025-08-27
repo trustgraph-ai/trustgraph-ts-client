@@ -6,7 +6,7 @@
 
 # Interface: Metadata
 
-Defined in: [src/api/trustgraph/messages.ts:51](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L51)
+Defined in: [src/api/trustgraph/messages.ts:51](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L51)
 
 Metadata container for various API operations
 
@@ -16,7 +16,7 @@ Metadata container for various API operations
 
 > `optional` **id**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:53](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L53)
+Defined in: [src/api/trustgraph/messages.ts:53](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L53)
 
 Optional identifier
 
@@ -26,7 +26,7 @@ Optional identifier
 
 > `optional` **metadata**: [`ApiTriple`](ApiTriple.md)[]
 
-Defined in: [src/api/trustgraph/messages.ts:55](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L55)
+Defined in: [src/api/trustgraph/messages.ts:55](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L55)
 
 Knowledge graph metadata as triples
 
@@ -36,7 +36,7 @@ Knowledge graph metadata as triples
 
 > `optional` **user**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:57](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L57)
+Defined in: [src/api/trustgraph/messages.ts:57](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L57)
 
 User context
 
@@ -46,6 +46,6 @@ User context
 
 > `optional` **collection**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:59](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/api/trustgraph/messages.ts#L59)
+Defined in: [src/api/trustgraph/messages.ts:59](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/api/trustgraph/messages.ts#L59)
 
 Collection context

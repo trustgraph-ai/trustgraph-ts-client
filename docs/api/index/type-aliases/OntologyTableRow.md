@@ -8,6 +8,6 @@
 
 > **OntologyTableRow** = \[`string`, [`Ontology`](../interfaces/Ontology.md)\]
 
-Defined in: [src/tables/ontologies.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/ontologies.ts#L7)
+Defined in: [src/tables/ontologies.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/ontologies.ts#L7)
 
 Ontology table row type - tuple of [id, ontology]

@@ -8,7 +8,7 @@
 
 > **Document** = `object`
 
-Defined in: [src/tables/document.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L9)
+Defined in: [src/tables/document.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L9)
 
 Document data structure for the document table
 Represents a single document with its metadata and properties
@@ -19,7 +19,7 @@ Represents a single document with its metadata and properties
 
 > **id**: `string`
 
-Defined in: [src/tables/document.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L10)
+Defined in: [src/tables/document.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L10)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/document.ts:10](https://github.com/trustgraph-ai/trustgr
 
 > **title**: `string`
 
-Defined in: [src/tables/document.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L11)
+Defined in: [src/tables/document.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L11)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/tables/document.ts:11](https://github.com/trustgraph-ai/trustgr
 
 > **time**: `number`
 
-Defined in: [src/tables/document.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L12)
+Defined in: [src/tables/document.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L12)
 
 ***
 
@@ -43,7 +43,7 @@ Defined in: [src/tables/document.ts:12](https://github.com/trustgraph-ai/trustgr
 
 > **kind**: `string`
 
-Defined in: [src/tables/document.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L13)
+Defined in: [src/tables/document.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L13)
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: [src/tables/document.ts:13](https://github.com/trustgraph-ai/trustgr
 
 > **user**: `string`
 
-Defined in: [src/tables/document.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L14)
+Defined in: [src/tables/document.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L14)
 
 ***
 
@@ -59,7 +59,7 @@ Defined in: [src/tables/document.ts:14](https://github.com/trustgraph-ai/trustgr
 
 > **comments**: `string`
 
-Defined in: [src/tables/document.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L15)
+Defined in: [src/tables/document.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L15)
 
 ***
 
@@ -67,7 +67,7 @@ Defined in: [src/tables/document.ts:15](https://github.com/trustgraph-ai/trustgr
 
 > **tags**: `string`[]
 
-Defined in: [src/tables/document.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L16)
+Defined in: [src/tables/document.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L16)
 
 ***
 
@@ -75,7 +75,7 @@ Defined in: [src/tables/document.ts:16](https://github.com/trustgraph-ai/trustgr
 
 > **metadata**: `object`[]
 
-Defined in: [src/tables/document.ts:17](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/dd779923b4eaffccd17ba61aaee70d2766e28e49/src/tables/document.ts#L17)
+Defined in: [src/tables/document.ts:17](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/4700024d623d01d40c50072d60c021f3b6c60b54/src/tables/document.ts#L17)
 
 #### s
 
