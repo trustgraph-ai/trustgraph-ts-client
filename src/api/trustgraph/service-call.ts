@@ -53,7 +53,6 @@ export class ServiceCall {
     // Simple exponential backoff calculation
     return Math.min(1000 * Math.pow(2, 3 - this.retries), 10000);
   }
-  complete: boolean; // Flag indicating if request is complete
 
   /**
    * Initiates the service call by registering it with the socket's inflight

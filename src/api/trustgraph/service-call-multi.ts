@@ -16,6 +16,8 @@ export class ServiceCallMulti {
   completed: boolean = false;
   receiver: (response: any) => boolean;
   timer: NodeJS.Timeout | undefined;
+  complete: boolean = false;
+  timeoutId: NodeJS.Timeout | undefined;
 
   constructor(
     mid: string,
@@ -36,6 +38,11 @@ export class ServiceCallMulti {
     this.socket = socket;
     this.completed = false;
     this.receiver = receiver;
+  }
+
+  calculateBackoff(): number {
+    // Simple exponential backoff calculation
+    return Math.min(1000 * Math.pow(2, 3 - this.retries), 10000);
   }
 
   start() {

@@ -955,7 +955,7 @@ export class FlowApi {
           prompt: text, // User prompt
         },
         30000,
-        null, // Use default retries
+        undefined, // Use default retries
         this.flowId, // Route through this flow
       )
       .then((r) => r.response);
@@ -976,7 +976,7 @@ export class FlowApi {
           "max-path-length": options?.pathLength,
         },
         60000, // Longer timeout for complex graph operations
-        null,
+        undefined,
         this.flowId,
       )
       .then((r) => r.response);
