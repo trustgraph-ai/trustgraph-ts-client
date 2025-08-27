@@ -19,7 +19,7 @@ export const createDocId = () => {
   return "https://trustgraph.ai/doc/" + uuidv4();
 };
 
-export const prepareMetadata = (doc_id: string, params) => {
+export const prepareMetadata = (doc_id: string, params: any) => {
   let doc_meta: Triple[] = [
     {
       s: { v: doc_id, e: true },
