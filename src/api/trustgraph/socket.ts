@@ -1,2 +1,5 @@
-// Re-export the socket hook and connection state hook from SocketProvider
+/**
+ * Re-exports for socket hooks from SocketProvider
+ * @public
+ */
 export { useSocket, useConnectionState } from "./SocketProvider";

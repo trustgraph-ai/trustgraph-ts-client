@@ -8,7 +8,7 @@
 
 > **useProcessing**(): `object`
 
-Defined in: [src/state/processing.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/processing.ts#L11)
+Defined in: [src/state/processing.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/processing.ts#L11)
 
 Custom hook for managing processing operations
 Provides functionality for fetching, deleting, and creating processing

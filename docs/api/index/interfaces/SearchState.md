@@ -6,7 +6,7 @@
 
 # Interface: SearchState
 
-Defined in: [src/state/search.ts:5](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/search.ts#L5)
+Defined in: [src/state/search.ts:5](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/search.ts#L5)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/state/search.ts:5](https://github.com/trustgraph-ai/trustgraph-
 
 > **rows**: `Row`[]
 
-Defined in: [src/state/search.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/search.ts#L7)
+Defined in: [src/state/search.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/search.ts#L7)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/state/search.ts:7](https://github.com/trustgraph-ai/trustgraph-
 
 > **setRows**: (`v`) => `void`
 
-Defined in: [src/state/search.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/search.ts#L10)
+Defined in: [src/state/search.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/search.ts#L10)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [src/state/search.ts:10](https://github.com/trustgraph-ai/trustgraph
 
 > **input**: `string`
 
-Defined in: [src/state/search.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/search.ts#L13)
+Defined in: [src/state/search.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/search.ts#L13)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [src/state/search.ts:13](https://github.com/trustgraph-ai/trustgraph
 
 > **setInput**: (`v`) => `void`
 
-Defined in: [src/state/search.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/search.ts#L16)
+Defined in: [src/state/search.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/search.ts#L16)
 
 #### Parameters
 

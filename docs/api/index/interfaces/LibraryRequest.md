@@ -6,7 +6,7 @@
 
 # Interface: LibraryRequest
 
-Defined in: [src/api/trustgraph/messages.ts:135](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L135)
+Defined in: [src/api/trustgraph/messages.ts:230](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L230)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/api/trustgraph/messages.ts:135](https://github.com/trustgraph-a
 
 > **operation**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:136](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L136)
+Defined in: [src/api/trustgraph/messages.ts:231](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L231)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/api/trustgraph/messages.ts:136](https://github.com/trustgraph-a
 
 > `optional` **document-id**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:137](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L137)
+Defined in: [src/api/trustgraph/messages.ts:232](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L232)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/api/trustgraph/messages.ts:137](https://github.com/trustgraph-a
 
 > `optional` **processing-id**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:138](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L138)
+Defined in: [src/api/trustgraph/messages.ts:233](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L233)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/api/trustgraph/messages.ts:138](https://github.com/trustgraph-a
 
 > `optional` **document-metadata**: [`DocumentMetadata`](DocumentMetadata.md)
 
-Defined in: [src/api/trustgraph/messages.ts:139](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L139)
+Defined in: [src/api/trustgraph/messages.ts:234](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L234)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/api/trustgraph/messages.ts:139](https://github.com/trustgraph-a
 
 > `optional` **processing-metadata**: [`ProcessingMetadata`](ProcessingMetadata.md)
 
-Defined in: [src/api/trustgraph/messages.ts:140](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L140)
+Defined in: [src/api/trustgraph/messages.ts:235](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L235)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/api/trustgraph/messages.ts:140](https://github.com/trustgraph-a
 
 > `optional` **content**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:141](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L141)
+Defined in: [src/api/trustgraph/messages.ts:236](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L236)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [src/api/trustgraph/messages.ts:141](https://github.com/trustgraph-a
 
 > `optional` **user**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:142](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L142)
+Defined in: [src/api/trustgraph/messages.ts:237](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L237)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [src/api/trustgraph/messages.ts:142](https://github.com/trustgraph-a
 
 > `optional` **collection**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:143](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L143)
+Defined in: [src/api/trustgraph/messages.ts:238](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L238)
 
 ***
 
@@ -78,4 +78,4 @@ Defined in: [src/api/trustgraph/messages.ts:143](https://github.com/trustgraph-a
 
 > `optional` **metadata**: [`ApiTriple`](ApiTriple.md)[]
 
-Defined in: [src/api/trustgraph/messages.ts:144](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L144)
+Defined in: [src/api/trustgraph/messages.ts:239](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L239)

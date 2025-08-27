@@ -6,7 +6,7 @@
 
 # Interface: ProgressState
 
-Defined in: [src/state/progress.ts:4](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/progress.ts#L4)
+Defined in: [src/state/progress.ts:4](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L4)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/state/progress.ts:4](https://github.com/trustgraph-ai/trustgrap
 
 > **activity**: `Set`\<`string`\>
 
-Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/progress.ts#L7)
+Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L7)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgrap
 
 > **error**: `string`
 
-Defined in: [src/state/progress.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/progress.ts#L10)
+Defined in: [src/state/progress.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L10)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/state/progress.ts:10](https://github.com/trustgraph-ai/trustgra
 
 > **addActivity**: (`act`) => `void`
 
-Defined in: [src/state/progress.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/progress.ts#L13)
+Defined in: [src/state/progress.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L13)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [src/state/progress.ts:13](https://github.com/trustgraph-ai/trustgra
 
 > **removeActivity**: (`act`) => `void`
 
-Defined in: [src/state/progress.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/progress.ts#L16)
+Defined in: [src/state/progress.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L16)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [src/state/progress.ts:16](https://github.com/trustgraph-ai/trustgra
 
 > **setError**: (`error`) => `void`
 
-Defined in: [src/state/progress.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/progress.ts#L19)
+Defined in: [src/state/progress.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L19)
 
 #### Parameters
 

@@ -8,7 +8,7 @@
 
 > **KnowledgeCore** = `object`
 
-Defined in: [src/tables/knowledge-cores.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/knowledge-cores.ts#L8)
+Defined in: [src/tables/knowledge-cores.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/knowledge-cores.ts#L8)
 
 Knowledge core data structure for the knowledge core table
 Represents a single knowledge core with its metadata and properties
@@ -19,4 +19,4 @@ Represents a single knowledge core with its metadata and properties
 
 > **id**: `string`
 
-Defined in: [src/tables/knowledge-cores.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/knowledge-cores.ts#L9)
+Defined in: [src/tables/knowledge-cores.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/knowledge-cores.ts#L9)

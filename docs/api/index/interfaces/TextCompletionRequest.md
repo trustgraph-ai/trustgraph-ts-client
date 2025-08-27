@@ -6,7 +6,9 @@
 
 # Interface: TextCompletionRequest
 
-Defined in: [src/api/trustgraph/messages.ts:37](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L37)
+Defined in: [src/api/trustgraph/messages.ts:88](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L88)
+
+Request for AI text completion
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/api/trustgraph/messages.ts:37](https://github.com/trustgraph-ai
 
 > **system**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:38](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L38)
+Defined in: [src/api/trustgraph/messages.ts:90](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L90)
+
+System prompt/instructions
 
 ***
 
@@ -22,4 +26,6 @@ Defined in: [src/api/trustgraph/messages.ts:38](https://github.com/trustgraph-ai
 
 > **prompt**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:39](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L39)
+Defined in: [src/api/trustgraph/messages.ts:92](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L92)
+
+User prompt

@@ -6,7 +6,7 @@
 
 # Interface: LoadState
 
-Defined in: [src/state/load.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L8)
+Defined in: [src/state/load.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L8)
 
 State interface for managing document loading and upload operations
 Handles file uploads, text input, metadata, and processing operations
@@ -17,7 +17,7 @@ Handles file uploads, text input, metadata, and processing operations
 
 > **title**: `string`
 
-Defined in: [src/state/load.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L10)
+Defined in: [src/state/load.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L10)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: [src/state/load.ts:10](https://github.com/trustgraph-ai/trustgraph-t
 
 > **comments**: `string`
 
-Defined in: [src/state/load.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L11)
+Defined in: [src/state/load.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L11)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [src/state/load.ts:11](https://github.com/trustgraph-ai/trustgraph-t
 
 > **url**: `string`
 
-Defined in: [src/state/load.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L12)
+Defined in: [src/state/load.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L12)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [src/state/load.ts:12](https://github.com/trustgraph-ai/trustgraph-t
 
 > **keywords**: `string`[]
 
-Defined in: [src/state/load.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L13)
+Defined in: [src/state/load.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L13)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [src/state/load.ts:13](https://github.com/trustgraph-ai/trustgraph-t
 
 > **operation**: `string`
 
-Defined in: [src/state/load.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L16)
+Defined in: [src/state/load.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L16)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [src/state/load.ts:16](https://github.com/trustgraph-ai/trustgraph-t
 
 > **files**: `File`[]
 
-Defined in: [src/state/load.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L19)
+Defined in: [src/state/load.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L19)
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: [src/state/load.ts:19](https://github.com/trustgraph-ai/trustgraph-t
 
 > **uploaded**: `string`[]
 
-Defined in: [src/state/load.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L20)
+Defined in: [src/state/load.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L20)
 
 ***
 
@@ -73,7 +73,7 @@ Defined in: [src/state/load.ts:20](https://github.com/trustgraph-ai/trustgraph-t
 
 > **text**: `string`
 
-Defined in: [src/state/load.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L21)
+Defined in: [src/state/load.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L21)
 
 ***
 
@@ -81,7 +81,7 @@ Defined in: [src/state/load.ts:21](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setTitle**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L24)
+Defined in: [src/state/load.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L24)
 
 #### Parameters
 
@@ -99,7 +99,7 @@ Defined in: [src/state/load.ts:24](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setComments**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L25)
+Defined in: [src/state/load.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L25)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: [src/state/load.ts:25](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setUrl**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L26)
+Defined in: [src/state/load.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L26)
 
 #### Parameters
 
@@ -135,7 +135,7 @@ Defined in: [src/state/load.ts:26](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setKeywords**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L27)
+Defined in: [src/state/load.ts:27](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L27)
 
 #### Parameters
 
@@ -153,7 +153,7 @@ Defined in: [src/state/load.ts:27](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setOperation**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:30](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L30)
+Defined in: [src/state/load.ts:30](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L30)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [src/state/load.ts:30](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setFiles**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L33)
+Defined in: [src/state/load.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L33)
 
 #### Parameters
 
@@ -189,7 +189,7 @@ Defined in: [src/state/load.ts:33](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setUploaded**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L34)
+Defined in: [src/state/load.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L34)
 
 #### Parameters
 
@@ -207,7 +207,7 @@ Defined in: [src/state/load.ts:34](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setText**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:35](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L35)
+Defined in: [src/state/load.ts:35](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L35)
 
 #### Parameters
 
@@ -225,7 +225,7 @@ Defined in: [src/state/load.ts:35](https://github.com/trustgraph-ai/trustgraph-t
 
 > **addUploaded**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L36)
+Defined in: [src/state/load.ts:36](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L36)
 
 #### Parameters
 
@@ -243,7 +243,7 @@ Defined in: [src/state/load.ts:36](https://github.com/trustgraph-ai/trustgraph-t
 
 > **removeFile**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:37](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L37)
+Defined in: [src/state/load.ts:37](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L37)
 
 #### Parameters
 
@@ -261,7 +261,7 @@ Defined in: [src/state/load.ts:37](https://github.com/trustgraph-ai/trustgraph-t
 
 > **textUploads**: `number`
 
-Defined in: [src/state/load.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L40)
+Defined in: [src/state/load.ts:40](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L40)
 
 ***
 
@@ -269,7 +269,7 @@ Defined in: [src/state/load.ts:40](https://github.com/trustgraph-ai/trustgraph-t
 
 > **setTextUploads**: (`v`) => `void`
 
-Defined in: [src/state/load.ts:41](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L41)
+Defined in: [src/state/load.ts:41](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L41)
 
 #### Parameters
 
@@ -287,7 +287,7 @@ Defined in: [src/state/load.ts:41](https://github.com/trustgraph-ai/trustgraph-t
 
 > **incTextUploads**: () => `void`
 
-Defined in: [src/state/load.ts:42](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/load.ts#L42)
+Defined in: [src/state/load.ts:42](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/load.ts#L42)
 
 #### Returns
 

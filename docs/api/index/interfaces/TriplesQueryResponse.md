@@ -6,7 +6,7 @@
 
 # Interface: TriplesQueryResponse
 
-Defined in: [src/api/trustgraph/messages.ts:93](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L93)
+Defined in: [src/api/trustgraph/messages.ts:188](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L188)
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: [src/api/trustgraph/messages.ts:93](https://github.com/trustgraph-ai
 
 > **response**: [`ApiTriple`](ApiTriple.md)[]
 
-Defined in: [src/api/trustgraph/messages.ts:94](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L94)
+Defined in: [src/api/trustgraph/messages.ts:189](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L189)

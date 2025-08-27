@@ -8,7 +8,7 @@
 
 > **useTriples**(`__namedParameters`): `object`
 
-Defined in: [src/state/triples.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/triples.ts#L13)
+Defined in: [src/state/triples.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/triples.ts#L13)
 
 Custom hook for managing token cost operations
 Provides functionality for fetching, deleting, and updating token costs

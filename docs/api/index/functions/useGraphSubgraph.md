@@ -8,7 +8,7 @@
 
 > **useGraphSubgraph**(`entityUri`, `flowId`): `object`
 
-Defined in: [src/state/graph-query.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/graph-query.ts#L21)
+Defined in: [src/state/graph-query.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/graph-query.ts#L21)
 
 Custom hook for managing graph visualization operations using React Query
 Provides functionality for fetching and updating graph subgraphs

@@ -6,7 +6,7 @@
 
 # Interface: ChatState
 
-Defined in: [src/state/chat.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L14)
+Defined in: [src/state/chat.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L14)
 
 State interface for chat management
 
@@ -16,7 +16,7 @@ State interface for chat management
 
 > **messages**: `Message`[]
 
-Defined in: [src/state/chat.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L16)
+Defined in: [src/state/chat.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L16)
 
 Array of chat messages
 
@@ -26,7 +26,7 @@ Array of chat messages
 
 > **input**: `string`
 
-Defined in: [src/state/chat.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L18)
+Defined in: [src/state/chat.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L18)
 
 Current user input text
 
@@ -36,7 +36,7 @@ Current user input text
 
 > **chatMode**: [`ChatMode`](../type-aliases/ChatMode.md)
 
-Defined in: [src/state/chat.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L20)
+Defined in: [src/state/chat.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L20)
 
 Current chat mode
 
@@ -46,7 +46,7 @@ Current chat mode
 
 > **setMessages**: (`v`) => `void`
 
-Defined in: [src/state/chat.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L23)
+Defined in: [src/state/chat.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L23)
 
 Update the entire messages array
 
@@ -66,7 +66,7 @@ Update the entire messages array
 
 > **addMessage**: (`role`, `text`, `type?`) => `void`
 
-Defined in: [src/state/chat.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L25)
+Defined in: [src/state/chat.ts:25](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L25)
 
 Add a new message to the chat history
 
@@ -94,7 +94,7 @@ Add a new message to the chat history
 
 > **setInput**: (`v`) => `void`
 
-Defined in: [src/state/chat.ts:31](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L31)
+Defined in: [src/state/chat.ts:31](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L31)
 
 Update the current user input
 
@@ -114,7 +114,7 @@ Update the current user input
 
 > **setChatMode**: (`mode`) => `void`
 
-Defined in: [src/state/chat.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/chat.ts#L33)
+Defined in: [src/state/chat.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/chat.ts#L33)
 
 Change the current chat mode
 

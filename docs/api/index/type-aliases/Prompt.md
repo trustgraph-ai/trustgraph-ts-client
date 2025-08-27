@@ -8,7 +8,7 @@
 
 > **Prompt** = `object`
 
-Defined in: [src/tables/prompts.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/prompts.ts#L8)
+Defined in: [src/tables/prompts.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/prompts.ts#L8)
 
 Prompt data structure for the prompts table
 Represents a prompt template with its metadata and configuration
@@ -19,7 +19,7 @@ Represents a prompt template with its metadata and configuration
 
 > **id**: `string`
 
-Defined in: [src/tables/prompts.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/prompts.ts#L9)
+Defined in: [src/tables/prompts.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/prompts.ts#L9)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/prompts.ts:9](https://github.com/trustgraph-ai/trustgrap
 
 > **prompt**: `string`
 
-Defined in: [src/tables/prompts.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/prompts.ts#L10)
+Defined in: [src/tables/prompts.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/prompts.ts#L10)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/tables/prompts.ts:10](https://github.com/trustgraph-ai/trustgra
 
 > **responseType**: `"json"` \| `"text"`
 
-Defined in: [src/tables/prompts.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/prompts.ts#L11)
+Defined in: [src/tables/prompts.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/prompts.ts#L11)
 
 ***
 
@@ -43,4 +43,4 @@ Defined in: [src/tables/prompts.ts:11](https://github.com/trustgraph-ai/trustgra
 
 > **hasSchema**: `boolean`
 
-Defined in: [src/tables/prompts.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/prompts.ts#L12)
+Defined in: [src/tables/prompts.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/prompts.ts#L12)

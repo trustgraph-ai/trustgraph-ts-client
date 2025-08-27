@@ -6,7 +6,9 @@
 
 # Interface: EmbeddingsRequest
 
-Defined in: [src/api/trustgraph/messages.ts:69](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L69)
+Defined in: [src/api/trustgraph/messages.ts:158](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L158)
+
+Request for text embeddings generation
 
 ## Properties
 
@@ -14,4 +16,6 @@ Defined in: [src/api/trustgraph/messages.ts:69](https://github.com/trustgraph-ai
 
 > **text**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:70](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L70)
+Defined in: [src/api/trustgraph/messages.ts:160](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L160)
+
+Text to generate embeddings for

@@ -8,7 +8,7 @@
 
 > `const` **flowClassColumns**: `AccessorFnColumnDef`\<[`FlowClassRow`](../type-aliases/FlowClassRow.md), `string`\>[]
 
-Defined in: [src/tables/flow-classes.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/flow-classes.ts#L19)
+Defined in: [src/tables/flow-classes.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/flow-classes.ts#L19)
 
 Column definitions for the flow classes table
 Returns UI-agnostic column definitions that can be used with any table component

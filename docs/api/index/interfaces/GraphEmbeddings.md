@@ -6,7 +6,9 @@
 
 # Interface: GraphEmbeddings
 
-Defined in: [src/api/trustgraph/messages.ts:32](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L32)
+Defined in: [src/api/trustgraph/messages.ts:77](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L77)
+
+Collection of entities with embeddings and metadata
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/api/trustgraph/messages.ts:32](https://github.com/trustgraph-ai
 
 > `optional` **metadata**: [`Metadata`](Metadata.md)
 
-Defined in: [src/api/trustgraph/messages.ts:33](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L33)
+Defined in: [src/api/trustgraph/messages.ts:79](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L79)
+
+Associated metadata
 
 ***
 
@@ -22,4 +26,6 @@ Defined in: [src/api/trustgraph/messages.ts:33](https://github.com/trustgraph-ai
 
 > `optional` **entities**: [`EntityEmbeddings`](EntityEmbeddings.md)[]
 
-Defined in: [src/api/trustgraph/messages.ts:34](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L34)
+Defined in: [src/api/trustgraph/messages.ts:81](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L81)
+
+Array of entities with their embeddings

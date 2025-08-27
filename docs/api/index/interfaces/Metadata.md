@@ -6,7 +6,9 @@
 
 # Interface: Metadata
 
-Defined in: [src/api/trustgraph/messages.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L20)
+Defined in: [src/api/trustgraph/messages.ts:51](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L51)
+
+Metadata container for various API operations
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/api/trustgraph/messages.ts:20](https://github.com/trustgraph-ai
 
 > `optional` **id**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L21)
+Defined in: [src/api/trustgraph/messages.ts:53](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L53)
+
+Optional identifier
 
 ***
 
@@ -22,7 +26,9 @@ Defined in: [src/api/trustgraph/messages.ts:21](https://github.com/trustgraph-ai
 
 > `optional` **metadata**: [`ApiTriple`](ApiTriple.md)[]
 
-Defined in: [src/api/trustgraph/messages.ts:22](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L22)
+Defined in: [src/api/trustgraph/messages.ts:55](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L55)
+
+Knowledge graph metadata as triples
 
 ***
 
@@ -30,7 +36,9 @@ Defined in: [src/api/trustgraph/messages.ts:22](https://github.com/trustgraph-ai
 
 > `optional` **user**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L23)
+Defined in: [src/api/trustgraph/messages.ts:57](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L57)
+
+User context
 
 ***
 
@@ -38,4 +46,6 @@ Defined in: [src/api/trustgraph/messages.ts:23](https://github.com/trustgraph-ai
 
 > `optional` **collection**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:24](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L24)
+Defined in: [src/api/trustgraph/messages.ts:59](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L59)
+
+Collection context

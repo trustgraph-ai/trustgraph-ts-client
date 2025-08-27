@@ -6,7 +6,9 @@
 
 # Interface: AgentResponse
 
-Defined in: [src/api/trustgraph/messages.ts:62](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L62)
+Defined in: [src/api/trustgraph/messages.ts:143](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L143)
+
+Response from AI agent with different phases
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/api/trustgraph/messages.ts:62](https://github.com/trustgraph-ai
 
 > `optional` **thought**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:63](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L63)
+Defined in: [src/api/trustgraph/messages.ts:145](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L145)
+
+Agent's reasoning/thinking process
 
 ***
 
@@ -22,7 +26,9 @@ Defined in: [src/api/trustgraph/messages.ts:63](https://github.com/trustgraph-ai
 
 > `optional` **observation**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:64](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L64)
+Defined in: [src/api/trustgraph/messages.ts:147](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L147)
+
+Agent's observations
 
 ***
 
@@ -30,7 +36,9 @@ Defined in: [src/api/trustgraph/messages.ts:64](https://github.com/trustgraph-ai
 
 > `optional` **answer**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:65](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L65)
+Defined in: [src/api/trustgraph/messages.ts:149](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L149)
+
+Agent's final answer
 
 ***
 
@@ -38,4 +46,6 @@ Defined in: [src/api/trustgraph/messages.ts:65](https://github.com/trustgraph-ai
 
 > `optional` **error**: `string`
 
-Defined in: [src/api/trustgraph/messages.ts:66](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/api/trustgraph/messages.ts#L66)
+Defined in: [src/api/trustgraph/messages.ts:151](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L151)
+
+Error message if something went wrong

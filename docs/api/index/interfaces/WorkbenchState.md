@@ -6,7 +6,7 @@
 
 # Interface: WorkbenchState
 
-Defined in: [src/state/workbench.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L10)
+Defined in: [src/state/workbench.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L10)
 
 State interface for the main workbench/workspace application
 Manages the current tool selection, entity selection, and available entities
@@ -17,7 +17,7 @@ Manages the current tool selection, entity selection, and available entities
 
 > `optional` **selected**: [`Entity`](Entity.md)
 
-Defined in: [src/state/workbench.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L12)
+Defined in: [src/state/workbench.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L12)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: [src/state/workbench.ts:12](https://github.com/trustgraph-ai/trustgr
 
 > **tool**: `string`
 
-Defined in: [src/state/workbench.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L14)
+Defined in: [src/state/workbench.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L14)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [src/state/workbench.ts:14](https://github.com/trustgraph-ai/trustgr
 
 > **entities**: [`Entity`](Entity.md)[]
 
-Defined in: [src/state/workbench.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L16)
+Defined in: [src/state/workbench.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L16)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [src/state/workbench.ts:16](https://github.com/trustgraph-ai/trustgr
 
 > **setSelected**: (`e`) => `void`
 
-Defined in: [src/state/workbench.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L19)
+Defined in: [src/state/workbench.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L19)
 
 #### Parameters
 
@@ -59,7 +59,7 @@ Defined in: [src/state/workbench.ts:19](https://github.com/trustgraph-ai/trustgr
 
 > **unsetSelected**: () => `void`
 
-Defined in: [src/state/workbench.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L20)
+Defined in: [src/state/workbench.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L20)
 
 #### Returns
 
@@ -71,7 +71,7 @@ Defined in: [src/state/workbench.ts:20](https://github.com/trustgraph-ai/trustgr
 
 > **setTool**: (`v`) => `void`
 
-Defined in: [src/state/workbench.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L23)
+Defined in: [src/state/workbench.ts:23](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L23)
 
 #### Parameters
 
@@ -89,7 +89,7 @@ Defined in: [src/state/workbench.ts:23](https://github.com/trustgraph-ai/trustgr
 
 > **setEntities**: (`ents`) => `void`
 
-Defined in: [src/state/workbench.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/workbench.ts#L26)
+Defined in: [src/state/workbench.ts:26](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/workbench.ts#L26)
 
 #### Parameters
 

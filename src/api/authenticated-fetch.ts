@@ -1,8 +1,9 @@
 /**
  * Authenticated fetch utility
- *
+ * 
  * Provides fetch functions that automatically include Bearer token authentication
  * when an API key is configured in settings.
+ * @public
  */
 
 /**
@@ -31,6 +32,7 @@ export const createAuthenticatedFetch = (apiKey?: string) => {
 /**
  * Hook-based authenticated fetch that uses current settings
  * This is a React hook that must be called from within a component
+ * @throws Error indicating this is not yet implemented
  */
 export const useAuthenticatedFetch = () => {
   // Note: This will be implemented when we need it in components

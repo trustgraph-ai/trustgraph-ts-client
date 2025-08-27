@@ -8,7 +8,7 @@
 
 > **FlowClassRow** = \[`string`, \{\[`key`: `string`\]: `unknown`; `description`: `string`; \}\]
 
-Defined in: [src/tables/flow-classes.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/tables/flow-classes.ts#L7)
+Defined in: [src/tables/flow-classes.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/flow-classes.ts#L7)
 
 Flow class data structure for the flow classes table
 Represents a flow class as a tuple with name and metadata

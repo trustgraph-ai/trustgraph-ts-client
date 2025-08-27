@@ -8,7 +8,7 @@
 
 > **useNotification**(): `object`
 
-Defined in: [src/state/notify.ts:104](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/edcc8c01cf9c2f58c76719d5d2aa7058546360d9/src/state/notify.ts#L104)
+Defined in: [src/state/notify.ts:104](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/notify.ts#L104)
 
 Hook for managing notifications in a UI-agnostic way
 Provides methods to emit notifications and manage notification state
