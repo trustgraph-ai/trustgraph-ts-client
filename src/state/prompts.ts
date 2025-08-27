@@ -66,19 +66,19 @@ export const usePrompts = () => {
           return socket
             .config()
             .getConfig(
-              promptIds.map((id) => ({
+              promptIds.map((id: string) => ({
                 type: "prompt",
                 key: "template." + id,
               })),
             )
-            .then((r) => {
-              if (r["error"]) {
+            .then((r: any) => {
+              if (r && r["error"]) {
                 console.log("Error:", r);
                 throw r.error.message;
               }
               // Parse template configurations and pair them with their IDs
-              const config = r.values.map((c) => JSON.parse(c.value));
-              return promptIds.map((id, ix) => [id, config[ix]]);
+              const config = r.values.map((c: any) => JSON.parse(c.value));
+              return promptIds.map((id: string, ix: number) => [id, config[ix]]);
             });
         });
     },
@@ -87,7 +87,7 @@ export const usePrompts = () => {
   // Mutation for updating the system prompt
   // System prompt controls the AI assistant's base behavior and instructions
   const updateSystemPromptMutation = useMutation({
-    mutationFn: ({ prompt, onSuccess }) => {
+    mutationFn: ({ prompt, onSuccess }: { prompt: any; onSuccess?: () => void }) => {
       return socket
         .config()
         .putConfig([
@@ -97,8 +97,8 @@ export const usePrompts = () => {
             value: JSON.stringify(prompt),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -119,7 +119,7 @@ export const usePrompts = () => {
 
   // Mutation for updating an existing prompt template
   const updatePromptMutation = useMutation({
-    mutationFn: ({ id, prompt, onSuccess }) => {
+    mutationFn: ({ id, prompt, onSuccess }: { id: string; prompt: any; onSuccess?: () => void }) => {
       return socket
         .config()
         .putConfig([
@@ -129,8 +129,8 @@ export const usePrompts = () => {
             value: JSON.stringify(prompt),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -152,7 +152,7 @@ export const usePrompts = () => {
   // Mutation for creating a new prompt template
   // Updates both the template index and creates the template configuration
   const createPromptMutation = useMutation({
-    mutationFn: ({ id, prompt, onSuccess }) => {
+    mutationFn: ({ id, prompt, onSuccess }: { id: string; prompt: any; onSuccess?: () => void }) => {
       // Step 1: Get current template index
       return socket
         .config()
@@ -200,7 +200,7 @@ export const usePrompts = () => {
   // Mutation for deleting a prompt template
   // Removes the template from both the index and deletes its configuration
   const deletePromptMutation = useMutation({
-    mutationFn: ({ id, onSuccess }) => {
+    mutationFn: ({ id, onSuccess }: { id: string; onSuccess?: () => void }) => {
       // Step 1: Get current template index
       return socket
         .config()
