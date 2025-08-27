@@ -114,16 +114,14 @@ export const useMcpTools = () => {
   // Mutation for deleting a tool
   // Deletes the tool configuration directly
   const deleteToolMutation = useMutation({
-    mutationFn: ({ id, onSuccess }) => {
+    mutationFn: ({ id, onSuccess }: { id: string; onSuccess?: () => void }) => {
       // Delete the tool configuration
       return socket
         .config()
-        .deleteConfig([
-          {
-            type: "mcp",
-            key: id,
-          },
-        ])
+        .deleteConfig({
+          type: "mcp",
+          key: id,
+        })
         .then((x: any) => {
           if (x && x["error"]) {
             console.log("Error:", x);

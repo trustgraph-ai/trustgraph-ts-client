@@ -10,7 +10,13 @@ import { useActivity } from "./activity";
  * for AI models
  * @returns {Object} Token cost state and operations
  */
-export const useTriples = ({ flow, s, p, o, limit }) => {
+export const useTriples = ({ flow, s, p, o, limit }: { 
+  flow?: string; 
+  s?: any; 
+  p?: any; 
+  o?: any; 
+  limit?: number; 
+}) => {
   // WebSocket connection for communicating with the configuration service
   const socket = useSocket();
 

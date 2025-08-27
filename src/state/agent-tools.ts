@@ -38,7 +38,7 @@ export const useAgentTools = () => {
         .getValues("tool")
         .then((values) => {
           // Parse tool configurations and pair them with their IDs
-          return values.map((item) => [item.key, JSON.parse(item.value)]);
+          return values.map((item: any) => [item.key, JSON.parse(item.value)]);
         })
         .catch((err) => {
           console.log("Error:", err);
@@ -49,7 +49,7 @@ export const useAgentTools = () => {
 
   // Mutation for updating an existing tool's configuration
   const updateToolMutation = useMutation({
-    mutationFn: ({ id, tool, onSuccess }) => {
+    mutationFn: ({ id, tool, onSuccess }: { id: string; tool: any; onSuccess?: () => void }) => {
       // Update the tool configuration in the backend
       return socket
         .config()
@@ -60,8 +60,8 @@ export const useAgentTools = () => {
             value: JSON.stringify(tool),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -83,7 +83,7 @@ export const useAgentTools = () => {
   // Mutation for creating a new tool
   // Creates the tool configuration directly
   const createToolMutation = useMutation({
-    mutationFn: ({ id, tool, onSuccess }) => {
+    mutationFn: ({ id, tool, onSuccess }: { id: string; tool: any; onSuccess?: () => void }) => {
       // Create the new tool configuration
       return socket
         .config()
@@ -94,8 +94,8 @@ export const useAgentTools = () => {
             value: JSON.stringify(tool),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -117,18 +117,16 @@ export const useAgentTools = () => {
   // Mutation for deleting a tool
   // Deletes the tool configuration directly
   const deleteToolMutation = useMutation({
-    mutationFn: ({ id, onSuccess }) => {
+    mutationFn: ({ id, onSuccess }: { id: string; onSuccess?: () => void }) => {
       // Delete the tool configuration
       return socket
         .config()
-        .deleteConfig([
-          {
-            type: "tool",
-            key: id,
-          },
-        ])
-        .then((x) => {
-          if (x["error"]) {
+        .deleteConfig({
+          type: "tool",
+          key: id,
+        })
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
