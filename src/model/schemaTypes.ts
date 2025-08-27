@@ -1,4 +1,4 @@
-import { SchemaField } from "../model/schemas-table";
+import { SchemaField } from "../tables/schemas";
 
 export interface SchemaTypeOption {
   value: SchemaField["type"];

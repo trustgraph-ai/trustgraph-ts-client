@@ -1,5 +1,5 @@
+import React from "react";
 import { createColumnHelper } from "@tanstack/react-table";
-import { Flex, HStack, Badge, Text, Code } from "@chakra-ui/react";
 
 export interface SchemaField {
   id: string; // Unique identifier for React keys
@@ -21,36 +21,43 @@ export type SchemaTableRow = [string, Schema];
 
 const columnHelper = createColumnHelper<SchemaTableRow>();
 
-export const schemaColumns = [
+export const schemaColumns = (renderers?: {
+  code?: (value: string) => React.ReactNode;
+  badge?: (badges: string[]) => React.ReactNode;
+}) => [
   columnHelper.accessor("0", {
     header: "ID",
-    cell: (info) => <Code p={2}>{info.getValue()}</Code>,
+    cell: (info) => {
+      const value = info.getValue();
+      return renderers?.code ? renderers.code(value) : value;
+    },
   }),
   columnHelper.accessor((row) => row[1].description, {
     id: "description",
     header: "Description",
-    cell: (info) => <Text>{info.getValue()}</Text>,
+    cell: (info) => info.getValue(),
   }),
   columnHelper.display({
     id: "fields",
     header: "Fields",
     cell: ({ row }) => {
-      const fieldCount = row.original[1].fields.length;
-      const pkCount = row.original[1].fields.filter(
-        (f) => f.primary_key,
-      ).length;
-      return (
-        <HStack gap={2}>
-          <Badge size="sm" colorPalette="blue">
-            {fieldCount} field{fieldCount !== 1 ? "s" : ""}
-          </Badge>
-          {pkCount > 0 && (
-            <Badge size="sm" colorPalette="purple">
-              {pkCount} PK
-            </Badge>
-          )}
-        </HStack>
-      );
+      const fields = row.original[1].fields;
+      const fieldCount = fields.length;
+      const pkCount = fields.filter((f) => f.primary_key).length;
+      
+      const fieldInfo = `${fieldCount} field${fieldCount !== 1 ? "s" : ""}`;
+      const pkInfo = pkCount > 0 ? `${pkCount} PK` : null;
+      
+      if (renderers?.badge) {
+        const badges = [fieldInfo];
+        if (pkInfo) badges.push(pkInfo);
+        return renderers.badge(badges);
+      }
+      
+      // Fallback to plain text
+      const parts = [fieldInfo];
+      if (pkInfo) parts.push(pkInfo);
+      return parts.join(" • ");
     },
   }),
   columnHelper.display({
@@ -58,15 +65,13 @@ export const schemaColumns = [
     header: "Types",
     cell: ({ row }) => {
       const types = [...new Set(row.original[1].fields.map((f) => f.type))];
-      return (
-        <Flex wrap="wrap" gap={1}>
-          {types.map((type) => (
-            <Badge key={type} size="sm" variant="outline">
-              {type}
-            </Badge>
-          ))}
-        </Flex>
-      );
+      
+      if (renderers?.badge) {
+        return renderers.badge(types);
+      }
+      
+      // Fallback to plain text
+      return types.join(", ");
     },
   }),
   columnHelper.display({
@@ -74,11 +79,7 @@ export const schemaColumns = [
     header: "Indexes",
     cell: ({ row }) => {
       const indexes = row.original[1].indexes || [];
-      return (
-        <Text fontSize="sm" color="gray.600">
-          {indexes.length > 0 ? indexes.join(", ") : "None"}
-        </Text>
-      );
+      return indexes.length > 0 ? indexes.join(", ") : "None";
     },
   }),
 ];

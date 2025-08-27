@@ -1,6 +1,5 @@
 import "@testing-library/jest-dom";
 import { vi, beforeEach } from "vitest";
-import type { MockedObject } from "vitest";
 
 // Mock WebSocket globally
 global.WebSocket = vi.fn(() => ({
@@ -9,7 +8,7 @@ global.WebSocket = vi.fn(() => ({
   send: vi.fn(),
   close: vi.fn(),
   readyState: 1,
-})) as MockedObject<WebSocket>;
+})) as unknown as typeof WebSocket;
 
 // Mock ResizeObserver
 global.ResizeObserver = vi.fn(() => ({
@@ -23,7 +22,7 @@ global.IntersectionObserver = vi.fn(() => ({
   observe: vi.fn(),
   unobserve: vi.fn(),
   disconnect: vi.fn(),
-}));
+})) as unknown as typeof IntersectionObserver;
 
 // Mock matchMedia
 Object.defineProperty(window, "matchMedia", {

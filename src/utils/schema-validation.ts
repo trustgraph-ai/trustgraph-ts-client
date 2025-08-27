@@ -1,4 +1,4 @@
-import { Schema, SchemaTableRow } from "../model/schemas-table";
+import { Schema, SchemaTableRow } from "../tables/schemas";
 
 export const validateSchema = (
   schema: Schema,
