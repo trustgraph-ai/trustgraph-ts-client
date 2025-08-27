@@ -24,7 +24,7 @@ import {
   LoadDocumentRequest,
   LoadDocumentResponse,
   LoadTextRequest,
-  //  LoadTextResponse,
+  LoadTextResponse,
   //  ProcessingMetadata,
   RequestMessage,
   TextCompletionRequest,
@@ -860,7 +860,7 @@ export class FlowsApi {
    * Retrieves the system prompt configuration
    */
   getSystemPrompt() {
-    return this.getConfigAll().then((r) =>
+    return this.api.config().getConfigAll().then((r: any) =>
       JSON.parse(r.config.prompt.system),
     );
   }
@@ -996,19 +996,21 @@ export class FlowApi {
     // Create a receiver function to handle streaming responses
     const receiver = (response: unknown) => {
       console.log("Agent response received:", response);
+      
+      const resp = response as any;
 
       // Check for backend errors
-      if (response.error) {
-        const errorMessage = response.error.message || "Unknown agent error";
+      if (resp.error) {
+        const errorMessage = resp.error.message || "Unknown agent error";
         error(`Agent error: ${errorMessage}`);
         return true; // End streaming on error
       }
 
       // Handle different response types
-      if (response.thought) think(response.thought);
-      if (response.observation) observe(response.observation);
-      if (response.answer) {
-        answer(response.answer);
+      if (resp.thought) think(resp.thought);
+      if (resp.observation) observe(resp.observation);
+      if (resp.answer) {
+        answer(resp.answer);
         return true; // End streaming when final answer is received
       }
 
@@ -1046,7 +1048,7 @@ export class FlowApi {
           text: text,
         },
         30000,
-        null,
+        undefined,
         this.flowId,
       )
       .then((r) => r.vectors);
@@ -1064,7 +1066,7 @@ export class FlowApi {
           limit: limit ? limit : 20, // Default to 20 results
         },
         30000,
-        null,
+        undefined,
         this.flowId,
       )
       .then((r) => r.entities);
@@ -1085,7 +1087,7 @@ export class FlowApi {
           limit: limit ? limit : 20,
         },
         30000,
-        null,
+        undefined,
         this.flowId,
       )
       .then((r) => r.response);
@@ -1209,8 +1211,9 @@ export class ConfigApi {
    */
   getPrompts() {
     return this.api
+      .config()
       .getConfigAll()
-      .then((r) => JSON.parse(r.config.prompt["template-index"]));
+      .then((r: any) => JSON.parse(r.config.prompt["template-index"]));
   }
 
   /**
@@ -1218,8 +1221,9 @@ export class ConfigApi {
    */
   getPrompt(id: string) {
     return this.api
+      .config()
       .getConfigAll()
-      .then((r) => JSON.parse(r.config.prompt[`template.${id}`]));
+      .then((r: any) => JSON.parse(r.config.prompt[`template.${id}`]));
   }
 
   /**
@@ -1227,8 +1231,9 @@ export class ConfigApi {
    */
   getSystemPrompt() {
     return this.api
+      .config()
       .getConfigAll()
-      .then((r) => JSON.parse(r.config.prompt.system));
+      .then((r: any) => JSON.parse(r.config.prompt.system));
   }
 
   /**
