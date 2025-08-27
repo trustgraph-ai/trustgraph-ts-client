@@ -641,7 +641,7 @@ export class LibrarianApi {
         },
         60000,
       )
-      .then((r) => r["processing-metadatas"]);
+      .then((r: any) => r["processing-metadata"]);
   }
 
   /**
@@ -660,10 +660,10 @@ export class LibrarianApi {
     mimeType: string,
     title: string,
     comments: string,
-    id?: string,
-    metadata?: Triple[],
     tags: string[],
     user: string,
+    id?: string,
+    metadata?: Triple[],
   ) {
     return this.api.makeRequest<LibraryRequest, LibraryResponse>(
       "librarian",
@@ -842,15 +842,16 @@ export class FlowsApi {
    */
   getPrompts() {
     return this.api
+      .config()
       .getConfigAll()
-      .then((r) => JSON.parse(r.config.prompt["template-index"]));
+      .then((r: any) => JSON.parse(r.config.prompt["template-index"]));
   }
 
   /**
    * Retrieves a specific prompt template
    */
   getPrompt(id: string) {
-    return this.getConfigAll().then((r) =>
+    return this.api.config().getConfigAll().then((r: any) =>
       JSON.parse(r.config.prompt[`template.${id}`]),
     );
   }

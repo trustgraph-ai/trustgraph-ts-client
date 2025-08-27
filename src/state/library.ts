@@ -128,10 +128,10 @@ export const useLibrary = () => {
                   mimeType,
                   params.title,
                   params.comments,
-                  doc_id,
-                  meta,
                   params.keywords,
                   user,
+                  doc_id,
+                  meta,
                 );
             })
             .then(() => {
@@ -176,10 +176,10 @@ export const useLibrary = () => {
               mimeType,
               params.title,
               params.comments,
-              doc_id,
-              meta,
               params.keywords,
               user,
+              doc_id,
+              meta,
             );
         }),
       ).then(() => {
