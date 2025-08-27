@@ -486,7 +486,7 @@ export class BaseApi {
     const msg: RequestMessage = {
       id: mid,
       service: service,
-      request: request,
+      request: request as object,
     };
 
     // Add flow identifier if provided
@@ -534,7 +534,7 @@ export class BaseApi {
     const msg: RequestMessage = {
       id: mid,
       service: service,
-      request: request,
+      request: request as object,
     };
 
     if (flow) msg.flow = flow;
@@ -588,7 +588,7 @@ export class BaseApi {
     return new FlowsApi(this);
   }
 
-  flow(id) {
+  flow(id: string) {
     return new FlowApi(this, id);
   }
 
@@ -657,11 +657,11 @@ export class LibrarianApi {
    */
   loadDocument(
     document: string, // base64-encoded doc
-    id?: string,
-    metadata?: Triple[],
     mimeType: string,
     title: string,
     comments: string,
+    id?: string,
+    metadata?: Triple[],
     tags: string[],
     user: string,
   ) {
@@ -775,7 +775,7 @@ export class FlowsApi {
         },
         60000,
       )
-      .then((r) => JSON.parse(r.flow)); // Parse JSON flow definition
+      .then((r: any) => JSON.parse(r.flow || "{}")); // Parse JSON flow definition
   }
 
   // Configuration management methods
@@ -894,7 +894,7 @@ export class FlowsApi {
         },
         60000,
       )
-      .then((r) => JSON.parse(r["class-definition"]));
+      .then((r: any) => JSON.parse(r["class-definition"] || "{}"));
   }
 
   // Flow lifecycle management

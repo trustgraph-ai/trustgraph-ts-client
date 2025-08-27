@@ -46,10 +46,10 @@ export const useLibrary = () => {
    * Executes parallel deletion requests and handles success/error states
    */
   const deleteDocumentsMutation = useMutation({
-    mutationFn: ({ ids, onSuccess }) => {
+    mutationFn: ({ ids, onSuccess }: { ids: string[]; onSuccess?: () => void }) => {
       // Execute deletion requests in parallel for all document IDs
       return Promise.all(
-        ids.map((id) => socket.librarian().removeDocument(id)),
+        ids.map((id) => socket.librarian().removeDocument(id, "trustgraph")),
       ).then(() => {
         // Execute success callback if provided
         if (onSuccess) onSuccess();
@@ -73,7 +73,7 @@ export const useLibrary = () => {
    * Creates processing entries for each document with specified flow and tags
    */
   const submitDocumentsMutation = useMutation({
-    mutationFn: ({ ids, flow, tags, onSuccess }) => {
+    mutationFn: ({ ids, flow, tags, onSuccess }: { ids: string[]; flow: string; tags: string[]; onSuccess?: () => void }) => {
       // FIXME: Needs to be properly implemented.
       // Hardcoded values that should be configurable
       const user = "trustgraph";
@@ -110,7 +110,7 @@ export const useLibrary = () => {
    * library, but does not initiate processing.
    */
   const uploadFilesMutation = useMutation({
-    mutationFn: ({ files, params, mimeType, user, onSuccess }) => {
+    mutationFn: ({ files, params, mimeType, user, onSuccess }: { files: File[]; params: any; mimeType: string; user: string; onSuccess?: () => void }) => {
       // Create processing entries for each document
       return Promise.all(
         files.map((file) => {
@@ -120,16 +120,16 @@ export const useLibrary = () => {
           const meta = prepareMetadata(doc_id, params);
 
           return fileToBase64(file)
-            .then((enc) => {
+            .then((enc: string) => {
               return socket
                 .librarian()
                 .loadDocument(
                   enc,
-                  doc_id,
-                  meta,
                   mimeType,
                   params.title,
                   params.comments,
+                  doc_id,
+                  meta,
                   params.keywords,
                   user,
                 );
@@ -158,7 +158,7 @@ export const useLibrary = () => {
    * library, but does not initiate processing.
    */
   const uploadTextsMutation = useMutation({
-    mutationFn: ({ texts, params, mimeType, user, onSuccess }) => {
+    mutationFn: ({ texts, params, mimeType, user, onSuccess }: { texts: string[]; params: any; mimeType: string; user: string; onSuccess?: () => void }) => {
       // Create processing entries for each document
       return Promise.all(
         texts.map((text) => {
@@ -173,11 +173,11 @@ export const useLibrary = () => {
             .librarian()
             .loadDocument(
               enc,
-              doc_id,
-              meta,
               mimeType,
               params.title,
               params.comments,
+              doc_id,
+              meta,
               params.keywords,
               user,
             );
