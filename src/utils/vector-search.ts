@@ -8,10 +8,10 @@ import {
 } from "./row";
 
 export const vectorSearch = (
-  socket,
-  flowId,
-  addActivity,
-  removeActivity,
+  socket: any,
+  flowId: string,
+  addActivity: (s: string) => void,
+  removeActivity: (s: string) => void,
   term: string,
 ) => {
   const api = socket.flow(flowId);
@@ -25,13 +25,13 @@ export const vectorSearch = (
     .then(addRowLabels(api, addActivity, removeActivity))
     .then(addRowDefinitions(api, addActivity, removeActivity))
     .then(addRowEmbeddings(api, addActivity, removeActivity))
-    .then(computeCosineSimilarity(addActivity, removeActivity))
-    .then(sortSimilarity(addActivity, removeActivity))
-    .then((x) => {
+    .then(computeCosineSimilarity())
+    .then(sortSimilarity())
+    .then((x: any) => {
       removeActivity(searchAct);
       return {
         view: x,
-        entities: x.map((row) => {
+        entities: x.map((row: any) => {
           return {
             uri: row.uri,
             label: row.label ? row.label : "n/a",
@@ -39,7 +39,7 @@ export const vectorSearch = (
         }),
       };
     })
-    .catch((err) => {
+    .catch((err: any) => {
       removeActivity(searchAct);
       throw err;
     });
