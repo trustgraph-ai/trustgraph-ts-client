@@ -8,7 +8,7 @@
 
 > **useMcpTools**(): `object`
 
-Defined in: [src/state/mcp-tools.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/mcp-tools.ts#L15)
+Defined in: [src/state/mcp-tools.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/mcp-tools.ts#L15)
 
 Custom hook for managing MCP tools (create, read, update, delete operations)
 Provides CRUD operations for MCP tools stored in the TrustGraph configuration

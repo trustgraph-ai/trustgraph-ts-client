@@ -6,7 +6,7 @@
 
 # Interface: Schema
 
-Defined in: [src/tables/schemas.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/schemas.ts#L13)
+Defined in: [src/tables/schemas.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/schemas.ts#L13)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/tables/schemas.ts:13](https://github.com/trustgraph-ai/trustgra
 
 > **name**: `string`
 
-Defined in: [src/tables/schemas.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/schemas.ts#L14)
+Defined in: [src/tables/schemas.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/schemas.ts#L14)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/tables/schemas.ts:14](https://github.com/trustgraph-ai/trustgra
 
 > **description**: `string`
 
-Defined in: [src/tables/schemas.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/schemas.ts#L15)
+Defined in: [src/tables/schemas.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/schemas.ts#L15)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/tables/schemas.ts:15](https://github.com/trustgraph-ai/trustgra
 
 > **fields**: [`SchemaField`](SchemaField.md)[]
 
-Defined in: [src/tables/schemas.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/schemas.ts#L16)
+Defined in: [src/tables/schemas.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/schemas.ts#L16)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [src/tables/schemas.ts:16](https://github.com/trustgraph-ai/trustgra
 
 > `optional` **indexes**: `string`[]
 
-Defined in: [src/tables/schemas.ts:17](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/schemas.ts#L17)
+Defined in: [src/tables/schemas.ts:17](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/schemas.ts#L17)

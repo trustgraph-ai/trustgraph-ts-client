@@ -8,38 +8,49 @@
 
 > **useVectorSearch**(): `object`
 
-Defined in: [src/state/vector-search.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/vector-search.ts#L15)
+Defined in: [src/state/vector-search.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/vector-search.ts#L14)
 
-Custom hook for managing token cost operations
-Provides functionality for fetching, deleting, and updating token costs
-for AI models
+Custom hook for performing vector-based semantic search
+Provides functionality for searching knowledge graph entities using embeddings
 
 ## Returns
 
-`object`
-
-Token cost state and operations
+Vector search operations
 
 ### query()
 
-> **query**: (`__namedParameters`) => `undefined` \| `Promise`\<`any`\>
+> **query**: (`params`) => `undefined` \| `Promise`\<`any`\>
+
+Execute a vector search query
+
+Execute a vector search query
 
 #### Parameters
 
-##### \_\_namedParameters
+##### params
+
+Search parameters
 
 ###### flow
 
 `string`
 
+Flow ID to use for the search
+
 ###### term
 
 `string`
+
+Search term to find similar entities for
 
 ###### limit
 
 `number`
 
+Maximum number of results to return
+
 #### Returns
 
 `undefined` \| `Promise`\<`any`\>
+
+Promise resolving to search results

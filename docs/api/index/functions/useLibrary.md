@@ -8,7 +8,7 @@
 
 > **useLibrary**(): `object`
 
-Defined in: [src/state/library.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/library.ts#L16)
+Defined in: [src/state/library.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/library.ts#L16)
 
 Custom hook for managing document library operations
 Provides functionality for fetching, deleting, and submitting documents

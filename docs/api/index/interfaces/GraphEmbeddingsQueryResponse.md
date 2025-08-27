@@ -6,7 +6,7 @@
 
 # Interface: GraphEmbeddingsQueryResponse
 
-Defined in: [src/api/trustgraph/messages.ts:177](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L177)
+Defined in: [src/api/trustgraph/messages.ts:177](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L177)
 
 ## Properties
 
@@ -14,4 +14,4 @@ Defined in: [src/api/trustgraph/messages.ts:177](https://github.com/trustgraph-a
 
 > **entities**: [`ApiValue`](ApiValue.md)[]
 
-Defined in: [src/api/trustgraph/messages.ts:178](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/messages.ts#L178)
+Defined in: [src/api/trustgraph/messages.ts:178](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/messages.ts#L178)

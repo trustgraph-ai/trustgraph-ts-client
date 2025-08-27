@@ -1,50 +1,65 @@
-// Zustand state management library for creating stores
 import { create } from "zustand";
 
 /**
  * State interface for managing document loading and upload operations
  * Handles file uploads, text input, metadata, and processing operations
+ * @public
  */
 export interface LoadState {
-  // Document metadata
-  title: string; // Document title/name
-  comments: string; // Additional comments or description
-  url: string; // Source URL (for web-based content)
-  keywords: string[]; // Keywords/tags associated with the document
+  /** Document title/name */
+  title: string;
+  /** Additional comments or description */
+  comments: string;
+  /** Source URL (for web-based content) */
+  url: string;
+  /** Keywords/tags associated with the document */
+  keywords: string[];
 
-  // Processing configuration
-  operation: string; // Type of operation (e.g., "upload-pdf", "upload-text")
+  /** Type of operation (e.g., "upload-pdf", "upload-text") */
+  operation: string;
 
-  // File management
-  files: File[]; // Files selected for upload
-  uploaded: string[]; // List of successfully uploaded file names
-  text: string; // Direct text input content
+  /** Files selected for upload */
+  files: File[];
+  /** List of successfully uploaded file names */
+  uploaded: string[];
+  /** Direct text input content */
+  text: string;
 
-  // State update functions for document metadata
+  /** Update document title */
   setTitle: (v: string) => void;
+  /** Update document comments */
   setComments: (v: string) => void;
+  /** Update document URL */
   setUrl: (v: string) => void;
+  /** Update document keywords */
   setKeywords: (v: string[]) => void;
 
-  // State update functions for processing
+  /** Update processing operation type */
   setOperation: (v: string) => void;
 
-  // State update functions for file management
+  /** Update selected files */
   setFiles: (v: File[]) => void;
+  /** Update uploaded files list */
   setUploaded: (v: string[]) => void;
+  /** Update text content */
   setText: (v: string) => void;
-  addUploaded: (v: string) => void; // Add a single uploaded file to the list
-  removeFile: (v: File) => void; // Remove a file from the selection
+  /** Add a single uploaded file to the list */
+  addUploaded: (v: string) => void;
+  /** Remove a file from the selection */
+  removeFile: (v: File) => void;
 
-  // Text upload tracking
-  textUploads: number; // Counter for text-based uploads
+  /** Counter for text-based uploads */
+  textUploads: number;
+  /** Update text upload counter */
   setTextUploads: (v: number) => void;
-  incTextUploads: () => void; // Increment the text upload counter
+  /** Increment the text upload counter */
+  incTextUploads: () => void;
 }
 
 /**
  * Zustand store for managing document loading state
  * Provides centralized state management for the document upload/loading workflow
+ * @public
  */
 export const useLoadStateStore = create<LoadState>()((set) => ({
   // Initial state values

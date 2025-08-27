@@ -1,11 +1,6 @@
-// React Query hooks for data fetching and mutation management
 import { useQueryClient, useQuery, useMutation } from "@tanstack/react-query";
-
-// Notification system for user feedback
 import { useNotification } from "./notify";
-// Activity tracking for loading states
 import { useActivity } from "./activity";
-// Settings types and defaults
 import {
   Settings,
   DEFAULT_SETTINGS,
@@ -15,6 +10,9 @@ import {
 /**
  * Utility function to merge imported settings with defaults
  * Ensures all required properties exist and handles partial imports
+ * @param settings - Partial settings to merge with defaults
+ * @returns Complete settings object with all required properties
+ * @internal
  */
 const mergeWithDefaults = (settings: Partial<Settings>): Settings => {
   return {
@@ -35,6 +33,8 @@ const mergeWithDefaults = (settings: Partial<Settings>): Settings => {
 
 /**
  * Utility function to update localStorage as a cache/fallback
+ * @param settings - Settings object to store
+ * @internal
  */
 const updateLocalStorage = (settings: Settings) => {
   try {
@@ -46,6 +46,8 @@ const updateLocalStorage = (settings: Settings) => {
 
 /**
  * Utility function to load from localStorage as fallback
+ * @returns Settings object from localStorage or defaults
+ * @internal
  */
 const loadFromLocalStorage = (): Settings => {
   try {
@@ -64,6 +66,8 @@ const loadFromLocalStorage = (): Settings => {
  * Custom hook for managing application settings
  * Uses TanStack Query for consistent async patterns while storing in localStorage
  * Ready for future backend integration when needed
+ * @returns Settings state and management functions
+ * @public
  */
 export const useSettings = () => {
   // Query client for cache management

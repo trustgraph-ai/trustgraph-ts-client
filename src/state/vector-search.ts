@@ -6,14 +6,13 @@ import { vectorSearch } from "../utils/vector-search";
 import { useProgressStateStore } from "./progress";
 
 /**
- * Custom hook for managing token cost operations
- * Provides functionality for fetching, deleting, and updating token costs
- * for AI models
- * @returns {Object} Token cost state and operations
+ * Custom hook for performing vector-based semantic search
+ * Provides functionality for searching knowledge graph entities using embeddings
+ * @returns Vector search operations
+ * @public
  */
-
 export const useVectorSearch = () => {
-  // WebSocket connection for communicating with the configuration service
+  // WebSocket connection for communicating with the graph service
   const socket = useSocket();
 
   const addActivity = useProgressStateStore((state) => state.addActivity);
@@ -27,6 +26,14 @@ export const useVectorSearch = () => {
 
   const queryClient = useQueryClient();
 
+  /**
+   * Execute a vector search query
+   * @param params - Search parameters
+   * @param params.flow - Flow ID to use for the search
+   * @param params.term - Search term to find similar entities for
+   * @param params.limit - Maximum number of results to return
+   * @returns Promise resolving to search results
+   */
   const query = ({ flow, term, limit }: { flow: string; term: string; limit: number }) => {
     if (!term) return;
 
@@ -34,7 +41,7 @@ export const useVectorSearch = () => {
     if (!limit) limit = 10;
 
     /**
-     * Query for fetching graph embeddings
+     * Fetch embeddings and perform vector search
      * Uses React Query for caching and background refetching
      */
 
@@ -61,7 +68,7 @@ export const useVectorSearch = () => {
 
   // Return vector search functionality
   return {
-    // Vector search query function
+    /** Execute a vector search query */
     query: query,
   };
 };

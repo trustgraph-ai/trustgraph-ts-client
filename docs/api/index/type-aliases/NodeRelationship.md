@@ -8,7 +8,7 @@
 
 > **NodeRelationship** = `object`
 
-Defined in: [src/tables/node-relationships.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/node-relationships.ts#L8)
+Defined in: [src/tables/node-relationships.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/node-relationships.ts#L8)
 
 Node relationship data structure for the relationships table
 Represents a single relationship with direction and label
@@ -19,7 +19,7 @@ Represents a single relationship with direction and label
 
 > **relationship**: `string`
 
-Defined in: [src/tables/node-relationships.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/node-relationships.ts#L9)
+Defined in: [src/tables/node-relationships.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/node-relationships.ts#L9)
 
 ***
 
@@ -27,7 +27,7 @@ Defined in: [src/tables/node-relationships.ts:9](https://github.com/trustgraph-a
 
 > **direction**: `"incoming"` \| `"outgoing"`
 
-Defined in: [src/tables/node-relationships.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/node-relationships.ts#L10)
+Defined in: [src/tables/node-relationships.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/node-relationships.ts#L10)
 
 ***
 
@@ -35,7 +35,7 @@ Defined in: [src/tables/node-relationships.ts:10](https://github.com/trustgraph-
 
 > `optional` **uri**: `string`
 
-Defined in: [src/tables/node-relationships.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/node-relationships.ts#L11)
+Defined in: [src/tables/node-relationships.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/node-relationships.ts#L11)
 
 ***
 
@@ -43,7 +43,7 @@ Defined in: [src/tables/node-relationships.ts:11](https://github.com/trustgraph-
 
 > `optional` **onRelationshipClick**: (`uri`) => `void`
 
-Defined in: [src/tables/node-relationships.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/tables/node-relationships.ts#L12)
+Defined in: [src/tables/node-relationships.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/tables/node-relationships.ts#L12)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Interface: ConnectionState
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:150](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L150)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:150](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L150)
 
 Connection state interface for UI consumption
 
@@ -16,7 +16,7 @@ Connection state interface for UI consumption
 
 > **status**: `"connecting"` \| `"connected"` \| `"reconnecting"` \| `"failed"` \| `"authenticated"` \| `"unauthenticated"`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:152](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L152)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:152](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L152)
 
 Current connection status
 
@@ -26,7 +26,7 @@ Current connection status
 
 > **hasApiKey**: `boolean`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:160](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L160)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:160](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L160)
 
 Whether an API key is configured
 
@@ -36,7 +36,7 @@ Whether an API key is configured
 
 > `optional` **reconnectAttempt**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:162](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L162)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:162](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L162)
 
 Current reconnection attempt number
 
@@ -46,7 +46,7 @@ Current reconnection attempt number
 
 > `optional` **maxAttempts**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:164](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L164)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:164](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L164)
 
 Maximum allowed attempts
 
@@ -56,7 +56,7 @@ Maximum allowed attempts
 
 > `optional` **nextRetryIn**: `number`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:166](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L166)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:166](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L166)
 
 Seconds until next retry
 
@@ -66,6 +66,6 @@ Seconds until next retry
 
 > `optional` **lastError**: `string`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:168](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L168)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:168](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L168)
 
 Last error message

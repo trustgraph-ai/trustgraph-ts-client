@@ -8,7 +8,7 @@
 
 > `const` **TrustGraphProvider**: `React.FC`\<[`TrustGraphProviderProps`](../interfaces/TrustGraphProviderProps.md)\>
 
-Defined in: [src/providers/TrustGraphProvider.tsx:61](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/providers/TrustGraphProvider.tsx#L61)
+Defined in: [src/providers/TrustGraphProvider.tsx:61](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/providers/TrustGraphProvider.tsx#L61)
 
 Main provider component that sets up all necessary context for TrustGraph client
 

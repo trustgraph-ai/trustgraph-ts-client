@@ -8,7 +8,7 @@
 
 > **useActivity**(`isActive`, `description`): `void`
 
-Defined in: [src/state/activity.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/activity.ts#L20)
+Defined in: [src/state/activity.ts:20](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/activity.ts#L20)
 
 Custom hook for managing activity notifications in the UI
 Automatically adds/removes activity indicators based on a boolean condition

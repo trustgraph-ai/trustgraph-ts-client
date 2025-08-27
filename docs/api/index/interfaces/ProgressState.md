@@ -6,7 +6,9 @@
 
 # Interface: ProgressState
 
-Defined in: [src/state/progress.ts:4](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L4)
+Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L7)
+
+Progress state interface for tracking activities and errors
 
 ## Properties
 
@@ -14,7 +16,9 @@ Defined in: [src/state/progress.ts:4](https://github.com/trustgraph-ai/trustgrap
 
 > **activity**: `Set`\<`string`\>
 
-Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L7)
+Defined in: [src/state/progress.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L9)
+
+Set of active activity identifiers - using Set for O(1) lookups and automatic deduplication
 
 ***
 
@@ -22,7 +26,9 @@ Defined in: [src/state/progress.ts:7](https://github.com/trustgraph-ai/trustgrap
 
 > **error**: `string`
 
-Defined in: [src/state/progress.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L10)
+Defined in: [src/state/progress.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L12)
+
+Current error message, empty string when no error
 
 ***
 
@@ -30,7 +36,9 @@ Defined in: [src/state/progress.ts:10](https://github.com/trustgraph-ai/trustgra
 
 > **addActivity**: (`act`) => `void`
 
-Defined in: [src/state/progress.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L13)
+Defined in: [src/state/progress.ts:15](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L15)
+
+Add a new activity to the tracking set
 
 #### Parameters
 
@@ -48,7 +56,9 @@ Defined in: [src/state/progress.ts:13](https://github.com/trustgraph-ai/trustgra
 
 > **removeActivity**: (`act`) => `void`
 
-Defined in: [src/state/progress.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L16)
+Defined in: [src/state/progress.ts:18](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L18)
+
+Remove an activity from the tracking set
 
 #### Parameters
 
@@ -66,7 +76,9 @@ Defined in: [src/state/progress.ts:16](https://github.com/trustgraph-ai/trustgra
 
 > **setError**: (`error`) => `void`
 
-Defined in: [src/state/progress.ts:19](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/progress.ts#L19)
+Defined in: [src/state/progress.ts:21](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/progress.ts#L21)
+
+Set/update the current error message
 
 #### Parameters
 

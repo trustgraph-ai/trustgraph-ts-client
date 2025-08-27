@@ -6,51 +6,64 @@
 
 # Function: useEmbeddings()
 
-> **useEmbeddings**(`__namedParameters`): `object`
+> **useEmbeddings**(`params`): `object`
 
-Defined in: [src/state/embeddings.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/embeddings.ts#L13)
+Defined in: [src/state/embeddings.ts:16](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/embeddings.ts#L16)
 
-Custom hook for managing token cost operations
-Provides functionality for fetching, deleting, and updating token costs
-for AI models
+Custom hook for generating embeddings from text using AI models
+Provides functionality for computing vector embeddings for semantic search
 
 ## Parameters
 
-### \_\_namedParameters
+### params
+
+Configuration object
 
 #### flow?
 
 `string`
 
+Optional flow ID to use (defaults to "default")
+
 #### term
 
 `string`
 
+Text content to generate embeddings for
+
 ## Returns
 
-`object`
-
-Token cost state and operations
+Embeddings state and operations
 
 ### embeddings
 
 > **embeddings**: `any` = `query.data`
 
+Generated embeddings vector data
+
 ### isLoading
 
 > **isLoading**: `boolean` = `query.isLoading`
+
+Whether embeddings are being generated
 
 ### isError
 
 > **isError**: `boolean` = `query.isError`
 
+Whether an error occurred
+
 ### error
 
 > **error**: `null` \| `Error` = `query.error`
 
+Error details if generation failed
+
 ### refetch()
 
 > **refetch**: (`options?`) => `Promise`\<`QueryObserverResult`\<`any`, `Error`\>\> = `query.refetch`
+
+Manual refetch function
 
 #### Parameters
 

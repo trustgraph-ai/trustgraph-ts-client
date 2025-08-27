@@ -5,10 +5,13 @@ import { useNotification } from "./notify";
 import { useActivity } from "./activity";
 
 /**
- * Custom hook for managing token cost operations
- * Provides functionality for fetching, deleting, and updating token costs
- * for AI models
- * @returns {Object} Token cost state and operations
+ * Custom hook for generating embeddings from text using AI models
+ * Provides functionality for computing vector embeddings for semantic search
+ * @param params - Configuration object
+ * @param params.flow - Optional flow ID to use (defaults to "default")
+ * @param params.term - Text content to generate embeddings for
+ * @returns Embeddings state and operations
+ * @public
  */
 export const useEmbeddings = ({ flow, term }: { flow?: string; term: string }) => {
   // WebSocket connection for communicating with the configuration service
@@ -26,7 +29,7 @@ export const useEmbeddings = ({ flow, term }: { flow?: string; term: string }) =
   if (!flow) flow = "default";
 
   /**
-   * Query for fetching all token costs
+   * Query for generating text embeddings
    * Uses React Query for caching and background refetching
    */
   const query = useQuery({
@@ -53,15 +56,18 @@ export const useEmbeddings = ({ flow, term }: { flow?: string; term: string }) =
   // Show loading indicators for long-running operations
   useActivity(query.isLoading, "Compute embeddings");
 
-  // Return token cost state and operations for use in components
+  // Return embeddings state and operations for use in components
   return {
-    // Token cost query state
+    /** Generated embeddings vector data */
     embeddings: query.data,
+    /** Whether embeddings are being generated */
     isLoading: query.isLoading,
+    /** Whether an error occurred */
     isError: query.isError,
+    /** Error details if generation failed */
     error: query.error,
 
-    // Manual refetch function
+    /** Manual refetch function */
     refetch: query.refetch,
   };
 };

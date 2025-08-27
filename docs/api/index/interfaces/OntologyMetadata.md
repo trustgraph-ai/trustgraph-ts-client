@@ -6,7 +6,7 @@
 
 # Interface: OntologyMetadata
 
-Defined in: [src/state/ontologies.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L7)
+Defined in: [src/state/ontologies.ts:7](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L7)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [src/state/ontologies.ts:7](https://github.com/trustgraph-ai/trustgr
 
 > **name**: `string`
 
-Defined in: [src/state/ontologies.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L8)
+Defined in: [src/state/ontologies.ts:8](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L8)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [src/state/ontologies.ts:8](https://github.com/trustgraph-ai/trustgr
 
 > **description**: `string`
 
-Defined in: [src/state/ontologies.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L9)
+Defined in: [src/state/ontologies.ts:9](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L9)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/state/ontologies.ts:9](https://github.com/trustgraph-ai/trustgr
 
 > **version**: `string`
 
-Defined in: [src/state/ontologies.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L10)
+Defined in: [src/state/ontologies.ts:10](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L10)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [src/state/ontologies.ts:10](https://github.com/trustgraph-ai/trustg
 
 > **created**: `string`
 
-Defined in: [src/state/ontologies.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L11)
+Defined in: [src/state/ontologies.ts:11](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L11)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [src/state/ontologies.ts:11](https://github.com/trustgraph-ai/trustg
 
 > **modified**: `string`
 
-Defined in: [src/state/ontologies.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L12)
+Defined in: [src/state/ontologies.ts:12](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L12)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [src/state/ontologies.ts:12](https://github.com/trustgraph-ai/trustg
 
 > **creator**: `string`
 
-Defined in: [src/state/ontologies.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L13)
+Defined in: [src/state/ontologies.ts:13](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L13)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [src/state/ontologies.ts:13](https://github.com/trustgraph-ai/trustg
 
 > **namespace**: `string`
 
-Defined in: [src/state/ontologies.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/state/ontologies.ts#L14)
+Defined in: [src/state/ontologies.ts:14](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/state/ontologies.ts#L14)

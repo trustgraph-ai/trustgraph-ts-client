@@ -6,7 +6,7 @@
 
 # Class: LibrarianApi
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:633](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L633)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:633](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L633)
 
 LibrarianApi - Manages document storage and retrieval
 Handles document lifecycle including upload, processing, and removal
@@ -17,7 +17,7 @@ Handles document lifecycle including upload, processing, and removal
 
 > **new LibrarianApi**(`api`): `LibrarianApi`
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:636](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L636)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:636](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L636)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/api/trustgraph/trustgraph-socket.ts:636](https://github.com/tru
 
 > **getDocuments**(): `Promise`\<`undefined` \| [`DocumentMetadata`](../../../../index/interfaces/DocumentMetadata.md)[]\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:643](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L643)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:643](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L643)
 
 Retrieves list of all documents in the system
 
@@ -49,7 +49,7 @@ Retrieves list of all documents in the system
 
 > **getProcessing**(): `Promise`\<`any`\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:659](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L659)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:659](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L659)
 
 Retrieves list of documents currently being processed
 
@@ -63,7 +63,7 @@ Retrieves list of documents currently being processed
 
 > **loadDocument**(`document`, `mimeType`, `title`, `comments`, `tags`, `user`, `id?`, `metadata?`): `Promise`\<[`LibraryResponse`](../../../../index/interfaces/LibraryResponse.md)\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:683](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L683)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:683](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L683)
 
 Uploads a document to the library with full metadata
 
@@ -127,7 +127,7 @@ Optional metadata as triples
 
 > **removeDocument**(`id`, `user`): `Promise`\<[`LibraryResponse`](../../../../index/interfaces/LibraryResponse.md)\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:716](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L716)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:716](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L716)
 
 Removes a document from the library
 
@@ -151,7 +151,7 @@ Removes a document from the library
 
 > **addProcessing**(`id`, `doc_id`, `flow`, `user?`, `collection?`, `tags?`): `Promise`\<[`LibraryResponse`](../../../../index/interfaces/LibraryResponse.md)\>
 
-Defined in: [src/api/trustgraph/trustgraph-socket.ts:737](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/24d0d0886a310c1fecf9e6fc95cd3a24cf32c92e/src/api/trustgraph/trustgraph-socket.ts#L737)
+Defined in: [src/api/trustgraph/trustgraph-socket.ts:737](https://github.com/trustgraph-ai/trustgraph-ts-client/blob/9a2bad46722f27bb783391eed1d9289614cc905a/src/api/trustgraph/trustgraph-socket.ts#L737)
 
 Adds a document to the processing queue
 
