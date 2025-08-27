@@ -37,21 +37,40 @@ const sessionStore = useSessionStore()
 
 ### UI-Agnostic Tables
 ```typescript
-import { tokenCostColumns, promptColumns, type TableRenderers } from '@trustgraph/client/tables'
+import { 
+  tokenCostColumns, 
+  promptColumns, 
+  documentColumns,
+  schemaColumns,
+  type TableRenderers 
+} from '@trustgraph/client/tables'
 
-// Option 1: Use without renderers (plain text)
-const columns = tokenCostColumns
+// Option 1: Simple tables (no renderers needed)
+const tokenColumns = tokenCostColumns
 
-// Option 2: Use with custom renderers for your UI framework
+// Option 2: Tables with custom renderers for your UI framework
 const renderers: TableRenderers = {
   code: (value) => <YourCodeComponent>{value}</YourCodeComponent>,
-  tag: (value) => <YourTagComponent>{value}</YourTagComponent>
+  badge: (items) => items.map(item => <YourBadge key={item}>{item}</YourBadge>),
+  checkbox: (checked, onChange, indeterminate) => (
+    <YourCheckbox 
+      checked={checked} 
+      onChange={onChange} 
+      indeterminate={indeterminate === 'indeterminate'} 
+    />
+  ),
+  button: (label, onClick, variant) => (
+    <YourButton variant={variant} onClick={onClick}>{label}</YourButton>
+  )
 }
 
-const columnsWithRenderers = promptColumns(renderers)
+// Complex tables with full renderer support
+const docColumns = documentColumns(renderers) // Selection, tags, timestamps
+const codeColumns = promptColumns(renderers)  // Code syntax highlighting
+const dataColumns = schemaColumns(renderers)  // Field badges, type indicators
 
-// Use with any table component (TanStack Table, MUI DataGrid, etc.)
-<YourTableComponent columns={columns} data={data} />
+// Use with any table component (TanStack Table, MUI DataGrid, AG-Grid, etc.)
+<YourTableComponent columns={docColumns} data={documents} />
 ```
 
 ## Development Status
@@ -62,12 +81,12 @@ const columnsWithRenderers = promptColumns(renderers)
 - Basic TypeScript configuration
 - CommonJS and ES modules support
 - Core API structure
-- UI-agnostic table definitions (7/13 tables migrated)
-  - ✅ tokenCostColumns, ontologyColumns, mcpToolColumns, agentToolColumns
-  - ✅ promptColumns (with renderer support), flowClassColumns, nodePropertyColumns
+- ✅ **UI-agnostic table definitions (13/13 tables migrated)**
+  - **Simple tables**: tokenCostColumns, ontologyColumns, mcpToolColumns, agentToolColumns, nodePropertyColumns
+  - **Renderer tables**: promptColumns, flowClassColumns (support custom code/text renderers)
+  - **Complex tables**: processingColumns, schemaColumns, nodeRelationshipColumns, documentColumns, flowColumns, knowledgeCoreColumns (support badges, checkboxes, buttons)
 
 🚧 **In Progress:**
-- UI-agnostic table definitions
 - Event-based notification system
 - Complete TypeScript declarations
 
