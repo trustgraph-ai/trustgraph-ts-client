@@ -169,7 +169,7 @@ export class SKOSSerializer {
     const concepts = Object.values(ontology.concepts);
     const scheme = ontology.scheme;
 
-    const ttl = [];
+    const ttl: string[] = [];
 
     // Prefixes
     ttl.push("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .");
@@ -510,7 +510,7 @@ export class SKOSParser {
   /**
    * Parse SKOS Turtle and convert to internal ontology format
    */
-  async parseTurtle(): Promise<Ontology> {
+  async parseTurtle(content: string, ontologyId: string): Promise<Ontology> {
     // For a complete implementation, we'd use a proper Turtle parser
     // This is a placeholder for the Turtle parsing functionality
     throw new Error(

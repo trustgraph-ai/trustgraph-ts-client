@@ -286,7 +286,7 @@ export const filterInternals = (triples: Triple[]) =>
 // Generic triple fetcher, fetches triples related to a URI, adds labels
 // and provides over-arching uri/label props for the input URI
 export const getTriples = (
-  socket: Socket,
+  socket: any,
   flowId: string,
   uri: string,
   add: (s: string) => void,
@@ -302,7 +302,7 @@ export const getTriples = (
     .then((d) => labelS(api, d, add, remove))
     .then((d) => labelP(api, d, add, remove))
     .then((d) => labelO(api, d, add, remove))
-    .then((d) => filterInternals(d))
+    .then((d: any) => filterInternals(d as Triple[]))
     .then((d) => {
       return queryLabel(api, uri, add, remove).then((label: string) => {
         return {

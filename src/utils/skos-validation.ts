@@ -55,6 +55,7 @@ export class SKOSValidator {
     ontology: Ontology,
     errors: ValidationError[],
     warnings: ValidationError[],
+    info: ValidationError[],
   ) {
     const { scheme, metadata } = ontology;
 
@@ -185,6 +186,7 @@ export class SKOSValidator {
     ontology: Ontology,
     errors: ValidationError[],
     warnings: ValidationError[],
+    info: ValidationError[],
   ) {
     const concepts = ontology.concepts;
 

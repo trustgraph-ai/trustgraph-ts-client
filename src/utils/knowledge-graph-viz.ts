@@ -116,7 +116,7 @@ export const updateSubgraph = (
     .then((d) => labelS(api, d, add, remove))
     .then((d) => labelP(api, d, add, remove))
     .then((d) => labelO(api, d, add, remove))
-    .then((d) => filterInternals(d))
+    .then((d: any) => filterInternals(d as Triple[]))
     .then((d) => updateSubgraphTriples(sg, d));
 };
 
@@ -159,6 +159,6 @@ export const updateSubgraphByRelationship = (
     .then((d: any) => labelS(api, d, add, remove))
     .then((d: any) => labelP(api, d, add, remove))
     .then((d: any) => labelO(api, d, add, remove))
-    .then((d: any) => filterInternals(d))
+    .then((d: any) => filterInternals(d as Triple[]))
     .then((d: any) => updateSubgraphTriples(sg, d));
 };
