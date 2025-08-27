@@ -39,14 +39,14 @@ export const useMcpTools = () => {
         .then((values) => {
           // Parse tool configurations and pair them with their IDs
           // MCP tools have simplified structure: { name: string, url: string }
-          return values.map((item) => [item.key, JSON.parse(item.value)]);
+          return values.map((item: any) => [item.key, JSON.parse(item.value)]);
         });
     },
   });
 
   // Mutation for updating an existing tool's configuration
   const updateToolMutation = useMutation({
-    mutationFn: ({ id, tool, onSuccess }) => {
+    mutationFn: ({ id, tool, onSuccess }: { id: string; tool: any; onSuccess?: () => void }) => {
       // Update the tool configuration in the backend
       return socket
         .config()
@@ -57,8 +57,8 @@ export const useMcpTools = () => {
             value: JSON.stringify(tool),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -80,7 +80,7 @@ export const useMcpTools = () => {
   // Mutation for creating a new tool
   // Creates the tool configuration directly
   const createToolMutation = useMutation({
-    mutationFn: ({ id, tool, onSuccess }) => {
+    mutationFn: ({ id, tool, onSuccess }: { id: string; tool: any; onSuccess?: () => void }) => {
       // Create the new tool configuration
       return socket
         .config()
@@ -91,8 +91,8 @@ export const useMcpTools = () => {
             value: JSON.stringify(tool),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -124,8 +124,8 @@ export const useMcpTools = () => {
             key: id,
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }

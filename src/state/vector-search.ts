@@ -27,7 +27,7 @@ export const useVectorSearch = () => {
 
   const queryClient = useQueryClient();
 
-  const query = ({ flow, term, limit }) => {
+  const query = ({ flow, term, limit }: { flow: string; term: string; limit: number }) => {
     if (!term) return;
 
     if (!flow) flow = "default";
@@ -42,14 +42,14 @@ export const useVectorSearch = () => {
       queryKey: ["search", { flow, term, limit }],
       queryFn: () => {
         return vectorSearch(socket, flow, addActivity, removeActivity, term)
-          .then((x) => {
-            if (x["error"]) {
+          .then((x: any) => {
+            if (x && x["error"]) {
               console.log("Error:", x);
               throw x.error.message;
             }
             return x;
           })
-          .catch((err) => {
+          .catch((err: any) => {
             console.log("Error:", err);
             notify.error(err);
           });
@@ -59,15 +59,9 @@ export const useVectorSearch = () => {
 
   // Not show loading indicators, it's handled above
 
-  // Return token cost state and operations for use in components
+  // Return vector search functionality
   return {
-    // Token cost query state
+    // Vector search query function
     query: query,
-    isLoading: query.isLoading,
-    isError: query.isError,
-    error: query.error,
-
-    // Manual refetch function
-    refetch: query.refetch,
   };
 };

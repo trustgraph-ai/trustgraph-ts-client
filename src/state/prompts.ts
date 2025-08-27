@@ -157,7 +157,7 @@ export const usePrompts = () => {
       return socket
         .config()
         .getConfig([{ type: "prompt", key: "template-index" }])
-        .then((res) => JSON.parse(res.values[0].value))
+        .then((res: any) => JSON.parse(res.values[0].value))
         .then((existingIds) => {
           // Step 2: Add new template ID to the index
           const newIds = [...existingIds, id];
@@ -176,8 +176,8 @@ export const usePrompts = () => {
                 value: JSON.stringify(prompt),
               },
             ])
-            .then((x) => {
-              if (x["error"]) {
+            .then((x: any) => {
+              if (x && x["error"]) {
                 console.log("Error:", x);
                 throw x.error.message;
               }
@@ -228,8 +228,8 @@ export const usePrompts = () => {
                 key: "template." + id,
               });
             })
-            .then((x) => {
-              if (x["error"]) {
+            .then((x: any) => {
+              if (x && x["error"]) {
                 console.log("Error:", x);
                 throw x.error.message;
               }

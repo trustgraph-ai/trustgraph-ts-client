@@ -37,8 +37,8 @@ export const useTokenCosts = () => {
       return socket
         .config()
         .getTokenCosts()
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -52,18 +52,16 @@ export const useTokenCosts = () => {
    * Removes the token cost configuration for a given model
    */
   const deleteTokenCostsMutation = useMutation({
-    mutationFn: ({ model, onSuccess }) => {
+    mutationFn: ({ model, onSuccess }: { model: string; onSuccess?: () => void }) => {
       // Delete the token cost configuration for the specified model
       return socket
         .config()
-        .deleteConfig([
-          {
-            type: "token-costs",
-            key: model,
-          },
-        ])
-        .then((x) => {
-          if (x["error"]) {
+        .deleteConfig({
+          type: "token-costs",
+          key: model,
+        })
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -90,7 +88,12 @@ export const useTokenCosts = () => {
    * configuration
    */
   const updateTokenCostMutation = useMutation({
-    mutationFn: ({ model, input_price, output_price, onSuccess }) => {
+    mutationFn: ({ model, input_price, output_price, onSuccess }: { 
+      model: string; 
+      input_price: number; 
+      output_price: number; 
+      onSuccess?: () => void 
+    }) => {
       // Convert per-million token prices to per-token prices
       const tokenCost = {
         input_price: input_price / 1000000,
@@ -107,8 +110,8 @@ export const useTokenCosts = () => {
             value: JSON.stringify(tokenCost),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }

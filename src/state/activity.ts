@@ -17,7 +17,7 @@ import { useProgressStateStore } from "./progress";
  * // Show "Saving data" while mutation is pending
  * useActivity(saveMutation.isPending, "Saving data");
  */
-export const useActivity = (isActive, description) => {
+export const useActivity = (isActive: boolean, description: string) => {
   // Get activity management functions from the progress state store
   const addActivity = useProgressStateStore((state) => state.addActivity);
   const removeActivity = useProgressStateStore(
@@ -37,6 +37,8 @@ export const useActivity = (isActive, description) => {
       // - component unmounts
       return () => removeActivity(description);
     }
+    // When isActive is false, no cleanup needed
+    return undefined;
     // Re-run effect when any dependency changes
   }, [isActive, description, addActivity, removeActivity]);
 };

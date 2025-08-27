@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Row } from "./row";
+import { Row } from "../utils/row";
 
 // Interface defining the shape of the search state store
 export interface SearchState {

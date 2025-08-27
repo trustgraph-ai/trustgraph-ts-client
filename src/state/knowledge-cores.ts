@@ -81,7 +81,7 @@ export const useKnowledgeCores = () => {
     mutationFn: ({ ids, flow, onSuccess }: { ids: string[]; flow: string; onSuccess?: () => void }) => {
       // Execute load requests in parallel for all knowledge cores
       return Promise.all(
-        ids.map((id) => socket.knowledge().loadKgCore(id, flow)),
+        ids.map((id: string) => socket.knowledge().loadKgCore(id, flow)),
       ).then(() => {
         // Execute success callback if provided
         if (onSuccess) onSuccess();

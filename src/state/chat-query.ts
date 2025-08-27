@@ -10,7 +10,7 @@ import { useSessionStore } from "./session";
 import { useSettings } from "./settings";
 import { RDFS_LABEL } from "../utils/knowledge-graph";
 import { Entity } from "./entity";
-import { Triple, Value } from "./triples";
+import { Triple, Value } from "../api/trustgraph/Triple";
 
 /**
  * Custom hook for managing chat operations using React Query
