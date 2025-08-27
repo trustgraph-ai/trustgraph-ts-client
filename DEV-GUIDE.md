@@ -26,24 +26,25 @@ This is a **UI-agnostic TypeScript client library** for TrustGraph, designed to 
 src/
 ├── api/                    # WebSocket communication and API layer
 │   └── trustgraph/         # TrustGraph-specific API implementations
-│       ├── Socket.ts           # Main WebSocket interface
+│       ├── socket.ts           # Main WebSocket interface
 │       ├── SocketProvider.tsx  # React context provider
 │       ├── messages.ts         # Message type definitions
 │       └── ...
-├── state/                  # Application state management
-│   ├── chat.ts                # Chat message state (Zustand)
+├── state/                  # Application state management & hooks
+│   ├── chat.ts                # Chat message state (Zustand) + hooks
 │   ├── progress.ts            # Loading/activity tracking
 │   ├── session.ts             # Session and flow management
-│   ├── settings.ts            # User settings management
+│   ├── settings.ts            # User settings management + hooks
 │   ├── workbench.ts           # UI navigation state
+│   ├── flows.ts               # Workflow management hooks
+│   ├── library.ts             # Document library hooks
+│   ├── triples.ts             # Knowledge graph hooks
 │   └── ...                    # Domain-specific state files
-├── hooks/                  # React hooks for data fetching
-│   ├── useFlows.ts            # Workflow management hooks
-│   ├── useLibrary.ts          # Document library hooks
-│   ├── useTriples.ts          # Knowledge graph hooks
-│   └── ...
-└── types/                  # Shared TypeScript types
-    └── index.ts               # Type exports
+├── model/                  # Data models and table definitions
+├── providers/              # React context providers
+├── tables/                 # Table component configurations
+├── types/                  # Shared TypeScript types
+└── utils/                  # Pure utility functions
 ```
 
 ### Architecture Principles
@@ -57,15 +58,9 @@ src/
 
 **State Layer (`src/state/`)**
 - Zustand stores for UI state
-- TanStack Query for server state
+- TanStack Query hooks for server data
 - Type-safe state interfaces
 - **No UI framework dependencies**
-
-**Hooks Layer (`src/hooks/`)**
-- React hooks that combine API + State
-- Data fetching and caching patterns
-- Automatic loading state management
-- **UI-agnostic data access**
 
 ## State Management Architecture
 
@@ -412,7 +407,7 @@ export {
   useTriples, 
   useEntityDetail, 
   useGraphSubgraph 
-} from './hooks'
+} from './state'
 ```
 
 ## Migration and Integration
