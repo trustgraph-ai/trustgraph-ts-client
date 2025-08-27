@@ -183,4 +183,4 @@ See `docs/tech-spec/architecture.md` for detailed architectural documentation.
 
 ## License
 
-MIT
+Apache 2.0
