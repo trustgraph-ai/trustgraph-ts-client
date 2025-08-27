@@ -106,6 +106,12 @@ trustgraph-client/
 │   │   ├── schemas.ts        # Schema management
 │   │   ├── chat.ts           # Chat state and operations
 │   │   └── index.ts          # State exports
+│   ├── tables/               # UI-agnostic table definitions
+│   │   ├── document.ts       # Document table schema
+│   │   ├── flows.ts          # Flow table schema
+│   │   ├── schemas.ts        # Schema table schema
+│   │   ├── renderers.ts      # Renderer interface
+│   │   └── index.ts          # Table exports
 │   ├── providers/            # React context providers
 │   │   └── TrustGraphProvider.tsx
 │   ├── types/                # TypeScript definitions
@@ -212,6 +218,7 @@ trustgraph-client/
      "exports": {
        ".": "./dist/index.js",
        "./state": "./dist/state/index.js",
+       "./tables": "./dist/tables/index.js",
        "./types": "./dist/types/index.js",
        "./providers": "./dist/providers/index.js"
      }
@@ -317,19 +324,20 @@ trustgraph-client/
 ## Timeline Estimate (Revised for Minimal Rework)
 
 - **Phase 1**: 3-5 days - Surgical removal of UI dependencies only
-- **Phase 2**: 2-3 days - Package configuration and exports
+- **Phase 2**: 3-5 days - Table transformation to UI-agnostic format
 - **Phase 3**: 1-2 days - Notification system refactor
-- **Phase 4**: 2-3 days - Build configuration and packaging
+- **Phase 4**: 2-3 days - Package configuration and exports
+- **Phase 5**: 2-3 days - Build configuration and packaging
 - **Documentation**: 2-3 days - API documentation and migration guide
 - **Testing**: 2-3 days - Verify existing tests still pass
 
-**Total Estimated Duration**: 2-3 weeks (significantly reduced from 6-9 weeks)
+**Total Estimated Duration**: 3-4 weeks (includes table preservation strategy)
 
 ## Appendix: File-by-File Migration Plan
 
-### Files to Remove
-- `/src/model/*-table.tsx` - All UI table components
-- Any Chakra-specific utility files
+### Files to Transform (Not Remove)
+- `/src/model/*-table.tsx` - Convert to UI-agnostic table definitions (see Table Strategy below)
+- Any Chakra-specific utility files - Remove
 
 ### Files Requiring Minimal Changes
 - `/src/api/trustgraph/*.ts` - Keep as-is, just repackage
@@ -340,5 +348,128 @@ trustgraph-client/
 ### New Files to Create
 - `/src/index.ts` - Public API surface
 - `/src/state/index.ts` - Consolidated state management exports
+- `/src/tables/index.ts` - Table schema exports
+- `/src/tables/renderers.ts` - UI renderer interface
 - `/src/types/index.ts` - Type exports
 - `/src/providers/TrustGraphProvider.tsx` - Main provider component
+
+## Table Strategy Recommendation
+
+### Keep the Tables, But Transform Them
+
+**Rationale**: The table definitions contain valuable business logic and domain knowledge that should be preserved. They define:
+- Rich data structures for documents, flows, schemas, ontologies
+- Complex field relationships and metadata
+- Consistent data formatting patterns
+- Type-safe column definitions using TanStack Table
+
+**The Problem**: Currently tightly coupled to Chakra UI components (Badge, Tag, Checkbox, etc.)
+
+**The Solution**: Convert to UI-agnostic table schemas with render props
+
+### Proposed Table Architecture
+
+```typescript
+// Instead of this (current):
+export function documentColumns() {
+  return [
+    columnHelper.accessor('name', {
+      header: 'Name',
+      cell: info => <Tag>{info.getValue()}</Tag> // ❌ Chakra dependency
+    })
+  ]
+}
+
+// Convert to this (proposed):
+export function documentColumns() {
+  return [
+    columnHelper.accessor('name', {
+      header: 'Name',
+      cell: info => ({
+        type: 'tag',
+        value: info.getValue(),
+        // Let consumer decide how to render
+      })
+    })
+  ]
+}
+
+// Or with render props:
+export function documentColumns(renderers?: TableRenderers) {
+  return [
+    columnHelper.accessor('name', {
+      header: 'Name',
+      cell: info => renderers?.tag ? 
+        renderers.tag(info.getValue()) : 
+        info.getValue()
+    })
+  ]
+}
+```
+
+### Implementation Approach
+
+1. **Extract Render Patterns**: Identify common UI patterns across tables:
+   - Tags/Badges (used in 7 tables)
+   - Checkboxes (used in 3 tables)
+   - Code blocks (used in 2 tables)
+   - Directional arrows (node relationships)
+
+2. **Create Renderer Interface**:
+   ```typescript
+   interface TableRenderers {
+     tag?: (value: string, color?: string) => ReactNode
+     checkbox?: (checked: boolean, onChange: () => void) => ReactNode
+     code?: (value: string) => ReactNode
+     badge?: (items: string[]) => ReactNode
+   }
+   ```
+
+3. **Preserve Business Logic**: Keep all the valuable parts:
+   - Column accessors and data transformation
+   - Sorting/filtering logic
+   - Selection state management
+   - Type definitions and validation
+
+### Migration Priority
+
+**Easy Wins** (already UI-agnostic):
+- `token-costs-table.tsx` - No UI components
+- `ontologies-table.tsx` - No UI components
+- `mcp-tools-table.tsx` - No UI components
+- `agent-tools-table.tsx` - No UI components
+
+**Simple Conversions**:
+- `prompts-table.tsx` - Only uses Code component
+- `flow-classes-table.tsx` - Only uses Text component
+
+**Complex Conversions**:
+- `schemas-table.tsx` - Multiple badges and layout components
+- `document-table.tsx` - Tags and checkboxes
+- `node-relationships-table.tsx` - Custom styled buttons
+
+### Benefits of This Approach
+
+1. **Preserves Investment**: Keeps valuable business logic and domain models
+2. **Consumer Flexibility**: Apps can render with Chakra, MUI, Ant Design, or plain HTML
+3. **Type Safety**: Maintains TanStack Table's type-safe column definitions
+4. **Progressive Migration**: Can convert tables incrementally
+5. **Documentation Value**: Table definitions serve as documentation of data structures
+
+### Example Consumer Usage
+
+```typescript
+import { documentColumns, TableRenderers } from '@trustgraph/client/tables'
+import { Badge, Checkbox } from '@mui/material' // Or any UI library
+
+const renderers: TableRenderers = {
+  tag: (value) => <Badge>{value}</Badge>,
+  checkbox: (checked, onChange) => 
+    <Checkbox checked={checked} onChange={onChange} />
+}
+
+const columns = documentColumns(renderers)
+// Use with any table component (MUI DataGrid, AG-Grid, etc.)
+```
+
+**Recommendation**: Keep and transform the tables. The domain logic is too valuable to discard, and the conversion effort (3-5 days) is justified by the reusability benefits.
