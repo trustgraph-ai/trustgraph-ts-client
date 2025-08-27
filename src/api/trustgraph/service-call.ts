@@ -1,8 +1,10 @@
 import type { RequestMessage } from './messages';
 import type { BaseApi } from './trustgraph-socket';
 
-// Constant defining the delay before attempting to reconnect a WebSocket
-// (2 seconds)
+/**
+ * Delay before attempting to reconnect a WebSocket (2 seconds)
+ * @public
+ */
 export const SOCKET_RECONNECTION_TIMEOUT = 2000;
 
 /**
@@ -17,27 +19,47 @@ export const SOCKET_RECONNECTION_TIMEOUT = 2000;
  * - Cleaning up resources
  */
 export class ServiceCall {
+  /** Message ID - unique identifier for this request */
   mid: string;
+  /** The actual message/request to send */
   msg: RequestMessage;
+  /** Callback function called on successful response */
   success: (resp: any) => void;
+  /** Callback function called on error/failure */
   error: (err: any) => void;
+  /** Timeout duration in milliseconds */
   timeout: number;
+  /** Number of retry attempts remaining */
   retries: number;
+  /** Socket instance to send the message through */
   socket: BaseApi;
+  /** Track if this request has completed (deprecated) */
   completed: boolean = false;
+  /** Timer for retry attempts */
   timer: NodeJS.Timeout | undefined;
+  /** Whether this request has completed */
   complete: boolean = false;
+  /** Timer ID for timeout handling */
   timeoutId: NodeJS.Timeout | undefined;
 
+  /**
+   * Create a new ServiceCall instance
+   * @param mid - Message ID - unique identifier for this request
+   * @param msg - The actual message/request to send
+   * @param success - Callback function called on successful response
+   * @param error - Callback function called on error/failure
+   * @param timeout - Timeout duration in milliseconds
+   * @param retries - Number of retry attempts allowed
+   * @param socket - Socket instance to send the message through
+   */
   constructor(
-    mid: string, // Message ID - unique identifier for this request
-    msg: RequestMessage, // The actual message/request to send
-    success: (resp: any) => void, // Callback function called on
-    // successful response
-    error: (err: any) => void, // Callback function called on error/failure
-    timeout: number, // Timeout duration in milliseconds
-    retries: number, // Number of retry attempts allowed
-    socket: BaseApi, // Socket instance to send the message through
+    mid: string,
+    msg: RequestMessage,
+    success: (resp: any) => void,
+    error: (err: any) => void,
+    timeout: number,
+    retries: number,
+    socket: BaseApi,
   ) {
     this.mid = mid;
     this.msg = msg;
@@ -49,8 +71,11 @@ export class ServiceCall {
     this.completed = false; // Track if this request has completed
   }
 
+  /**
+   * Calculate exponential backoff delay for retry attempts
+   * @returns Delay in milliseconds (capped at 10 seconds)
+   */
   calculateBackoff(): number {
-    // Simple exponential backoff calculation
     return Math.min(1000 * Math.pow(2, 3 - this.retries), 10000);
   }
 
