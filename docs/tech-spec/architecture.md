@@ -160,6 +160,26 @@ trustgraph-client/
    client.on('error', handler)
    ```
 
+4. **Notification System**
+   ```typescript
+   // Flexible notification system - consumers choose implementation
+   import { useNotifications } from '@trustgraph/client/state'
+   
+   const { notifications, subscribe, clear } = useNotifications()
+   
+   // Consumer can:
+   // 1. Display in UI (toast, modal, etc.)
+   // 2. Log to console
+   // 3. Ignore entirely (server-side usage)
+   
+   // Subscribe to notification events
+   const unsubscribe = subscribe((notification) => {
+     console.log(notification)
+     // or: showToast(notification)
+     // or: customHandler(notification)
+   })
+   ```
+
 ### Phase 3: State Management
 
 1. **TanStack Query Integration**
