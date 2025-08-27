@@ -73,6 +73,55 @@ const dataColumns = schemaColumns(renderers)  // Field badges, type indicators
 <YourTableComponent columns={docColumns} data={documents} />
 ```
 
+### Event-Based Notifications
+```typescript
+import { 
+  useNotification, 
+  useNotificationSubscription, 
+  useNotificationState 
+} from '@trustgraph/client/state'
+
+// Emit notifications from anywhere in your app
+function MyComponent() {
+  const notification = useNotification()
+  
+  const handleAction = () => {
+    notification.success('Action completed successfully!')
+    notification.error('Something went wrong', { duration: 10000 })
+    notification.warning('This is a warning')
+    notification.info('FYI: Something happened')
+  }
+}
+
+// Subscribe to notifications in your UI layer
+function NotificationProvider({ children }) {
+  useNotificationSubscription((notification) => {
+    // Handle with your UI framework of choice
+    if (notification.type === 'success') {
+      showToast(notification.message, { type: 'success' })
+    } else if (notification.type === 'error') {
+      showErrorModal(notification.message)
+    }
+    // Or log to console for server-side apps
+    console.log(`[${notification.type}]`, notification.message)
+  })
+  
+  return <>{children}</>
+}
+
+// Monitor notification state (useful for notification centers)
+function NotificationCenter() {
+  const { notifications, hasActiveListeners } = useNotificationState()
+  
+  return (
+    <div>
+      <p>Active listeners: {hasActiveListeners ? 'Yes' : 'No'}</p>
+      <p>Recent notifications: {notifications.length}</p>
+    </div>
+  )
+}
+```
+
 ## Development Status
 
 ✅ **Completed:**
@@ -85,9 +134,13 @@ const dataColumns = schemaColumns(renderers)  // Field badges, type indicators
   - **Simple tables**: tokenCostColumns, ontologyColumns, mcpToolColumns, agentToolColumns, nodePropertyColumns
   - **Renderer tables**: promptColumns, flowClassColumns (support custom code/text renderers)
   - **Complex tables**: processingColumns, schemaColumns, nodeRelationshipColumns, documentColumns, flowColumns, knowledgeCoreColumns (support badges, checkboxes, buttons)
+- ✅ **Event-based notification system**
+  - Pub/sub architecture with `useNotificationSubscription`
+  - History tracking with `useNotificationState`
+  - Framework-agnostic notification emission
+  - Auto-dismissal and manual control
 
 🚧 **In Progress:**
-- Event-based notification system
 - Complete TypeScript declarations
 
 📝 **Planned:**

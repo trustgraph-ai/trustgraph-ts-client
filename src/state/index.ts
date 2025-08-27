@@ -33,8 +33,13 @@ export type { ProgressState } from './progress'
 export { useAgentTools } from './agent-tools'
 export { useMcpTools } from './mcp-tools'
 
-// Notifications (UI-agnostic)
-export { useNotification } from './notify'
+// Notifications (UI-agnostic event-based system)
+export { 
+  useNotification, 
+  useNotificationSubscription, 
+  useNotificationState,
+  notificationManager
+} from './notify'
 
 // Entity and graph data
 export type { Entity } from './entity'
