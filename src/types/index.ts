@@ -39,7 +39,7 @@ export interface NotificationConfig {
 
 export interface TableRenderers {
   tag?: (value: string, color?: string) => React.ReactNode
-  checkbox?: (checked: boolean, onChange: () => void) => React.ReactNode
+  checkbox?: (checked: boolean, onChange: () => void, indeterminate?: string) => React.ReactNode
   code?: (value: string) => React.ReactNode
   badge?: (items: string[]) => React.ReactNode
   button?: (label: string, onClick: () => void, variant?: string) => React.ReactNode
