@@ -22,6 +22,7 @@ npm install @trustgraph/client
 
 ## Basic Usage
 
+### State Management
 ```typescript
 import { useSessionStore, SocketProvider } from '@trustgraph/client'
 
@@ -34,14 +35,36 @@ const sessionStore = useSessionStore()
 </SocketProvider>
 ```
 
+### UI-Agnostic Tables
+```typescript
+import { tokenCostColumns, promptColumns, type TableRenderers } from '@trustgraph/client/tables'
+
+// Option 1: Use without renderers (plain text)
+const columns = tokenCostColumns
+
+// Option 2: Use with custom renderers for your UI framework
+const renderers: TableRenderers = {
+  code: (value) => <YourCodeComponent>{value}</YourCodeComponent>,
+  tag: (value) => <YourTagComponent>{value}</YourTagComponent>
+}
+
+const columnsWithRenderers = promptColumns(renderers)
+
+// Use with any table component (TanStack Table, MUI DataGrid, etc.)
+<YourTableComponent columns={columns} data={data} />
+```
+
 ## Development Status
 
 ✅ **Completed:**
 - Package configuration and build setup
-- State management exports (50+ hooks and stores)
+- State management exports (50+ hooks and stores)  
 - Basic TypeScript configuration
 - CommonJS and ES modules support
 - Core API structure
+- UI-agnostic table definitions (7/13 tables migrated)
+  - ✅ tokenCostColumns, ontologyColumns, mcpToolColumns, agentToolColumns
+  - ✅ promptColumns (with renderer support), flowClassColumns, nodePropertyColumns
 
 🚧 **In Progress:**
 - UI-agnostic table definitions
