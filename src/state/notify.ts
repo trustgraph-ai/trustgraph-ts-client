@@ -1,4 +1,5 @@
-import { toaster } from "../components/ui/toaster";
+// TODO: Replace with event-based notification system
+// import { toaster } from "../components/ui/toaster";
 
 /**
  * Custom hook for displaying toast notifications to users
@@ -7,16 +8,19 @@ import { toaster } from "../components/ui/toaster";
  * @returns {Object} Notification methods for different message types
  */
 export const useNotification = () => {
+  // Temporary console-based implementation
+  const notify = (type: string, title: string) => {
+    console.log(`[${type.toUpperCase()}]: ${title}`);
+    // TODO: Emit event for consumer to handle
+  };
+
   return {
     /**
      * Display a success notification
      * @param {string} title - The success message to display
      */
-    success: (title) => {
-      toaster.create({
-        title: title,
-        type: "success",
-      });
+    success: (title: string) => {
+      notify('success', title);
     },
 
     /**

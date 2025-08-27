@@ -108,21 +108,11 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({
 
   // Show loading state until both settings and socket are ready
   if (!isSocketReady) {
+    // TODO: Replace with consumer-provided loading component
     return (
-      <Box
-        width="100%"
-        height="100vh"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        gap={4}
-      >
-        <CenterSpinner />
-        <Text color="fg.muted">
-          {!isLoaded ? "Loading settings..." : "Connecting to server..."}
-        </Text>
-      </Box>
+      <div>
+        {!isLoaded ? "Loading settings..." : "Connecting to server..."}
+      </div>
     );
   }
 
