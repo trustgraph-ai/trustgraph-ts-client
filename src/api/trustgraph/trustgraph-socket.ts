@@ -39,11 +39,18 @@ import {
   //  Response,
 } from "./messages";
 
-// GraphRAG options interface for configurable parameters
+/**
+ * GraphRAG query options for configurable parameters
+ * @public
+ */
 export interface GraphRagOptions {
+  /** Maximum number of entities to retrieve */
   entityLimit?: number;
+  /** Maximum number of triples to retrieve */
   tripleLimit?: number;
+  /** Maximum size of the knowledge subgraph */
   maxSubgraphSize?: number;
+  /** Maximum path length for graph traversal */
   pathLength?: number;
 }
 
@@ -54,52 +61,53 @@ const SOCKET_URL = "/api/socket"; // WebSocket endpoint path
 
 /**
  * Socket interface defining all available operations for the TrustGraph API
- * This provides a unified interface for various AI/ML and knowledge graph
- * operations
+ * This provides a unified interface for various AI/ML and knowledge graph operations
+ * @public
  */
 export interface Socket {
+  /** Close the WebSocket connection */
   close: () => void;
 
-  // Text completion using AI models
+  /** Text completion using AI models */
   textCompletion: (system: string, text: string) => Promise<string>;
 
-  // Graph-based Retrieval Augmented Generation
+  /** Graph-based Retrieval Augmented Generation */
   graphRag: (text: string, options?: GraphRagOptions) => Promise<string>;
 
-  // Agent interaction with streaming callbacks for different phases
+  /** Agent interaction with streaming callbacks for different phases */
   agent: (
     question: string,
-    think: (t: string) => void, // Called when agent is thinking
-    observe: (t: string) => void, // Called when agent makes observations
-    answer: (t: string) => void, // Called when agent provides final answer
-    error: (e: string) => void, // Called on errors
+    think: (t: string) => void,
+    observe: (t: string) => void,
+    answer: (t: string) => void,
+    error: (e: string) => void,
   ) => void;
 
-  // Generate embeddings for text
+  /** Generate embeddings for text */
   embeddings: (text: string) => Promise<number[][]>;
 
-  // Query graph using embedding vectors
+  /** Query graph using embedding vectors */
   graphEmbeddingsQuery: (vecs: number[][], limit: number) => Promise<Value[]>;
 
-  // Query knowledge graph triples (subject-predicate-object)
+  /** Query knowledge graph triples (subject-predicate-object) */
   triplesQuery: (
-    s?: Value, // Subject (optional)
-    p?: Value, // Predicate (optional)
-    o?: Value, // Object (optional)
+    s?: Value,
+    p?: Value,
+    o?: Value,
     limit?: number,
   ) => Promise<Triple[]>;
 
-  // Load a document into the system
+  /** Load a document into the system */
   loadDocument: (
-    document: string, // Base64-encoded document
-    id?: string, // Optional document ID
-    metadata?: Triple[], // Optional metadata as triples
+    document: string,
+    id?: string,
+    metadata?: Triple[],
   ) => Promise<void>;
 
-  // Load plain text into the system
+  /** Load plain text into the system */
   loadText: (text: string, id?: string, metadata?: Triple[]) => Promise<void>;
 
-  // Load a document into the library with full metadata
+  /** Load a document into the library with full metadata */
   loadLibraryDocument: (
     document: string,
     mimeType: string,
@@ -107,10 +115,10 @@ export interface Socket {
     metadata?: Triple[],
   ) => Promise<void>;
 
-  // Connection state management
+  /** Connection state management */
   onConnectionStateChange: (listener: (state: ConnectionState) => void) => () => void;
 
-  // API factory methods
+  /** API factory methods */
   librarian: () => LibrarianApi;
   flows: () => FlowsApi;
   flow: (id: string) => FlowApi;
@@ -136,12 +144,11 @@ function makeid(length: number) {
 }
 
 /**
- * BaseApi - Core WebSocket client for TrustGraph API
- * Manages connection lifecycle, message routing, and provides base request
- * functionality
+ * Connection state interface for UI consumption
+ * @public
  */
-// Connection state interface for UI consumption
 export interface ConnectionState {
+  /** Current connection status */
   status:
     | "connecting"
     | "connected"
@@ -149,12 +156,23 @@ export interface ConnectionState {
     | "failed"
     | "authenticated"
     | "unauthenticated";
+  /** Whether an API key is configured */
   hasApiKey: boolean;
+  /** Current reconnection attempt number */
   reconnectAttempt?: number;
+  /** Maximum allowed attempts */
   maxAttempts?: number;
+  /** Seconds until next retry */
   nextRetryIn?: number;
+  /** Last error message */
   lastError?: string;
 }
+
+/**
+ * BaseApi - Core WebSocket client for TrustGraph API
+ * Manages connection lifecycle, message routing, and provides base request functionality
+ * @public
+ */
 
 export class BaseApi {
   ws?: WebSocket; // WebSocket connection instance
@@ -579,23 +597,29 @@ export class BaseApi {
     );
   }
 
-  // Factory methods for creating specialized API instances
+  /** Factory methods for creating specialized API instances */
+  
+  /** Create LibrarianApi for document management */
   librarian() {
     return new LibrarianApi(this);
   }
 
+  /** Create FlowsApi for workflow management */
   flows() {
     return new FlowsApi(this);
   }
 
+  /** Create FlowApi for specific workflow instance */
   flow(id: string) {
     return new FlowApi(this, id);
   }
 
+  /** Create KnowledgeApi for knowledge graph operations */
   knowledge() {
     return new KnowledgeApi(this);
   }
 
+  /** Create ConfigApi for system configuration */
   config() {
     return new ConfigApi(this);
   }
@@ -604,6 +628,7 @@ export class BaseApi {
 /**
  * LibrarianApi - Manages document storage and retrieval
  * Handles document lifecycle including upload, processing, and removal
+ * @public
  */
 export class LibrarianApi {
   private api: BaseApi;

@@ -1,23 +1,43 @@
 import { create } from "zustand";
 import { Message } from "../model/message";
 
+/**
+ * Chat mode types for different conversation styles
+ * @public
+ */
 export type ChatMode = "graph-rag" | "agent" | "basic-llm";
 
+/**
+ * State interface for chat management
+ * @public
+ */
 export interface ChatState {
+  /** Array of chat messages */
   messages: Message[];
+  /** Current user input text */
   input: string;
+  /** Current chat mode */
   chatMode: ChatMode;
 
+  /** Update the entire messages array */
   setMessages: (v: Message[]) => void;
+  /** Add a new message to the chat history */
   addMessage: (
     role: string,
     text: string,
     type?: "normal" | "thinking" | "observation" | "answer",
   ) => void;
+  /** Update the current user input */
   setInput: (v: string) => void;
+  /** Change the current chat mode */
   setChatMode: (mode: ChatMode) => void;
 }
 
+/**
+ * Zustand store for chat state management
+ * Provides methods for managing chat messages, user input, and chat modes
+ * @public
+ */
 export const useChatStateStore = create<ChatState>()((set) => ({
   messages: [
     {

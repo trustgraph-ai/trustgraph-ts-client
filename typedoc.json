@@ -1,0 +1,46 @@
+{
+  "entryPoints": [
+    "src/index.ts",
+    "src/state/index.ts", 
+    "src/api/trustgraph/trustgraph-socket.ts",
+    "src/tables/index.ts",
+    "src/types/index.ts",
+    "src/providers/index.ts"
+  ],
+  "out": "docs/api",
+  "theme": "markdown",
+  "readme": "none",
+  "plugin": ["typedoc-plugin-markdown"],
+  "exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/test/**",
+    "**/model/**"
+  ],
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeInternal": true,
+  "hideGenerator": true,
+  "cleanOutputDir": true,
+  "sort": ["source-order"],
+  "kindSortOrder": [
+    "Project",
+    "Module",
+    "Namespace",
+    "Enum",
+    "Class", 
+    "Interface",
+    "TypeAlias",
+    "Constructor",
+    "Property",
+    "Variable",
+    "Function",
+    "Accessor",
+    "Method"
+  ],
+  "categorizeByGroup": false,
+  "searchInComments": true,
+  "searchInDocuments": true
+}

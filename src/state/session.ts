@@ -1,24 +1,31 @@
 import { create } from "zustand";
 
-// Interface defining the shape of the session state store
+/**
+ * Session state interface for managing workflow context
+ * @public
+ */
 export interface SessionState {
-  // Current flow identifier
+  /** Current flow identifier */
   flowId: string;
   
-  // Current flow name/type (string)
+  /** Current flow name/type */
   flow: string;
 
-  // Description of the current flow
+  /** Description of the current flow */
   flowDescription: string;
 
-  // Function to update the flow identifier
+  /** Update the flow identifier */
   setFlowId: (v: string) => void;
 
-  // Function to update the current flow
+  /** Update the current flow */
   setFlow: (v: string) => void;
 }
 
-// Zustand store for managing session/workflow state
+/**
+ * Zustand store for managing session/workflow state
+ * Tracks the current flow context and provides methods for updates
+ * @public
+ */
 export const useSessionStore = create<SessionState>()((set) => ({
   flowId: "default",
   flow: "",
