@@ -1,54 +1,58 @@
 // State management exports
 
-// Socket and connection
-export { default as useSocket } from './socket'
-
 // Session management
-export { useSession, useSessionStore } from './session'
+export { useSessionStore } from './session'
+export type { SessionState } from './session'
 
 // Data queries and mutations
-export { useFlows, useFlowsStore } from './flows'
-export { useChat, useChatStore } from './chat'
+export { useFlows } from './flows'
+export { useChatStateStore } from './chat'
+export type { ChatMode, ChatState } from './chat'
 export { useSchemas } from './schemas'
 export { useOntologies } from './ontologies'
+export type { OntologyMetadata, OntologyConcept, OntologyScheme, Ontology } from './ontologies'
 export { useKnowledgeCores } from './knowledge-cores'
-export { usePrompts, usePromptsStore } from './prompts'
+export { usePrompts } from './prompts'
 export { useTokenCosts } from './token-costs'
 
 // Search and query functionality
-export { useSearch, useSearchStore } from './search'
-export { useGraphQuery } from './graph-query'
-export { useEntityQuery } from './entity-query'
-export { useChatQuery } from './chat-query'
+export { useSearchStateStore } from './search'
+export type { SearchState } from './search'
+export { useGraphSubgraph } from './graph-query'
+export { useEntityDetail } from './entity-query'
+export { useChat } from './chat-query'
 export { useVectorSearch } from './vector-search'
 
 // Processing and activity
-export { useProcessing, useProcessingStore } from './processing'
-export { useActivity, useActivityStore } from './activity'
-export { useProgress, useProgressStore } from './progress'
+export { useProcessing } from './processing'
+export { useActivity } from './activity'
+export { useProgressStateStore } from './progress'
+export type { ProgressState } from './progress'
 
 // Tools and extensions
 export { useAgentTools } from './agent-tools'
 export { useMcpTools } from './mcp-tools'
 
 // Notifications (UI-agnostic)
-export { useNotifications, useNotificationStore } from './notify'
+export { useNotification } from './notify'
 
 // Entity and graph data
-export { useEntity, useEntityStore } from './entity'
-export { useTriples, useTriplesStore } from './triples'
+export type { Entity } from './entity'
+export { useTriples } from './triples'
 export { useNodeDetails } from './node-details'
 export { useEmbeddings } from './embeddings'
 export { useGraphEmbeddings } from './graph-embeddings'
 
 // Settings
-export { useSettings, useSettingsStore } from './settings'
+export { useSettings } from './settings'
 
 // Workbench
-export { useWorkbench, useWorkbenchStore } from './workbench'
+export { useWorkbenchStateStore } from './workbench'
+export type { WorkbenchState } from './workbench'
 
 // Library
-export { useLibrary, useLibraryStore } from './library'
+export { useLibrary } from './library'
 
 // Load utilities
-export { useLoad } from './load'
+export { useLoadStateStore } from './load'
+export type { LoadState } from './load'

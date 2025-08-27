@@ -1,11 +1,13 @@
 import React, { useEffect, useState, createContext, useContext } from "react";
-import { Box, Text } from "@chakra-ui/react";
+// import { Box, Text } from "@chakra-ui/react";
+// TODO: Remove Chakra dependency
 import {
   createTrustGraphSocket,
   type ConnectionState,
 } from "./trustgraph-socket";
 import { useSettings } from "../../state/settings";
-import CenterSpinner from "../../components/common/CenterSpinner";
+// import CenterSpinner from "../../components/common/CenterSpinner";
+// TODO: Remove UI component dependency
 import type { Socket } from "./trustgraph-socket";
 
 // Create contexts for socket and connection state
