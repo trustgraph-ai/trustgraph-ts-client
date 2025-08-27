@@ -1,17 +1,31 @@
+import type { RequestMessage } from './messages';
+import type { BaseApi } from './trustgraph-socket';
+
 // Constant defining the delay before attempting to reconnect a WebSocket
 // (2 seconds)
 export const SOCKET_RECONNECTION_TIMEOUT = 2000;
 
 export class ServiceCallMulti {
+  mid: string;
+  msg: RequestMessage;
+  success: (resp: any) => void;
+  error: (err: any) => void;
+  timeout: number;
+  retries: number;
+  socket: BaseApi;
+  completed: boolean = false;
+  receiver: (response: any) => boolean;
+  timer: NodeJS.Timeout | undefined;
+
   constructor(
     mid: string,
     msg: RequestMessage,
-    success: (resp: Response) => void,
-    error: (err: Error) => void,
+    success: (resp: any) => void,
+    error: (err: any) => void,
     timeout: number,
     retries: number,
-    socket: Socket,
-    receiver,
+    socket: BaseApi,
+    receiver: (response: any) => boolean,
   ) {
     this.mid = mid;
     this.msg = msg;
@@ -20,18 +34,9 @@ export class ServiceCallMulti {
     this.timeout = timeout;
     this.retries = retries;
     this.socket = socket;
-    this.complete = false;
+    this.completed = false;
     this.receiver = receiver;
   }
-
-  mid: string;
-  success: (resp: object) => void; // FIXME: any
-  error: (err: object | string) => void; // FIXME: any
-  timeoutId: Timeout;
-  timeout: number;
-  retries: number;
-  socket: Socket;
-  complete: boolean;
 
   start() {
     this.socket.inflight[this.mid] = this;

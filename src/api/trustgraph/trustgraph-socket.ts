@@ -102,10 +102,13 @@ export interface Socket {
   // Load a document into the library with full metadata
   loadLibraryDocument: (
     document: string,
+    mimeType: string,
     id?: string,
     metadata?: Triple[],
-    mimeType: string,
   ) => Promise<void>;
+
+  // Connection state management
+  onConnectionStateChange: (listener: (state: ConnectionState) => void) => () => void;
 
   // API factory methods
   librarian: () => LibrarianApi;
@@ -162,7 +165,7 @@ export class BaseApi {
   // message ID
   reconnectAttempts: number = 0; // Track reconnection attempts
   maxReconnectAttempts: number = 10; // Maximum reconnection attempts
-  reconnectTimer?: number; // Timer for reconnection attempts
+  reconnectTimer?: NodeJS.Timeout; // Timer for reconnection attempts
   reconnectionState: "idle" | "reconnecting" | "failed" = "idle"; // Connection state
 
   // Connection state tracking for UI

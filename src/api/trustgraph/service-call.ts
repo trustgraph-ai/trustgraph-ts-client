@@ -1,3 +1,6 @@
+import type { RequestMessage } from './messages';
+import type { BaseApi } from './trustgraph-socket';
+
 // Constant defining the delay before attempting to reconnect a WebSocket
 // (2 seconds)
 export const SOCKET_RECONNECTION_TIMEOUT = 2000;
@@ -14,15 +17,25 @@ export const SOCKET_RECONNECTION_TIMEOUT = 2000;
  * - Cleaning up resources
  */
 export class ServiceCall {
+  mid: string;
+  msg: RequestMessage;
+  success: (resp: any) => void;
+  error: (err: any) => void;
+  timeout: number;
+  retries: number;
+  socket: BaseApi;
+  completed: boolean = false;
+  timer: NodeJS.Timeout | undefined;
+
   constructor(
     mid: string, // Message ID - unique identifier for this request
     msg: RequestMessage, // The actual message/request to send
-    success: (resp: Response) => void, // Callback function called on
+    success: (resp: any) => void, // Callback function called on
     // successful response
-    error: (err: Error) => void, // Callback function called on error/failure
+    error: (err: any) => void, // Callback function called on error/failure
     timeout: number, // Timeout duration in milliseconds
     retries: number, // Number of retry attempts allowed
-    socket: Socket, // WebSocket instance to send the message through
+    socket: BaseApi, // Socket instance to send the message through
   ) {
     this.mid = mid;
     this.msg = msg;
@@ -31,19 +44,8 @@ export class ServiceCall {
     this.timeout = timeout;
     this.retries = retries;
     this.socket = socket;
-    this.complete = false; // Track if this request has completed
+    this.completed = false; // Track if this request has completed
   }
-
-  // Properties
-  mid: string; // Message identifier
-  success: (resp: object) => void; // Success callback (FIXME: should
-  // use proper typing)
-  error: (err: object | string) => void; // Error callback (FIXME: should
-  // use proper typing)
-  timeoutId: Timeout; // Reference to the active timeout timer
-  timeout: number; // Timeout duration in milliseconds
-  retries: number; // Remaining retry attempts
-  socket: Socket; // WebSocket connection reference
   complete: boolean; // Flag indicating if request is complete
 
   /**

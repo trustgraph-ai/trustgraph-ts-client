@@ -35,8 +35,8 @@ export const usePrompts = () => {
       return socket
         .config()
         .getConfig([{ type: "prompt", key: "system" }])
-        .then((res) => {
-          if (res["error"]) {
+        .then((res: any) => {
+          if (res && res["error"]) {
             console.log("Error:", res);
             throw res.error.message;
           }
@@ -55,8 +55,8 @@ export const usePrompts = () => {
       return socket
         .config()
         .getConfig([{ type: "prompt", key: "template-index" }])
-        .then((res) => {
-          if (res["error"]) {
+        .then((res: any) => {
+          if (res && res["error"]) {
             console.log("Error:", res);
             throw res.error.message;
           }

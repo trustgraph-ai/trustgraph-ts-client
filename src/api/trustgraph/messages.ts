@@ -9,6 +9,7 @@ export interface RequestMessage {
   id: string;
   service: string;
   request: Request;
+  flow?: string;
 }
 
 export interface ApiResponse {
