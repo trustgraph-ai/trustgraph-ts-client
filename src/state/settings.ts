@@ -180,7 +180,7 @@ export const useSettings = () => {
 
   // Helper function to reset settings
   const resetSettings = () => {
-    resetSettingsMutation.mutate();
+    resetSettingsMutation.mutate({});
   };
 
   // Helper function to export settings as JSON

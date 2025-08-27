@@ -10,7 +10,7 @@ import { useActivity } from "./activity";
  * for AI models
  * @returns {Object} Token cost state and operations
  */
-export const useGraphEmbeddings = ({ flow, vecs, limit }) => {
+export const useGraphEmbeddings = ({ flow, vecs, limit }: { flow?: string; vecs: number[][]; limit: number }) => {
   // WebSocket connection for communicating with the configuration service
   const socket = useSocket();
 
@@ -29,8 +29,8 @@ export const useGraphEmbeddings = ({ flow, vecs, limit }) => {
       return socket
         .flow(flow)
         .graphEmbeddingsQuery(vecs, limit)
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
