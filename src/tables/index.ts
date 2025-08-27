@@ -1,26 +1,25 @@
-// Table definitions exports
+// UI-agnostic table definitions
 
-// TODO: These will be converted to UI-agnostic format in the migration phase
-// Temporarily commented out to allow build
+// ✅ Migrated tables (UI-agnostic)
+export { tokenCostColumns } from './token-costs'
+export { ontologyColumns } from './ontologies'
+export { mcpToolColumns } from './mcp-tools'
+export { agentToolColumns } from './agent-tools'
 
-// export { documentColumns } from '../model/document-table'
-// export { flowColumns, flowClassColumns } from '../model/flow-table'
-// export { flowClassesColumns } from '../model/flow-classes-table'
-// export { schemaColumns } from '../model/schemas-table'
-// export { ontologyColumns } from '../model/ontologies-table'
-// export { knowledgeCoreColumns } from '../model/knowledge-core-table'
-// export { promptColumns } from '../model/prompts-table'
-// export { processingColumns } from '../model/processing-table'
-// export { nodePropertyColumns } from '../model/node-properties-table'
-// export { nodeRelationshipColumns } from '../model/node-relationships-table'
-// export { agentToolColumns } from '../model/agent-tools-table'
-// export { mcpToolColumns } from '../model/mcp-tools-table'
-// export { tokenCostColumns } from '../model/token-costs-table'
+export type { TokenCost } from './token-costs'
+export type { OntologyTableRow } from './ontologies'
+export type { McpTool } from './mcp-tools'
+export type { AgentTool } from './agent-tools'
+
+// TODO: Remaining tables to migrate (have Chakra dependencies)
+// export { documentColumns } from './document'
+// export { flowColumns } from './flows'
+// export { schemaColumns } from './schemas'
+// export { knowledgeCoreColumns } from './knowledge-cores'
+// export { promptColumns } from './prompts'
+// export { processingColumns } from './processing'
+// export { nodePropertyColumns } from './node-properties'
+// export { nodeRelationshipColumns } from './node-relationships'
 
 // Export renderer interface (defined in types but re-exported for convenience)
 export type { TableRenderers } from '../types'
-
-// Temporary placeholder export
-export const tables = {
-  message: 'Table definitions will be migrated to UI-agnostic format'
-}
