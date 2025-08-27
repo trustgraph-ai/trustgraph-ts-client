@@ -36,7 +36,7 @@ export const LIMIT = 30;
 
 // Query triples which match URI on 's'
 export const queryS = (
-  socket: Socket,
+  socket: any,
   uri: string,
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -64,7 +64,7 @@ export const queryS = (
 
 // Query triples which match URI on 'p'
 export const queryP = (
-  socket: Socket,
+  socket: any,
   uri: string,
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -92,7 +92,7 @@ export const queryP = (
 
 // Query triples which match URI on 'o'
 export const queryO = (
-  socket: Socket,
+  socket: any,
   uri: string,
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -120,7 +120,7 @@ export const queryO = (
 
 // Query triples which match URI on 's', 'p' or 'o'.
 export const query = (
-  socket: Socket,
+  socket: any,
   uri: string,
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -150,7 +150,7 @@ export const query = (
 // Convert a URI to its label by querying the graph store, returns a
 // promise
 export const queryLabel = (
-  socket: Socket,
+  socket: any,
   uri: string,
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -191,7 +191,7 @@ export const queryLabel = (
 // Add 'label' elements to 's' elements in a list of triples.
 // Returns a promise
 export const labelS = (
-  socket: Socket,
+  socket: any,
   triples: Triple[],
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -214,7 +214,7 @@ export const labelS = (
 // Add 'label' elements to 'p' elements in a list of triples.
 // Returns a promise
 export const labelP = (
-  socket: Socket,
+  socket: any,
   triples: Triple[],
   add: (s: string) => void,
   remove: (s: string) => void,
@@ -237,7 +237,7 @@ export const labelP = (
 // Add 'label' elements to 'o' elements in a list of triples.
 // Returns a promise
 export const labelO = (
-  socket: Socket,
+  socket: any,
   triples: Triple[],
   add: (s: string) => void,
   remove: (s: string) => void,
