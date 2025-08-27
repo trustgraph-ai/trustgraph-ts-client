@@ -129,17 +129,19 @@ trustgraph-client/
 
 ### Phase 2: API Design
 
-1. **Hook-Based Interface**
+1. **State Management Interface**
    ```typescript
-   // Primary hooks
-   useSocket(config?: SocketConfig)
-   useServiceCall(service: string, method: string)
-   useSubscription(topic: string)
+   // Socket and connection state
+   import { useSocket, useConnectionStatus } from '@trustgraph/client/state'
    
-   // Query hooks (TanStack)
-   useFlows()
-   useKnowledgeCores()
-   useSchemas()
+   // Domain-specific state management
+   import { useFlows, useFlowMutation } from '@trustgraph/client/state'
+   import { useKnowledgeCores } from '@trustgraph/client/state'
+   import { useSchemas, useSchemaValidation } from '@trustgraph/client/state'
+   import { useChat, useChatHistory } from '@trustgraph/client/state'
+   
+   // Service invocation
+   import { useServiceCall } from '@trustgraph/client/state'
    ```
 
 2. **Provider Pattern**
@@ -184,8 +186,9 @@ trustgraph-client/
      "types": "dist/index.d.ts",
      "exports": {
        ".": "./dist/index.js",
-       "./hooks": "./dist/hooks/index.js",
-       "./types": "./dist/types/index.js"
+       "./state": "./dist/state/index.js",
+       "./types": "./dist/types/index.js",
+       "./providers": "./dist/providers/index.js"
      }
    }
    ```
@@ -243,6 +246,7 @@ trustgraph-client/
    - Next.js integration
    - Vite integration
    - Create React App integration
+   - State management patterns
 
 3. **Migration Guide**
    - Step-by-step migration from current architecture
@@ -309,6 +313,6 @@ trustgraph-client/
 
 ### New Files to Create
 - `/src/index.ts` - Public API surface
-- `/src/hooks/index.ts` - Hook exports
+- `/src/state/index.ts` - Consolidated state management exports
 - `/src/types/index.ts` - Type exports
 - `/src/providers/TrustGraphProvider.tsx` - Main provider component
