@@ -1,7 +1,7 @@
 // Functionality here helps construct subgraphs for react-force-graph
 // visualisation
 
-import { Triple } from "./Triple";
+import { Triple } from "../api/trustgraph/Triple";
 import {
   query,
   labelS,
@@ -9,7 +9,7 @@ import {
   labelO,
   filterInternals,
 } from "./knowledge-graph";
-import { Socket } from "../socket/trustgraph-socket";
+import { Socket } from "../api/trustgraph/trustgraph-socket";
 
 interface Node {
   id: string;

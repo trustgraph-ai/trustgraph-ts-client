@@ -1,7 +1,7 @@
 /**
  * textToBase64 using TextEncoder
  */
-export const textToBase64 = (input) => {
+export const textToBase64 = (input: string) => {
   // Convert string to UTF-8 bytes, then to Base64
   const encoder = new TextEncoder();
   const bytes = encoder.encode(input);
@@ -30,7 +30,7 @@ export const textToBase64 = (input) => {
  * @param {File} file - The file to convert to Base64
  * @returns {Promise<string>} Promise that resolves to Base64 string
  */
-export const fileToBase64 = (file) => {
+export const fileToBase64 = (file: File): Promise<string> => {
   return new Promise((resolve) => {
     const reader = new FileReader();
 
