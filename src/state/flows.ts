@@ -36,13 +36,13 @@ export const useFlows = () => {
       return socket
         .flows()
         .getFlows()
-        .then((flows) =>
+        .then((flows: string[] | undefined) =>
           Promise.all(
-            flows.map((flowId) =>
+            (flows || []).map((flowId: string) =>
               socket
                 .flows()
                 .getFlow(flowId)
-                .then((flow) => {
+                .then((flow: any) => {
                   return { ...flow, id: flowId };
                 }),
             ),
@@ -62,13 +62,13 @@ export const useFlows = () => {
       return socket
         .flows()
         .getFlowClasses()
-        .then((cls) =>
+        .then((cls: string[] | undefined) =>
           Promise.all(
-            cls.map((id) =>
+            (cls || []).map((id: string) =>
               socket
                 .flows()
                 .getFlowClass(id)
-                .then((cls) => [id, cls]),
+                .then((cls: any) => [id, cls]),
             ),
           ),
         );
@@ -79,7 +79,12 @@ export const useFlows = () => {
    * Mutation for starting a new flow for processing workflows
    */
   const startFlowMutation = useMutation({
-    mutationFn: ({ id, flowClass, description, onSuccess }) => {
+    mutationFn: ({ id, flowClass, description, onSuccess }: { 
+      id: string; 
+      flowClass: string; 
+      description: string; 
+      onSuccess?: () => void;
+    }) => {
       return socket
         .flows()
         .startFlow(id, flowClass, description)
@@ -105,10 +110,13 @@ export const useFlows = () => {
    * Executes parallel deletion requests and handles success/error states
    */
   const stopFlowMutation = useMutation({
-    mutationFn: ({ ids, onSuccess }) => {
+    mutationFn: ({ ids, onSuccess }: { 
+      ids: string[]; 
+      onSuccess?: () => void; 
+    }) => {
       console.log("Selected", ids);
       // Execute deletion requests in parallel for all flows
-      return Promise.all(ids.map((id) => socket.flows().stopFlow(id))).then(
+      return Promise.all(ids.map((id: string) => socket.flows().stopFlow(id))).then(
         () => {
           // Execute success callback if provided
           if (onSuccess) onSuccess();

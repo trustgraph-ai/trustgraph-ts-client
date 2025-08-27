@@ -2,5 +2,10 @@
 
 export { SocketProvider, SocketContext } from '../api/trustgraph/SocketProvider'
 
-// Main TrustGraph provider (to be created in migration)
-// export { TrustGraphProvider } from './TrustGraphProvider'
+// Main TrustGraph provider
+export { 
+  TrustGraphProvider, 
+  useTrustGraphConfig,
+  type TrustGraphConfig,
+  type TrustGraphProviderProps
+} from './TrustGraphProvider'

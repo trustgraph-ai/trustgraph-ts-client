@@ -22,8 +22,8 @@ export const useSchemas = () => {
       return socket
         .config()
         .getValues("schema")
-        .then((values) => {
-          return values.map((item) => [item.key, JSON.parse(item.value)]);
+        .then((values: { key: string; value: string }[]) => {
+          return values.map((item: { key: string; value: string }) => [item.key, JSON.parse(item.value)]);
         })
         .catch((err) => {
           console.log("Error:", err);
@@ -33,7 +33,11 @@ export const useSchemas = () => {
   });
 
   const updateSchemaMutation = useMutation({
-    mutationFn: ({ id, schema, onSuccess }) => {
+    mutationFn: ({ id, schema, onSuccess }: { 
+      id: string; 
+      schema: any; 
+      onSuccess?: () => void; 
+    }) => {
       return socket
         .config()
         .putConfig([

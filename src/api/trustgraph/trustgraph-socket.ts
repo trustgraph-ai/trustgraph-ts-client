@@ -106,6 +106,13 @@ export interface Socket {
     metadata?: Triple[],
     mimeType: string,
   ) => Promise<void>;
+
+  // API factory methods
+  librarian: () => LibrarianApi;
+  flows: () => FlowsApi;
+  flow: (id: string) => FlowApi;
+  knowledge: () => KnowledgeApi;
+  config: () => ConfigApi;
 }
 
 /**
@@ -509,7 +516,7 @@ export class BaseApi {
   makeRequestMulti<RequestType, ResponseType>(
     service: string,
     request: RequestType,
-    receiver, // Callback to handle each response chunk
+    receiver: (response: any) => boolean, // Callback to handle each response chunk
     timeout?: number,
     retries?: number,
     flow?: string,
@@ -596,7 +603,9 @@ export class BaseApi {
  * Handles document lifecycle including upload, processing, and removal
  */
 export class LibrarianApi {
-  constructor(api) {
+  private api: BaseApi;
+
+  constructor(api: BaseApi) {
     this.api = api;
   }
 
@@ -729,7 +738,9 @@ export class LibrarianApi {
  * Flows define how documents and data are processed through the system
  */
 export class FlowsApi {
-  constructor(api) {
+  private api: BaseApi;
+
+  constructor(api: BaseApi) {
     this.api = api;
   }
 
@@ -921,7 +932,10 @@ export class FlowsApi {
  * Provides flow-specific versions of core AI/ML operations
  */
 export class FlowApi {
-  constructor(api, flowId) {
+  private api: BaseApi;
+  private flowId: string;
+
+  constructor(api: BaseApi, flowId: string) {
     this.api = api;
     this.flowId = flowId; // All requests will be routed through this flow
   }
@@ -1123,7 +1137,9 @@ export class FlowApi {
  * Handles system configuration, prompts, and token cost tracking
  */
 export class ConfigApi {
-  constructor(api) {
+  private api: BaseApi;
+
+  constructor(api: BaseApi) {
     this.api = api;
   }
 
@@ -1281,7 +1297,9 @@ export class ConfigApi {
  * Knowledge cores appear to be collections of processed knowledge graph data
  */
 export class KnowledgeApi {
-  constructor(api) {
+  private api: BaseApi;
+
+  constructor(api: BaseApi) {
     this.api = api;
   }
 
@@ -1338,9 +1356,9 @@ export class KnowledgeApi {
    * Uses multi-request pattern for large datasets
    * @param receiver - Callback function to handle streaming data chunks
    */
-  getKgCore(id: string, user?: string, receiver) {
+  getKgCore(id: string, user?: string, receiver: (msg: any, isEnd: boolean) => void) {
     // Wrapper to handle end-of-stream detection
-    const recv = (msg) => {
+    const recv = (msg: any) => {
       if (msg.eos) {
         // End of stream - notify receiver and signal completion
         receiver(msg, true);

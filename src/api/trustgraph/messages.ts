@@ -1,3 +1,5 @@
+import type { Triple, Value } from './Triple';
+
 // FIXME: Better types?
 export type Request = object;
 export type Response = object;
@@ -28,7 +30,7 @@ export interface EntityEmbeddings {
 
 export interface GraphEmbeddings {
   metadata?: Metadata;
-  entities?: EntityEmbedding[];
+  entities?: EntityEmbeddings[];
 }
 
 export interface TextCompletionRequest {

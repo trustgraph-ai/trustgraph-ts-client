@@ -1,13 +1,13 @@
 /**
  * Test utilities for wrapping components with required providers
+ * UI-agnostic test setup - no longer depends on Chakra UI
  */
 
 import React from "react";
 import { render, RenderOptions } from "@testing-library/react";
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-// Custom render function that includes ChakraProvider and QueryClient
+// Custom render function that includes only essential providers
 const customRender = (ui: React.ReactElement, options?: RenderOptions) => {
   const queryClient = new QueryClient({
     defaultOptions: {
@@ -18,7 +18,7 @@ const customRender = (ui: React.ReactElement, options?: RenderOptions) => {
 
   const Wrapper = ({ children }: { children: React.ReactNode }) => (
     <QueryClientProvider client={queryClient}>
-      <ChakraProvider value={defaultSystem}>{children}</ChakraProvider>
+      {children}
     </QueryClientProvider>
   );
 

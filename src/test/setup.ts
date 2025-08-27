@@ -52,21 +52,21 @@ Object.defineProperty(window, "location", {
   writable: true,
 });
 
-// Set up DOM for Portal components globally
-// Create portal containers that persist across tests
+// Set up DOM for Portal components globally (UI-agnostic)
+// Create generic portal containers that persist across tests
 const setupPortalContainers = () => {
-  // Ensure portal containers exist for Dialog and other Portal components
-  if (!document.getElementById("chakra-portal")) {
-    const portalRoot = document.createElement("div");
-    portalRoot.setAttribute("id", "chakra-portal");
-    document.body.appendChild(portalRoot);
-  }
-
-  // Also create a generic portal root that some components might use
+  // Generic portal root that any UI framework can use
   if (!document.getElementById("portal-root")) {
     const portalRoot = document.createElement("div");
     portalRoot.setAttribute("id", "portal-root");
     document.body.appendChild(portalRoot);
+  }
+
+  // Additional portal container for modals/dialogs
+  if (!document.getElementById("modal-root")) {
+    const modalRoot = document.createElement("div");
+    modalRoot.setAttribute("id", "modal-root");
+    document.body.appendChild(modalRoot);
   }
 };
 
@@ -74,15 +74,15 @@ const setupPortalContainers = () => {
 setupPortalContainers();
 
 beforeEach(() => {
-  // Ensure portal containers are clean but still exist
-  const chakraPortal = document.getElementById("chakra-portal");
-  if (chakraPortal) {
-    chakraPortal.innerHTML = "";
-  }
-
+  // Clean portal containers but keep them available
   const portalRoot = document.getElementById("portal-root");
   if (portalRoot) {
     portalRoot.innerHTML = "";
+  }
+
+  const modalRoot = document.getElementById("modal-root");
+  if (modalRoot) {
+    modalRoot.innerHTML = "";
   }
 
   // Recreate if they were removed
