@@ -10,13 +10,26 @@ import { useSettings } from "../../state/settings";
 // TODO: Remove UI component dependency
 import type { Socket } from "./trustgraph-socket";
 
-// Create contexts for socket and connection state
+/**
+ * React context for providing the TrustGraph socket instance
+ * @public
+ */
 export const SocketContext = createContext<Socket | null>(null);
+
+/**
+ * React context for providing connection state information
+ * @public
+ */
 export const ConnectionStateContext = createContext<ConnectionState | null>(
   null,
 );
 
-// Hook to use the socket context
+/**
+ * Hook to access the TrustGraph socket instance
+ * @returns Socket instance
+ * @throws Error if used outside of SocketProvider
+ * @public
+ */
 export const useSocket = () => {
   const socket = useContext(SocketContext);
 
@@ -27,7 +40,12 @@ export const useSocket = () => {
   return socket;
 };
 
-// Hook to use the connection state context
+/**
+ * Hook to access the WebSocket connection state
+ * @returns Current connection state
+ * @throws Error if used outside of SocketProvider
+ * @public
+ */
 export const useConnectionState = () => {
   const state = useContext(ConnectionStateContext);
 
@@ -40,7 +58,12 @@ export const useConnectionState = () => {
   return state;
 };
 
+/**
+ * Props for SocketProvider component
+ * @public
+ */
 interface SocketProviderProps {
+  /** Child components to render */
   children: React.ReactNode;
 }
 

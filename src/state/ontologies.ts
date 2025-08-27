@@ -4,42 +4,88 @@ import { useSocket, useConnectionState } from "../api/trustgraph/socket";
 import { useNotification } from "./notify";
 import { useActivity } from "./activity";
 
+/**
+ * Metadata for an ontology definition
+ * @public
+ */
 export interface OntologyMetadata {
+  /** Name of the ontology */
   name: string;
+  /** Human-readable description */
   description: string;
+  /** Version identifier */
   version: string;
+  /** ISO date when created */
   created: string;
+  /** ISO date when last modified */
   modified: string;
+  /** Creator/author of the ontology */
   creator: string;
+  /** Namespace URI for the ontology */
   namespace: string;
 }
 
+/**
+ * Individual concept within an ontology (SKOS-based)
+ * @public
+ */
 export interface OntologyConcept {
+  /** Unique identifier for the concept */
   id: string;
+  /** Preferred label for display */
   prefLabel: string;
+  /** Alternative labels/synonyms */
   altLabel?: string[];
+  /** Formal definition of the concept */
   definition?: string;
+  /** Scope note explaining usage */
   scopeNote?: string;
+  /** Usage examples */
   example?: string[];
+  /** Notation code */
   notation?: string;
+  /** Parent concept URI (broader term) */
   broader?: string | null;
+  /** Child concept URIs (narrower terms) */
   narrower?: string[];
+  /** Related concept URIs */
   related?: string[];
+  /** Whether this is a top-level concept */
   topConcept?: boolean;
 }
 
+/**
+ * Concept scheme for organizing ontology concepts
+ * @public
+ */
 export interface OntologyScheme {
+  /** URI identifier for the scheme */
   uri: string;
+  /** Preferred label for the scheme */
   prefLabel: string;
+  /** URIs of top concepts in the scheme */
   hasTopConcept: string[];
 }
 
+/**
+ * Complete ontology structure with metadata, concepts, and scheme
+ * @public
+ */
 export interface Ontology {
+  /** Ontology metadata */
   metadata: OntologyMetadata;
+  /** Map of concept IDs to concepts */
   concepts: Record<string, OntologyConcept>;
+  /** Concept scheme definition */
   scheme: OntologyScheme;
 }
 
+/**
+ * Custom hook for managing ontology operations
+ * Provides functionality for fetching, creating, updating, and deleting ontologies
+ * @returns Ontology state and operations
+ * @public
+ */
 export const useOntologies = () => {
   const socket = useSocket();
   const connectionState = useConnectionState();

@@ -1,16 +1,13 @@
-// React Query hooks for data fetching and mutation management
 import { useQueryClient, useQuery, useMutation } from "@tanstack/react-query";
-
-// TrustGraph socket connection for API communication
 import { useSocket, useConnectionState } from "../api/trustgraph/socket";
-// Notification system for user feedback
 import { useNotification } from "./notify";
-// Activity tracking for loading states
 import { useActivity } from "./activity";
 
 /**
  * Custom hook for managing AI prompts (system prompt and prompt templates)
  * Provides CRUD operations for both the system prompt and user-defined prompt templates
+ * @returns Prompts state and operations
+ * @public
  */
 export const usePrompts = () => {
   // Socket connection for API calls

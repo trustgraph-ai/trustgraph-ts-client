@@ -4,6 +4,12 @@ import { useSocket, useConnectionState } from "../api/trustgraph/socket";
 import { useNotification } from "./notify";
 import { useActivity } from "./activity";
 
+/**
+ * Custom hook for managing data schemas
+ * Provides functionality for fetching, updating, and deleting schemas
+ * @returns Schema state and operations
+ * @public
+ */
 export const useSchemas = () => {
   const socket = useSocket();
   const connectionState = useConnectionState();
