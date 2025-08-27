@@ -58,8 +58,8 @@ export const useOntologies = () => {
       return socket
         .config()
         .getValues("ontology")
-        .then((values) => {
-          return values.map((item) => [item.key, JSON.parse(item.value)]);
+        .then((values: { key: string; value: string }[]) => {
+          return values.map((item: { key: string; value: string }) => [item.key, JSON.parse(item.value)]);
         })
         .catch((err) => {
           console.log("Error:", err);
@@ -87,8 +87,8 @@ export const useOntologies = () => {
             value: JSON.stringify(ontology),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -124,8 +124,8 @@ export const useOntologies = () => {
             value: JSON.stringify(ontology),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -158,8 +158,8 @@ export const useOntologies = () => {
             key: id,
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }

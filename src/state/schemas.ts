@@ -47,8 +47,8 @@ export const useSchemas = () => {
             value: JSON.stringify(schema),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -66,7 +66,11 @@ export const useSchemas = () => {
   });
 
   const createSchemaMutation = useMutation({
-    mutationFn: ({ id, schema, onSuccess }) => {
+    mutationFn: ({ id, schema, onSuccess }: { 
+      id: string; 
+      schema: any; 
+      onSuccess?: () => void; 
+    }) => {
       return socket
         .config()
         .putConfig([
@@ -76,8 +80,8 @@ export const useSchemas = () => {
             value: JSON.stringify(schema),
           },
         ])
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
@@ -95,17 +99,18 @@ export const useSchemas = () => {
   });
 
   const deleteSchemaMutation = useMutation({
-    mutationFn: ({ id, onSuccess }) => {
+    mutationFn: ({ id, onSuccess }: { 
+      id: string; 
+      onSuccess?: () => void; 
+    }) => {
       return socket
         .config()
-        .deleteConfig([
-          {
-            type: "schema",
-            key: id,
-          },
-        ])
-        .then((x) => {
-          if (x["error"]) {
+        .deleteConfig({
+          type: "schema",
+          key: id,
+        })
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
