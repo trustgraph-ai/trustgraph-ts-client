@@ -52,11 +52,11 @@ export const queryS = (
       undefined,
       limit ? limit : LIMIT,
     )
-    .then((x) => {
+    .then((x: any) => {
       remove(act);
       return x;
     })
-    .catch((err) => {
+    .catch((err: any) => {
       remove(act);
       throw err;
     });
@@ -80,11 +80,11 @@ export const queryP = (
       undefined,
       limit ? limit : LIMIT,
     )
-    .then((x) => {
+    .then((x: any) => {
       remove(act);
       return x;
     })
-    .catch((err) => {
+    .catch((err: any) => {
       remove(act);
       throw err;
     });
@@ -108,11 +108,11 @@ export const queryO = (
       { v: uri, e: true },
       limit ? limit : LIMIT,
     )
-    .then((x) => {
+    .then((x: any) => {
       remove(act);
       return x;
     })
-    .catch((err) => {
+    .catch((err: any) => {
       remove(act);
       throw err;
     });
@@ -137,11 +137,11 @@ export const query = (
     .then((resp) => {
       return resp[0].concat(resp[1]).concat(resp[2]);
     })
-    .then((x) => {
+    .then((x: any) => {
       remove(act);
       return x;
     })
-    .catch((err) => {
+    .catch((err: any) => {
       remove(act);
       throw err;
     });
@@ -178,11 +178,11 @@ export const queryLabel = (
       if (triples.length > 0) return triples[0].o.v;
       else return uri;
     })
-    .then((x) => {
+    .then((x: any) => {
       remove(act);
       return x;
     })
-    .catch((err) => {
+    .catch((err: any) => {
       remove(act);
       throw err;
     });
