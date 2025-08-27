@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the architectural transformation of the TrustGraph client codebase from a tightly-coupled Chakra UI application into a reusable, UI-agnostic client library for WebSocket communication and state management.
+This document outlines the minimal architectural transformation of the TrustGraph client codebase from a tightly-coupled Chakra UI application into a reusable, UI-agnostic client library for WebSocket communication and state management. The emphasis is on preserving the stable, battle-tested WebSocket and state management APIs while only removing direct UI dependencies.
 
 ## Architectural Goals
 
@@ -13,6 +13,7 @@ This document outlines the architectural transformation of the TrustGraph client
 3. **State Management**: Maintain React-based state management using TanStack Query for server state
 4. **WebSocket Communication**: Provide robust WebSocket client functionality with automatic reconnection and error handling
 5. **Type Safety**: Full TypeScript support with exported types for consumer applications
+6. **Minimal Refactoring**: Preserve existing state and WebSocket APIs that are battle-tested and stable
 
 ### Design Principles
 
@@ -31,27 +32,30 @@ This document outlines the architectural transformation of the TrustGraph client
 3. **Presentation Logic**: Components that mix business logic with UI rendering
 4. **Notification System** (`/state/notify.ts`): Currently integrated with Chakra's toast component - needs refactoring to event-based system
 
-### Core Modules to Preserve and Enhance
+### Core Modules to Preserve (Minimal Changes)
 
-#### API Layer (`/api`)
-- `authenticated-fetch.ts`: HTTP client wrapper
-- `trustgraph/socket.ts`: WebSocket implementation
-- `trustgraph/service-call*.ts`: RPC-style service invocation
-- `trustgraph/messages.ts`: Message protocol definitions
+#### API Layer (`/api`) - **PRESERVE AS-IS**
+- `authenticated-fetch.ts`: HTTP client wrapper ✓
+- `trustgraph/socket.ts`: WebSocket implementation ✓
+- `trustgraph/service-call*.ts`: RPC-style service invocation ✓
+- `trustgraph/messages.ts`: Message protocol definitions ✓
+- **Status**: These are stable and battle-tested - minimal changes needed
 
-#### State Management (`/state`)
-- Query hooks and state stores
-- Session management
-- Real-time data synchronization
+#### State Management (`/state`) - **PRESERVE CORE LOGIC**
+- Query hooks and state stores ✓
+- Session management ✓
+- Real-time data synchronization ✓
+- **Changes needed**: Only remove direct UI dependencies (toast notifications)
 
 #### Data Models (`/model`)
-- Type definitions (preserve `schemaTypes.ts`, `message.ts`, etc.)
-- Remove UI table components
+- Type definitions (preserve `schemaTypes.ts`, `message.ts`, etc.) ✓
+- **Remove only**: UI table components (`*-table.tsx`)
 
-#### Utilities (`/utils`)
-- Business logic utilities
-- Data transformation functions
-- Validation helpers
+#### Utilities (`/utils`) - **PRESERVE AS-IS**
+- Business logic utilities ✓
+- Data transformation functions ✓
+- Validation helpers ✓
+- **Status**: Generally UI-agnostic already
 
 ## Proposed Architecture
 
@@ -116,32 +120,32 @@ trustgraph-client/
 
 ## Rework Requirements
 
-### Phase 1: Dependency Removal
+### Phase 1: Minimal Dependency Removal
 
-1. **Remove Chakra UI Dependencies**
+1. **Surgical Chakra UI Removal**
    - Delete all `*-table.tsx` files from `/model`
-   - Remove any Chakra imports from remaining files
-   - Extract pure business logic from UI components
+   - Remove Chakra imports ONLY where necessary
+   - Keep all core business logic intact
 
-2. **Isolate UI-Agnostic Code**
-   - Identify and preserve core business logic
-   - Remove any direct DOM manipulation
-   - Eliminate style-related code
+2. **Preserve Existing Architecture**
+   - Maintain current file structure where possible
+   - Keep existing function signatures and APIs
+   - Only refactor what directly depends on UI frameworks
 
-### Phase 2: API Design
+### Phase 2: API Preservation & Packaging
 
-1. **State Management Interface**
+1. **Export Existing APIs**
    ```typescript
-   // Socket and connection state
+   // Preserve existing state hooks exactly as they are
    import { useSocket, useConnectionStatus } from '@trustgraph/client/state'
    
-   // Domain-specific state management
+   // Keep current API signatures unchanged
    import { useFlows, useFlowMutation } from '@trustgraph/client/state'
    import { useKnowledgeCores } from '@trustgraph/client/state'
    import { useSchemas, useSchemaValidation } from '@trustgraph/client/state'
    import { useChat, useChatHistory } from '@trustgraph/client/state'
    
-   // Service invocation
+   // Existing service invocation patterns remain the same
    import { useServiceCall } from '@trustgraph/client/state'
    ```
 
@@ -310,16 +314,16 @@ trustgraph-client/
    - Clear error messages
    - Comprehensive IntelliSense support
 
-## Timeline Estimate
+## Timeline Estimate (Revised for Minimal Rework)
 
-- **Phase 1**: 1-2 weeks - Dependency removal and code isolation
-- **Phase 2**: 2-3 weeks - API design and implementation
-- **Phase 3**: 2-3 weeks - State management refactoring
-- **Phase 4**: 1 week - Build configuration and packaging
-- **Documentation**: Ongoing throughout development
-- **Testing**: Ongoing with dedicated week for integration tests
+- **Phase 1**: 3-5 days - Surgical removal of UI dependencies only
+- **Phase 2**: 2-3 days - Package configuration and exports
+- **Phase 3**: 1-2 days - Notification system refactor
+- **Phase 4**: 2-3 days - Build configuration and packaging
+- **Documentation**: 2-3 days - API documentation and migration guide
+- **Testing**: 2-3 days - Verify existing tests still pass
 
-**Total Estimated Duration**: 6-9 weeks
+**Total Estimated Duration**: 2-3 weeks (significantly reduced from 6-9 weeks)
 
 ## Appendix: File-by-File Migration Plan
 
@@ -327,11 +331,11 @@ trustgraph-client/
 - `/src/model/*-table.tsx` - All UI table components
 - Any Chakra-specific utility files
 
-### Files to Refactor
-- `/src/api/trustgraph/*.ts` - Extract to core modules
-- `/src/state/*.ts` - Convert to UI-agnostic hooks
+### Files Requiring Minimal Changes
+- `/src/api/trustgraph/*.ts` - Keep as-is, just repackage
+- `/src/state/*.ts` - Remove UI imports only, preserve all logic
 - `/src/state/notify.ts` - Refactor from toast integration to event-based notification system
-- `/src/utils/*.ts` - Ensure no UI dependencies
+- `/src/utils/*.ts` - Likely no changes needed
 
 ### New Files to Create
 - `/src/index.ts` - Public API surface
