@@ -35,8 +35,8 @@ export const useTriples = ({ flow, s, p, o, limit }: {
       return socket
         .flow(flow)
         .triplesQuery(s, p, o, limit)
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }

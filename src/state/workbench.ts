@@ -1,7 +1,7 @@
 // Zustand state management library for creating stores
 import { create } from "zustand";
 // Entity interface definition for knowledge graph entities
-import { Entity } from "./Entity";
+import { Entity } from "./entity";
 
 /**
  * State interface for the main workbench/workspace application

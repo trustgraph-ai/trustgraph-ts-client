@@ -10,7 +10,7 @@ import { useActivity } from "./activity";
  * for AI models
  * @returns {Object} Token cost state and operations
  */
-export const useEmbeddings = ({ flow, term }) => {
+export const useEmbeddings = ({ flow, term }: { flow?: string; term: string }) => {
   // WebSocket connection for communicating with the configuration service
   const socket = useSocket();
   const connectionState = useConnectionState();
@@ -36,8 +36,8 @@ export const useEmbeddings = ({ flow, term }) => {
       return socket
         .flow(flow)
         .embeddings(term)
-        .then((x) => {
-          if (x["error"]) {
+        .then((x: any) => {
+          if (x && x["error"]) {
             console.log("Error:", x);
             throw x.error.message;
           }
