@@ -36,8 +36,8 @@ export const useKnowledgeCores = () => {
       return socket
         .knowledge()
         .getKnowledgeCores()
-        .then((cores) =>
-          cores.map((x) => {
+        .then((cores: string[]) =>
+          cores.map((x: string) => {
             return { id: x };
           }),
         );
@@ -49,12 +49,12 @@ export const useKnowledgeCores = () => {
    * Executes parallel deletion requests and handles success/error states
    */
   const deleteKnowledgeCoresMutation = useMutation({
-    mutationFn: ({ ids, onSuccess }) => {
+    mutationFn: ({ ids, onSuccess }: { ids: string[]; onSuccess?: () => void }) => {
       const user = "trustgraph";
 
       // Execute deletion requests in parallel for all knowledge cores
       return Promise.all(
-        ids.map((id) => socket.knowledge().deleteKgCore(id, user)),
+        ids.map((id: string) => socket.knowledge().deleteKgCore(id, user)),
       ).then(() => {
         // Execute success callback if provided
         if (onSuccess) onSuccess();
@@ -78,7 +78,7 @@ export const useKnowledgeCores = () => {
    * Executes parallel load requests with specified flow
    */
   const loadKnowledgeCoresMutation = useMutation({
-    mutationFn: ({ ids, flow, onSuccess }) => {
+    mutationFn: ({ ids, flow, onSuccess }: { ids: string[]; flow: string; onSuccess?: () => void }) => {
       // Execute load requests in parallel for all knowledge cores
       return Promise.all(
         ids.map((id) => socket.knowledge().loadKgCore(id, flow)),

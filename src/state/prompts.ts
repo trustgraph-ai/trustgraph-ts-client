@@ -205,11 +205,11 @@ export const usePrompts = () => {
       return socket
         .config()
         .getConfig([{ type: "prompt", key: "template-index" }])
-        .then((res) => JSON.parse(res.values[0].value))
-        .then((existingIds) => {
+        .then((res: any) => JSON.parse(res.values[0].value))
+        .then((existingIds: string[]) => {
           // Step 2: Remove the template ID from the index
           const newIds = existingIds.filter(
-            (existingId) => existingId !== id,
+            (existingId: string) => existingId !== id,
           );
           // Step 3: Update the template index
           return socket
@@ -223,12 +223,10 @@ export const usePrompts = () => {
             ])
             .then(() => {
               // Step 4: Delete the template configuration
-              return socket.config().deleteConfig([
-                {
-                  type: "prompt",
-                  key: "template." + id,
-                },
-              ]);
+              return socket.config().deleteConfig({
+                type: "prompt",
+                key: "template." + id,
+              });
             })
             .then((x) => {
               if (x["error"]) {
