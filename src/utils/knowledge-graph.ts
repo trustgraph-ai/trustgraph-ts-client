@@ -1,5 +1,5 @@
-import { Socket } from "../socket/trustgraph-socket";
-import { Triple } from "./Triple";
+import { Socket } from "../api/trustgraph/trustgraph-socket";
+import { Triple } from "../api/trustgraph/Triple";
 
 export const RDFS_LABEL = "http://www.w3.org/2000/01/rdf-schema#label";
 

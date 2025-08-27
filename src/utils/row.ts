@@ -135,7 +135,7 @@ export const addRowEmbeddings =
 
         return socket
           .embeddings(text)
-          .then((x) => {
+          .then((x: any) => {
             if (x && x.length > 0) {
               remove(act);
               return {
