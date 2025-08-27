@@ -5,10 +5,21 @@ export * from '../model/schemaTypes'
 export * from '../model/message'
 export * from '../model/document-metadata'
 export * from '../model/settings-types'
-export * from '../model/triples'
 
-// Re-export API types
-export * from '../api/trustgraph/Triple'
+// Re-export specific types to avoid conflicts
+export type { 
+  PartialTriple as ModelPartialTriple,
+  Triple as ModelTriple,
+  Value as ModelValue 
+} from '../model/triples'
+
+// Re-export API types with specific names to avoid conflicts
+export type {
+  Triple as ApiTriple,
+  PartialTriple as ApiPartialTriple,
+  Value as ApiValue
+} from '../api/trustgraph/Triple'
+
 export * from '../api/trustgraph/messages'
 
 // Common type definitions
